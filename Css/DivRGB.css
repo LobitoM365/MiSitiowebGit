@@ -2,22 +2,39 @@
     padding: 0%;
     margin: 0%;
 }
-.Box-1{
+.Box{
     height: 300px;
     width: 300px;
+    color: black;
+}
+div{
+    display: inline-block;
+}
+
+.Box-1{
+    background-color: darkcyan;
+}
+.Box-2{
+    background-color: goldenrod;
+}
+.Box-3{
+    background-color: gainsboro;
+}
+.Box-4{
+    background-color: lavender;
+}
+
+.Box-5{
     background-color: rgb(255,0,0);
 }
 
-.Box-2{
-    height: 300px;
-    width: 300px;
+.Box-6{
     background-color: rgb(0,255,0);
-
 }
 
-.Box-3{
-    height: 300px;
-    width: 300px;
+.Box-7{
     background-color: rgb(0,0,255);
-
+}
+.Box-8{
+    background-color: rgb(123,61,235);
 }
