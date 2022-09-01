@@ -5,7 +5,7 @@
 .Box{
     height: 300px;
     width: 300px;
-    color: black;
+    color: rgba(0, 0, 0, 0.911);
 }
 div{
     display: inline-block;
