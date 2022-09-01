@@ -11,7 +11,8 @@ body{
 }
 H1{
     font-family:"DS-DIGI";
-    font-size: 9em;
+    font-size: 11em;
+    color: black;
 }
 
 @font-face{
