@@ -4,14 +4,40 @@
 }
 body{
     background-color: rgba(24, 24, 24, .9);
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
 h1{
     font-family: 'Bebas Neue', cursive;
     font-size: 9em;
     color:red;
+}
+
+.Netflix{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.nav {
+    position: absolute;
+    padding: 30px;
+}
+.nav nav ul li a{
+    color: red;
+    font-size: 2.5em;
+    text-decoration: none;
+    padding: 9px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold;
+}
+.nav nav ul li{
+    list-style: none;
+    
+}
+.nav nav ul li a:hover{
+    background-color: rgba(240, 255, 255, 0.300);
+    padding: 9px;
+    border-radius: 4px;
+   
 }
