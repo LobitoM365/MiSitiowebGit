@@ -1,3 +1,7 @@
+*{
+    margin: 0px;
+    padding: 0%;
+}
 .letter-style{
     font-size: 2em;
     color: rgb(162, 164, 165);
@@ -27,4 +31,30 @@ h2.text-style{
 /* Ejemplo de estilo utilizando ID*/
 #textStyle{
     color: violet;
+}
+
+.nav {
+    
+    padding: 30px;
+  
+    
+}
+
+.nav nav ul li a{
+    color: rgba(0, 0, 0, 0.842);
+    font-size: 2.2em;
+    text-decoration: none;
+    padding: 9px ;
+    
+}
+.nav nav ul li{
+    list-style: none;
+    
+    
+}
+.nav nav ul li a:hover{
+    background-color:rgba(179, 184, 184, 0.432);
+    padding: 9px;
+    border-radius: 4px;
+   
 }

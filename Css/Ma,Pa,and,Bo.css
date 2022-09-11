@@ -1,28 +1,83 @@
-*{
+* {
     padding: 0%;
     margin: 0%;
 }
+
 .box {
-    display: inline-block;
-    width: 300px;
-    height: 300px;
+    display: inline-flex;
+    width: 130px;
+    height: 210px;
     background-color: aqua;
+    padding: 2em;
+    margin: 10em 1.5em 1.5em 0em ;
+    
 }
 
-.Box1{
-    padding: 10px red;
+p {
+    text-align: justify;
+    letter-spacing: 1px;
+    word-spacing: 0.7em;
+    line-height: 1.3em;
+    text-indent: 1em;
+    color: white;
+}
 
 
+blockquote{
+  display: inline-block;
+  font-size: 1em;
+  color: darkcyan;
+  text-align: justify;
 }
-.Box1{
+.Box1 {
+    margin-left: 50px;
+    border: 9px solid  darkcyan;
+    background-color: rgb(27,69,67);
+}
+
+.Box2 {
+    border: 9px  dotted  rgb(10,41,28);
+    background-color: rgb(21,80,52);
+}
+
+.Box3 {
+    border: 9px dashed rgb(27,26,53);
+    background-color: rgb(46,44,93);
+}
+
+.Box4 {
+    border: 9px double rgb(135,142,182);
+    background-color: rgb(32,35,52);
+}
+
+.Box5 {
+    border: 9px groove  rgba(70,31,97)  ;
+    background-color: rgb(125,55,171);
+}
+
+.nav {
+    position: absolute;
+    padding: 30px;
+    margin-left: 15px;
     
 }
-.Box1{
+
+
+.nav nav ul li a{
+    color: rgba(0, 0, 0, 0.842);
+    font-size: 2.2em;
+    text-decoration: none;
+    padding: 9px ;
     
 }
-.Box1{
+.nav nav ul li{
+    list-style: none;
+    
     
 }
-.Box1{
-    
+.nav nav ul li a:hover{
+    background-color:rgba(179, 184, 184, 0.432);
+    padding: 9px;
+    border-radius: 4px;
+   
 }
