@@ -10,12 +10,10 @@
     background-color: aqua;
     padding: 2em;
     margin: 8em 0em 0em 0.9em;
-    
-    
+     
 }
 
 p {
-    text-align: justify;
     letter-spacing: 1px;
     word-spacing: 0.7em;
     line-height: 1.3em;
@@ -32,27 +30,30 @@ blockquote{
   text-align: justify;
 }
 .Box1 {
-    
     border: 9px solid  darkcyan;
     background-color: rgb(27,69,67);
 }
 
 .Box2 {
+    text-align: justify;
     border: 9px  dotted  rgb(10,41,28);
     background-color: rgb(21,80,52);
 }
 
 .Box3 {
+    text-align: center;
     border: 9px dashed rgb(27,26,53);
     background-color: rgb(46,44,93);
 }
 
 .Box4 {
+    text-align: left;
     border: 9px double rgb(135,142,182);
     background-color: rgb(32,35,52);
 }
 
 .Box5 {
+    text-align: right;
     border: 9px groove  rgba(70,31,97)  ;
     background-color: rgb(125,55,171);
 }
