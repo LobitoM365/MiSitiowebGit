@@ -1,39 +1,48 @@
 *{
-    margin: 0px;
+    margin: 0%;
     padding: 0%;
-}
-.letter-style{
-    font-size: 2em;
-    color: rgb(162, 164, 165);
-}
-
-.name-style{
-    color: rgb(64, 64, 64); 
-}
-
-/* Ejemplo clase de elemento */
-h2 {
-    color: red;
-}
-
-/* Ejemplo clase atada*/
-
-h2.text-style{
+ }
+ 
+ .google{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 80vh;
+    font-size: 4em;
+ 
+ }
+ 
+ span.G{
     color:blue;
-}
+    
+   
+ }
+ 
+ span.O{
+    color: red;
+    
+ }
+ 
+ span.o{
+    color: rgb(255, 196, 0);
+    
+ }
+ 
+ span.g{
+    color:blue;
+    
+ }
+ span.l{
+    color: rgb(5, 177, 5);
+    
+ }
+ span.e{
+    color: red;
+    
+ }
 
-/* Ejemplo calse no atada */
 
-.text-style{
-    color: darkcyan;
-}
-
-/* Ejemplo de estilo utilizando ID*/
-#textStyle{
-    color: violet;
-}
-
-.nav {
+ .nav {
     
     padding: 30px;
   

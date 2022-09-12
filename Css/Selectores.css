@@ -1,23 +1,36 @@
 *{
-    margin: 0%;
+    margin: 0px;
     padding: 0%;
 }
-
-
-.left{
-    text-align: left;
+.letter-style{
+    font-size: 2em;
+    color: rgb(162, 164, 165);
 }
 
-.right{
-    text-align: right;
+.name-style{
+    color: rgb(64, 64, 64); 
 }
 
-.center{
-    text-align: center;
+/* Ejemplo clase de elemento */
+h2 {
+    color: red;
 }
 
-.justify{
-    text-align: justify;
+/* Ejemplo clase atada*/
+
+h2.text-style{
+    color:blue;
+}
+
+/* Ejemplo calse no atada */
+
+.text-style{
+    color: darkcyan;
+}
+
+/* Ejemplo de estilo utilizando ID*/
+#textStyle{
+    color: violet;
 }
 
 .nav {
@@ -26,8 +39,6 @@
   
     
 }
-
-
 
 .nav nav ul li a{
     color: rgba(0, 0, 0, 0.842);
