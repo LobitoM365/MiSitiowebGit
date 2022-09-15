@@ -10,6 +10,7 @@ h1{
     font-family: 'Bebas Neue', cursive;
     font-size: 9em;
     color:red;
+    letter-spacing: 9px;
 }
 
 .Netflix{
@@ -30,6 +31,7 @@ h1{
     padding: 9px;
     font-family: 'Bebas Neue', cursive;
     font-weight: bold;
+    letter-spacing: 3px;
 }
 .nav nav ul li{
     list-style: none;
