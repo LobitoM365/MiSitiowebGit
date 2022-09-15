@@ -1,0 +1,54 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+img{
+    width: 30%;
+    height: 30%;
+  
+    
+    
+}        
+.nav {
+    position: absolute;
+    padding: 30px;
+    margin-left: 15px;
+    display: block;
+}
+
+.box{
+    display: inline;
+    background-color: #A449A9;
+}
+
+
+.imagenes{
+   
+    position: relative;
+}
+
+h1{
+    padding: 2em 0px 100px 0px;
+    text-align: center;
+    font-size: 4em;
+    display: block;
+}
+.nav nav ul li a{
+    color: #A449A9;
+    font-size: 2.2em;
+    text-decoration: none;
+    padding: 9px ;
+    font-weight: 600;
+}
+.nav nav ul li{
+    list-style: none;
+    
+    
+}
+.nav nav ul li a:hover{
+    background-color:rgba(179, 184, 184, 0.432);
+    padding: 9px;
+    border-radius: 4px;
+   
+}   
