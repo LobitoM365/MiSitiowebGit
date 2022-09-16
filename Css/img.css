@@ -3,12 +3,9 @@
     margin: 0%;
 }
 
-img{
-    width: 30%;
-    height: 30%;
-  
-    
-    
+.img-jhin, .img-bob, .img-pika{
+    width: 90%;
+    height: 90%; 
 }        
 .nav {
     position: absolute;
@@ -18,16 +15,28 @@ img{
 }
 
 .box{
+    height: 100%;
+    width: 100%;
     display: inline;
-    background-color: #A449A9;
+    text-align: center;
 }
 
 
 .imagenes{
-   
+    padding-bottom: 70px;
+    display: flex;
     position: relative;
 }
-
+h2{
+    text-align: right;
+    padding-right: 20px;
+    font-size: 2em;
+}
+p{
+    text-align: right;
+    padding-right: 27px;
+    font-size: 1.2em;
+}
 h1{
     padding: 2em 0px 100px 0px;
     text-align: center;
@@ -52,3 +61,7 @@ h1{
     border-radius: 4px;
    
 }   
+
+.imagenes2{
+    display: inline-flex;
+}
