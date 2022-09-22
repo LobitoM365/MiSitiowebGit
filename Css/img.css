@@ -15,18 +15,12 @@ img{
 }
 
 .box{
-    height: 0%;
-    width: 30%;
+    height: 30%;
+    width:  30%;
     display: inline-block;
     text-align: center;
     margin-left: 48px;
-}
-
-
-.imagenes{
-    padding-bottom: 70px;
-    display: inline-flex;
-    position: relative;
+    margin-bottom: 70px;
 }
 h2{
     text-align: right;
@@ -61,9 +55,7 @@ h1{
    
 }   
 
-.imagenes2{
-    display: inline-flex;
-}
+
 .contenedor-imagenes{
     padding-bottom: 5em;
 }
