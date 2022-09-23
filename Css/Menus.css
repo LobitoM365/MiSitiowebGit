@@ -6,9 +6,31 @@
 li{
     font-size: 2em;
     display: inline-block;
-    margin: 20px;
+    padding: 20px;
 }
 .menu{
     background-color: aquamarine;
+
+}
+
+ul .left >li a{
+    text-decoration: none;
+    color: black;
+
+}
+ul .left >li:hover{
+    background-color: rgba(139, 138, 138, 0.181);
+    padding: 20px;
+}
+
+.box{
+    vertical-align: top;
+    display: inline;
+}
+.right{
     text-align: right;
+}
+
+.left{
+    margin-right: 49em;
 }
