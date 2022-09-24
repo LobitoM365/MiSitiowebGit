@@ -7,30 +7,27 @@ li{
     font-size: 2em;
     display: inline-block;
     padding: 20px;
-}
-.menu{
-    background-color: aquamarine;
-
+    
 }
 
-ul .left >li a{
+
+.left ul li a{
     text-decoration: none;
     color: black;
-
 }
-ul .left >li:hover{
+.left >ul >li:hover{
     background-color: rgba(139, 138, 138, 0.181);
     padding: 20px;
 }
 
-.box{
-    vertical-align: top;
-    display: inline;
-}
+
 .right{
+    background-color: aqua;
     text-align: right;
 }
 
 .left{
-    margin-right: 49em;
+    background-color: aqua;
+    width: 100;
+    float: left;
 }
