@@ -6,3 +6,37 @@
 h1,h3, form{
     padding: 30px;
 }
+
+label{
+    display: block;
+    padding: 30px 0px 5px 0px;
+}
+
+.registro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0em;
+    
+}
+
+.formulario{
+
+    background-color: rgb(156, 185, 202);
+}
+
+input[type="text"]{
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 1em;
+    padding: 4px;
+    width: 240px;
+}
+textarea{
+    font-size: 1em;
+    padding: 4px;
+}
+input[type="text"]:focus{
+    outline: none;
+}
+

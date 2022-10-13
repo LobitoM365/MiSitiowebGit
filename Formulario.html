@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +8,51 @@
     <title>Formulario</title>
     <link rel="stylesheet" href="css/Formulario.css">
 </head>
+
 <body>
-
     <h1> Registrar usuario</h1>
-    <h3> Ingrese los siguiente datos</h3>
     <form>
-        <label>Nombre(s)</label> <br>
-       <input type="text"> <br>
-        <label> Tipo de documento</label> <br>
-        <select>
-            <option value="">Registro civil</option>
-            <option value="">Tarjeta de identidad</option>
-            <option value="">Cédula de ciudadania</option>
-            <option value="">Cédula extranjera</option>
-        </select> <br>
+        <fieldset>
 
-       <label>Numero de documento</label> <br>
-       <input type="text">
+            <legend> Ingrese los siguiente datos </legend>
+
+
+            <label>Nombre(s)</label>
+            <input type="text" placeholder="Ingrese su nombre">
+            <label>Apellido(s)</label>
+            <input type="text" placeholder="Ingrese su apellido">
+            <label> Tipo de documento</label>
+            <select>
+                <option value="">Registro civil</option>
+                <option value="">Tarjeta de identidad</option>
+                <option value="">Cédula de ciudadania</option>
+                <option value="">Cédula extranjera</option>
+            </select> <br>
+
+            <label>Numero de documento</label>
+            <input type="text" placeholder="Ingrese su numero de documento">
+            <label>Género</label>
+            <input type="radio" name="genero" id=""> Masculino <br>
+            <input type="radio" name="genero" id=""> Femenino <br>
+            <input type="radio" name="genero" id=""> No quiero especificar <br>
+            <label> Seleccione los dias que tiene disponible </label>
+            <input type="checkbox" name="dias" id=""> Lunes <br>
+            <input type="checkbox" name="dias" id=""> Martes <br>
+            <input type="checkbox" name="dias" id=""> Miercoles <br>
+            <input type="checkbox" name="dias" id=""> Jueves <br>
+            <input type="checkbox" name="dias" id=""> Viernes <br>
+            <label> Teléfono </label>
+            <input type="text" name="" id="" placeholder="Ingrese su numero de telefono">
+            <label> Correo electrónico </label>
+            <input type="text" name="" id=""placeholder="Ingrese su correo electrónico">
+            <label> Notas:</label>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese algún comentario"></textarea> <br> 
+            <input type="submit" value="Registrar"> <br> 
+            <button> Enviar</button>   
+
+
+        </fieldset>
     </form>
 </body>
+
 </html>
