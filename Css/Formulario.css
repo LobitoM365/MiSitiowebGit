@@ -6,6 +6,10 @@
 h1,h3, form{
     padding: 30px;
 }
+h1{
+    padding-left: 100px;
+    color: aliceblue;
+}
 
 label{
     display: block;
@@ -17,12 +21,28 @@ label{
     justify-content: center;
     align-items: center;
     padding: 2em 0em;
-    
 }
 
+option, select{
+    color: aliceblue;
+}
+fieldset{
+    padding-left: 70px;
+    color: aliceblue;
+}
+.otra{
+    padding: 0%;
+}
 .formulario{
-
-    background-color: rgb(156, 185, 202);
+    width: 60%;
+   
+}
+.formulario, input[type="text"], select, textarea, button, input[type="submit"], .registro{
+    
+    background-color: rgb(50, 88, 110);
+}
+input[type="text"]{
+    padding: 20px;
 }
 
 input[type="text"]{
@@ -39,4 +59,23 @@ textarea{
 input[type="text"]:focus{
     outline: none;
 }
+fieldset{
+    border-radius: 12px ;
+}
 
+h1,h2{
+    text-align: center;
+    margin: 30px;
+}
+
+::placeholder{
+    color: rgba(0, 0, 0, 0.711);
+}
+
+button{
+    background-color: rgb(28,181,224);
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    margin: 20px 20px 20px 0px;
+}
