@@ -1,5 +1,38 @@
-*{
+* {
     padding: 0%;
     margin: 0%;
 }
 
+label,
+input {
+    display: block;
+    margin: 10px;
+}
+
+fieldset {
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+    padding: 30px;
+
+}
+
+.iniciar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.restablecercontraseña{
+    text-align: right;
+}
