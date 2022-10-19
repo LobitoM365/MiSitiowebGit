@@ -10,49 +10,112 @@
 </head>
 
 <body>
-    <h1> Registrar usuario</h1>
-    <form>
-        <fieldset>
 
-            <legend> Ingrese los siguiente datos </legend>
+    <div class="registro">
 
-
-            <label>Nombre(s)</label>
-            <input type="text" placeholder="Ingrese su nombre">
-            <label>Apellido(s)</label>
-            <input type="text" placeholder="Ingrese su apellido">
-            <label> Tipo de documento</label>
-            <select>
-                <option value="">Registro civil</option>
-                <option value="">Tarjeta de identidad</option>
-                <option value="">Cédula de ciudadania</option>
-                <option value="">Cédula extranjera</option>
-            </select> <br>
-
-            <label>Numero de documento</label>
-            <input type="text" placeholder="Ingrese su numero de documento">
-            <label>Género</label>
-            <input type="radio" name="genero" id=""> Masculino <br>
-            <input type="radio" name="genero" id=""> Femenino <br>
-            <input type="radio" name="genero" id=""> No quiero especificar <br>
-            <label> Seleccione los dias que tiene disponible </label>
-            <input type="checkbox" name="dias" id=""> Lunes <br>
-            <input type="checkbox" name="dias" id=""> Martes <br>
-            <input type="checkbox" name="dias" id=""> Miercoles <br>
-            <input type="checkbox" name="dias" id=""> Jueves <br>
-            <input type="checkbox" name="dias" id=""> Viernes <br>
-            <label> Teléfono </label>
-            <input type="text" name="" id="" placeholder="Ingrese su numero de telefono">
-            <label> Correo electrónico </label>
-            <input type="text" name="" id=""placeholder="Ingrese su correo electrónico">
-            <label> Notas:</label>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese algún comentario"></textarea> <br> 
-            <input type="submit" value="Registrar"> <br> 
-            <button> Enviar</button>   
+        <div class="formulario">
+            <h1> Registrar caficultor</h1>
+            <form>
+                <fieldset>
 
 
-        </fieldset>
-    </form>
+
+                    <h2> Información del usuario</h2>
+                    <label>Nombre(s)</label>
+                    <input type="text" placeholder="Ingrese su nombre">
+                    <label>Apellido(s)</label>
+                    <input type="text" placeholder="Ingrese su apellido">
+                    <label> Tipo de documento</label>
+                    <select>
+                        <option value="">Registro civil</option>
+                        <option value="">Tarjeta de identidad</option>
+                        <option value="">Cédula de ciudadania</option>
+                        <option value="">Cédula extranjera</option>
+                    </select> <br>
+                    <label>Numero de documento</label>
+                    <input type="text" placeholder="Ingrese su número de documento">
+                    <label>Género</label>
+                    <input type="radio" name="genero" id=""> Masculino <br>
+                    <input type="radio" name="genero" id=""> Femenino <br>
+                    <input type="radio" name="genero" id=""> No quiero especificar <br>
+                    <label> Teléfono </label>
+                    <input type="text" name="" id="" placeholder="Ingrese su número de telefono">
+                    <label> Correo electrónico </label>
+                    <input type="text" name="" id="" placeholder="Ingrese su correo electrónico">
+                    <h2> Información de la finca</h2>
+                    <label> Municipio </label>
+                    <select>
+                        <option value="">Pitalito</option>
+                        <option value="">Colombia</option>
+                        <option value="">Baraya</option>
+                        <option value="">Villavieja</option>
+                        <option value="">Aipe</option>
+                        <option value="">Tello</option>
+                        <option value="">Neiva</option>
+                        <option value="">Rivera</option>
+                        <option value="">Palermo</option>
+                        <option value="">Santa María</option>
+                        <option value="">Teruel</option>
+                        <option value="">Campo alegre</option>
+                        <option value="">Iquirá</option>
+                        <option value="">Yaguará</option>
+                        <option value="">Hobo</option>
+                        <option value="">Algeciras</option>
+                        <option value="">Nátaga</option>
+                        <option value="">Tesalia</option>
+                        <option value="">Gigante</option>
+                        <option value="">Paicol</option>
+                        <option value="">Agrado</option>
+                        <option value="">Garzon</option>
+                        <option value="">La plata</option>
+                        <option value="">Pital</option>
+                        <option value="">Altamira</option>
+                        <option value="">Guadalupe</option>
+                        <option value="">Tarqui</option>
+                        <option value="">La argentina</option>
+                        <option value="">Oporapa</option>
+                        <option value="">Elías</option>
+                        <option value="">Timaná</option>
+                        <option value="">Suaza</option>
+                        <option value="">Saladoblanco</option>
+                        <option value="">Isnos</option>
+                        <option value="">Acevedo</option>
+                        <option value="">San Agustín</option>
+                        <option value="">Palestina</option>
+                    </select>
+                    <label> Nombre de la vereda </label>
+                    <input type="text" name="" id="">
+                    <label> Nombre de la finca</label>
+                    <input type="text" name="" id="">
+                    <label> Longitud</label>
+                    <input type="text" name="" id="">
+                    <label> Latitud</label>
+                    <input type="text" name="" id="">
+                    <label> Variedad de café que cultiva</label>
+                    <input type="checkbox" name="Variedad" id=""> Typica <br>
+                    <input type="checkbox" name="Variedad" id=""> Bourbon <br>
+                    <input type="checkbox" name="Variedad" id=""> Caturra <br>
+                    <input type="checkbox" name="Variedad" id=""> Maragogipe <br>
+                    <input type="checkbox" name="Variedad" id=""> Geisha <br>
+                    <input type="checkbox" name="Variedad" id=""> Los híbridos <br>
+                    <input type="checkbox" name="Variedad" id=""> Mundo novo <br>
+                    <input type="checkbox" name="Variedad" id=""> Catuai <br>
+                    <input type="checkbox" name="Variedad" id=""> Timor <br>
+                    <input type="checkbox" name="Variedad" id=""> Catimor <br>
+                    <input type="checkbox" name="Variedad" id=""> Sarchimores <br>
+                    <input type="checkbox" name="Variedad" id=""> Otra
+                    <label class="otra"> ¿Cuál?</label>
+                    <input type="text" name="" id="">
+                    <label> Notas:</label>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese algún comentario"></textarea> <br>
+                    <button>Registrar</button>
+
+
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
