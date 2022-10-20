@@ -69,11 +69,10 @@ h2 {
     text-align: right;
 }
 
-input[type="password"]:active{
 
 
 
-}
+
 button{
     padding: 8px 118px;
     font-size: 0.8em;
@@ -103,7 +102,7 @@ a{
 }
 
 .iniciodesesion{
-    margin: 130px 0px 0px 0px;
+    margin: 10em 0px 0px 0px;
 }
 
 .recordar{
@@ -113,7 +112,7 @@ a{
 
 nav ul li a{
     color: rgba(0, 0, 0, 0.842);
-    font-size: 1.8em;
+    font-size: 2.2em;
     text-decoration: none;
     padding: 9px ;
     
