@@ -9,6 +9,16 @@ input[type="password"], input[type="number"] {
     padding: 8px ;
     width: 93%;
     font-size: 0.8em;
+    outline: none;
+    
+}
+
+input[type="password"]:focus, input[type="number"]:focus{
+     box-shadow: 2px 2px 4px rgb(202, 117, 20),
+     -2px -2px 4px rgb(202, 117, 20) ;
+     
+    border: 2px solid rgb(212, 139, 55);
+   
 }
 
 fieldset {
@@ -59,11 +69,21 @@ h2 {
     text-align: right;
 }
 
+input[type="password"]:active{
+
+
+
+}
 button{
     padding: 8px 118px;
     font-size: 0.8em;
-    border-radius: 0px;
+    border: solid 1px white;
     width: 100%;
+    
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 form{

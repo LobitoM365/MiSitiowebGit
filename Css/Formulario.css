@@ -38,6 +38,10 @@ fieldset{
     width: 60%;
    
 }
+button:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.103);
+}
 body{
     background-color: rgb(50, 88, 110);
 }
@@ -74,9 +78,10 @@ fieldset{
 button{
     background-color: rgb(28,181,224);
     padding: 10px;
-    border: none;
+    border: solid  1px rgb(28,181,224);
     border-radius: 3px;
     margin: 20px 20px 20px 0px;
+    width: 10%;
 }
 
 nav ul li a{
