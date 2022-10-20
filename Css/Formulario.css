@@ -3,13 +3,13 @@
     margin: 0%;
 }
 
-h1,h3, form{
+h1,h2{
     padding: 30px;
+    text-align: center;
+    padding: 30px;
+    color: white;
 }
-h1{
-    padding-left: 100px;
-    color: aliceblue;
-}
+
 
 label{
     display: block;
@@ -27,7 +27,7 @@ option, select{
     color: aliceblue;
 }
 fieldset{
-    padding-left: 70px;
+   
     color: aliceblue;
 }
 .otra{
@@ -37,39 +37,34 @@ fieldset{
     width: 60%;
    
 }
-.formulario, input[type="text"], select, textarea, button, input[type="submit"], .registro{
+.formulario, input[type="text"], select, textarea, button, input[type="submit"], .registro, input[type="number"]{
     
     background-color: rgb(50, 88, 110);
 }
-input[type="text"]{
-    padding: 20px;
-}
 
-input[type="text"]{
+input[type="text"],input[type="number"]{ 
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.278);
     font-size: 1em;
     padding: 4px;
     width: 240px;
+    color: white;
 }
 textarea{
-    font-size: 1em;
+    font-size: 1.2em;
     padding: 4px;
 }
-input[type="text"]:focus{
+input[type="text"]:focus,input[type="number"]:focus{
     outline: none;
 }
 fieldset{
     border-radius: 12px ;
+    padding: 70px;
 }
 
-h1,h2{
-    text-align: center;
-    margin: 30px;
-}
 
 ::placeholder{
-    color: rgba(0, 0, 0, 0.711);
+    color: rgba(255, 255, 255, 0.4);
 }
 
 button{

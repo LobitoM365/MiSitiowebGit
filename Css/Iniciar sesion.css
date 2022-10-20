@@ -3,18 +3,38 @@
     margin: 0%;
 }
 
-label,
-input {
+
+input[type="password"], input[type="number"] {
     display: block;
-    margin: 10px;
+    padding: 10px ;
+    width: 93%;
+    font-size: 1em;
 }
 
 fieldset {
-    width: 10%;
     justify-content: center;
     align-items: center;
+    padding: 50px;
+    border: solid black 1px;
+    border-top: none;
+    
 }
 
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+.encc{
+   width: 100px;
+}
+label{
+    display: block;
+    font-size: 1.5em;
+    padding: 20px 0px;
+    color: white;
+}
 .formulario {
     display: flex;
     align-items: center;
@@ -22,17 +42,51 @@ fieldset {
 }
 
 h2 {
+    font-size: 2em;
     text-align: center;
-    padding: 30px;
-
+    padding: 20px;
 }
 
 .iniciar {
+    
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 40px 0px;
 }
 
 .restablecercontraseña{
     text-align: right;
+}
+
+button{
+    padding: 10px 120px;
+    font-size: 1em;
+    border-radius: 0px;
+    width: 100%;
+}
+
+form{
+    background-color:rgba(81, 48, 29, 0.693);
+   
+}
+
+
+
+body{
+    background-image: url(../img/coffee-1600x900.jpg);
+    background-size: cover  ;
+}
+
+a{
+    color: white;
+}
+
+.iniciodesesion{
+    margin: 50px 0px 0px 0px;
+}
+
+.recordar{
+    padding: 20px 0px;
+    color: white;
 }
