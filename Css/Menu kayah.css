@@ -1,0 +1,27 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+nav{
+    width: 20%;
+    padding: 30px 0px 0px 20px;
+    position: fixed;
+    height: 100VH;
+    top: 0;
+    left: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+li{     
+    list-style: none;
+    margin: 30px;
+}
+
+i{
+    margin-right: 27px;
+}
