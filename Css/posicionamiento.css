@@ -6,31 +6,71 @@
 .main-box{
     display: flex;
     flex-direction: row;
- 
 }
-.div-static{
+.div-box-static{
 
     margin: 30px;
     padding: 30px;
     width: 250px;
     height: 250px;
 }
+.div-box-fixed{
+    padding: 30px;
+    width: 250px;
+    height: 250px;
+}
+.div-box-fixed-sofia{
+    width: 50px;
+    height: 250px;
+}
 
-.posicionamiento1{
+p{
+    margin: 0em 20em;
+    line-height: 20px;
+    font-size: 1.2em;
+
+}
+
+
+
+.box-1-static{
     background-color: antiquewhite;
     position: static;
 
 }
-.posicionamiento2{
+.box-2-static{
     background-color: darkcyan;
     position: static;
     
 }
-.posicionamiento3{
+.box-3-static{
     background-color: violet;
     
 }
-.posicionamiento4{
+.box-4-static{
     background-color: aquamarine;
     
+}
+
+.box-1-fixed{
+    background-color: burlywood;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+.box-2-fixed{
+    background-color: aqua;
+    position: fixed;
+    bottom: 0  ;
+    right: 0;
+
+}
+
+.box-3-fixed{
+    background-color: rgb(0, 255, 34);
+    position: fixed;
+    top: 15em;
+    right: 0;
+
 }
