@@ -58,6 +58,11 @@
     background-color: rgb(230, 235, 239);
 }
 
+.kayak li:hover i{
+
+    color: rgb(45, 47, 48);
+}
+
 .nav ul li a{
     color: rgba(0, 0, 0, 0.842);
     font-size: 2.2em;
