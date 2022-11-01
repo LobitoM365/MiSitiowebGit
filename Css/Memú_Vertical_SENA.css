@@ -1,0 +1,164 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu_principal {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(251, 251, 251);
+    box-shadow: 0 5px 10px rgb(0 0 0 / 20%), -0 -0 20px rgb(0 0 0 / 10%) inset;
+
+}
+
+.div_fecha_ministerio {
+    height: 100%;
+    justify-content: right;
+    display: flex;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    border-right: 1px solid rgb(255, 107, 0);
+    padding: 8px 0px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 12px;
+    color: rgb(87, 87, 86);
+    padding: 10px 8px;
+    font-weight: bolder;
+}
+
+.focus {
+    background-color: rgb(87, 87, 86);
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.static {
+    width: 100%;
+    height: 35px;
+}
+
+.ayuda {
+    background-color: rgb(241, 241, 241);
+    width: 100%;
+    height: 35px;
+    text-align: right;
+    position: fixed;
+
+}
+
+.gov {
+    background-color: rgb(1, 93, 202);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.div_logos {
+    background-color: rgb(255, 255, 255);
+    height: 188px;
+}
+
+.fa-solid {
+    font-size: 1em;
+    text-align: center;
+    margin: 7px 14px;
+}
+
+.img_gov {
+    width: 100px;
+    margin-left: 11.3%;
+}
+
+.EN {
+    padding: 3px 2px;
+    font-size: 9px;
+    background-color: transparent;
+    color: white;
+    border: 0.2px solid white;
+    border-radius: 4px;
+    float: right;
+}
+
+.div_EN {
+    text-align: right;
+    width: 100%;
+    margin-right: 11.3em;
+}
+
+.logo_sena {
+    width: 116px;
+    margin: 30px 0px 30px 158px;
+    float: left;
+}
+
+.div_logo_sena {
+    float: left;
+}
+
+
+
+
+h4 {
+    display: inline-block;
+    font-size: 8.8px;
+    font-weight: lighter;
+    text-align: right;
+    margin: 11px 0px 0px 40px;
+    color: rgb(93, 93, 93);
+
+}
+
+.div_fecha {
+    text-align: right;
+    margin: 0em 11.3em 30px 0px;
+}
+
+.ministerio_del_trabajo {
+    width: 311px;
+}
+
+.div_ministerio_del_trabajo {
+    margin-right: 11.3em;
+}
+
+.submenu {
+    width: 1025px;
+    height: 700px;
+    background-color: white;
+    border: solid 1px rgb(212, 212, 212);
+    color: white;
+    padding-top: 58px;
+    box-shadow: -0 -0 20px rgb(0 0 0 / 20%) inset;
+}
+
+.borde_submenu {
+    border: none;
+
+}
+
+.div_submenu {
+    height: 770px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.li_submenu {
+    background-color: rgb(87, 87, 86);
+    display: block;
+    width: 210px;
+    padding: 10px;
+    margin: 0px 0px 3px 11px;
+    border-radius: 4px;
+}
