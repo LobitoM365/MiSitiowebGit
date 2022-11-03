@@ -8,27 +8,23 @@
     display: flex;
     justify-content: center;
     background-color: rgb(251, 251, 251);
-    box-shadow: 0 5px 10px rgb(0 0 0 / 20%), -0 -0 20px rgb(0 0 0 / 10%) inset;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 30%), 0 0 10px rgb(0 0 0 / 10%) inset;
 }
 
-.div_fecha_ministerio {
-    height: 100%;
-    justify-content: right;
-    display: flex;
-}
 
-.li_menu_principal {
+li {
     list-style: none;
     display: inline-block;
     border-right: 1px solid rgb(255, 107, 0);
-    padding: 8px 0px;
+    padding: 7px 0px;
+    margin: 0px 0px 2px 0px;
 }
 
 .a_menu_principal {
     text-decoration: none;
     font-size: 12px;
     color: rgb(87, 87, 86);
-    padding: 10px 8px;
+    padding: 10px 7px 9px 7px;
     font-weight: bolder;
 }
 
@@ -58,14 +54,8 @@
     background-color: rgb(1, 93, 202);
     width: 100%;
     height: 40px;
-    display: flex;
-    align-items: center;
 }
 
-.div_logos {
-    background-color: rgb(255, 255, 255);
-    height: 188px;
-}
 
 .fa-solid {
     font-size: 1em;
@@ -75,7 +65,7 @@
 
 .img_gov {
     width: 100px;
-    margin-left: 11.3%;
+    margin: 8px 0px;
 }
 
 .EN {
@@ -86,6 +76,7 @@
     border: 0.2px solid white;
     border-radius: 4px;
     float: right;
+    margin: 10px 3px;
 }
 
 .div_EN {
@@ -96,38 +87,28 @@
 
 .logo_sena {
     width: 116px;
-    margin: 30px 0px 30px 158px;
+    margin-top: 7px;
     float: left;
 }
-
-.div_logo_sena {
-    float: left;
-}
-
-
 
 
 h4 {
     display: inline-block;
     font-size: 8.8px;
     font-weight: lighter;
-    text-align: right;
-    margin: 11px 0px 0px 40px;
+    margin: 11px 5px 0px 32px;
     color: rgb(93, 93, 93);
 
 }
 
-.div_fecha {
+.fecha {
     text-align: right;
-    margin: 0em 11.3em 30px 0px;
 }
 
 .ministerio_del_trabajo {
     width: 311px;
-}
-
-.div_ministerio_del_trabajo {
-    margin-right: 11.3em;
+    float: right;
+    margin: 30px 0px;
 }
 
 .submenu {
@@ -136,13 +117,15 @@ h4 {
     background-color: white;
     border: solid 1px rgb(212, 212, 212);
     color: white;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 0px 0px rgb(0 0 0 / 0%), 0 5px 10px rgb(0 0 0 / 30%) inset;
+    border: solid 1px rgb(212, 212, 212);
+    border-top: solid 1px rgb(159, 159, 159);
     padding-top: 58px;
-    box-shadow: -0 -0 20px rgb(0 0 0 / 20%) inset;
 }
 
 .borde_submenu {
     border: none;
-
 }
 
 .div_submenu {
@@ -150,7 +133,8 @@ h4 {
     width: 100%;
     display: flex;
     justify-content: center;
-
+    background-color: rgb(241, 238, 238);
+    box-shadow: 0 5px 10px rgb(0 0 0 / 30%) inset;
 }
 
 .li_submenu {
@@ -160,4 +144,36 @@ h4 {
     padding: 10px;
     margin: 0px 0px 3px 11px;
     border-radius: 4px;
+
+}
+
+.div_limite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.limite {
+    width: 1025px;
+}
+
+.search {
+    width: 20px;
+    background-color: rgb(128, 128, 128);
+    color: azure;
+}
+
+.div_busqueda {
+    justify-content: right;
+    display: flex;
+    width: 700px;
+    float: right;
+    margin: 8px 0px 21px 0px;
+}
+
+.input_search {
+    width: 233px;
+    height: 18px;
+    padding: 0px 4px;
+
 }
