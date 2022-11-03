@@ -20,6 +20,10 @@ li {
     margin: 0px 0px 2px 0px;
 }
 
+.menu_principal li:hover{
+    background-color: rgba(0, 0, 0, 0.171);
+}
+
 a {
     text-decoration: none;
     font-size: 12px;

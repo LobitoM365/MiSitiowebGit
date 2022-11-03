@@ -1,0 +1,65 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.contenedor1 {
+    width: 500px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 30px;
+}
+
+.contenedor2,
+.contenedor3,
+.contenedor4,
+.contenedor5,
+.contenedor6 {
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+
+.contenedor2 {
+    background-color: antiquewhite;
+    top: 100%;
+}
+
+.contenedor3 {
+    background-color: rgb(45, 141, 141);
+    left: 100%;
+    display: none;
+}
+
+.contenedor4 {
+    background-color: rgb(183, 116, 34);
+    top: 100%;
+    cursor: pointer;
+}
+
+.contenedor5 {
+    background-color: rgb(72, 102, 129);
+    top: 100%;
+}
+
+.contenedor6 {
+    background-color: rgb(124, 73, 7);
+    left: 100%;
+    display: none;
+}
+
+.contenedor4:hover {
+    background-color: rgb(189, 131, 56);
+}
+
+.contenedor4:hover .contenedor3,
+.contenedor4:hover .contenedor6 {
+    display: block;
+    position: relative;
+}
+
+.boton-menu {
+    background-color: rgb(54, 53, 51);
+    width: 20px;
+    height: 20px;
+}
