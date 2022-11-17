@@ -1,0 +1,60 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.897);
+}
+
+ul {
+    list-style: none;
+    text-align: right;
+    width: 100%;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    padding: 20px;
+    font-size: 2em;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: rgba(255, 255, 255, 0.24);
+}
+
+.hamburguer {
+    display: none;
+}
+p{
+    padding: 60px;
+}
+
+@media only screen and (min-width:200px) and (max-width:800px) {
+    ul {
+        position: fixed;
+        display: block;
+        text-align: center;
+    }
+    li:hover {
+        background-color: rgba(0, 0, 0, 0.956);
+    }
+    
+    li {
+        background-color: rgba(5, 5, 5, 0.682);
+        display: block;
+        border-bottom: 1px solid white;
+    }
+
+    .hamburguer {
+        display: block;
+        padding: 12px;
+    }
+
+}
