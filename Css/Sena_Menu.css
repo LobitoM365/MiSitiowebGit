@@ -28,8 +28,12 @@ li {
     font-weight: bolder;
 }
 
-.focus {
+.color_focus {
     background-color: rgb(87, 87, 86);
+    color: white;
+}
+
+.focus {
     color: white;
     text-decoration: none;
     font-size: 12px;
@@ -176,4 +180,12 @@ h4 {
     height: 18px;
     padding: 0px 4px;
 
+}
+
+.submenu li:hover {
+    background-color: rgba(0, 0, 0, 0.472);
+}
+
+.menu_principal li:hover {
+    background-color: rgba(0, 0, 0, 0.171);
 }

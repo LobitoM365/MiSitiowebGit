@@ -8,13 +8,13 @@
 }
 img{
   float: left;
-  width: 70px;
+  width: 50px;
   padding: 10px;
   margin: 0px 20px;
 }
 body{
   background-color:aliceblue;
-  height: 1004px;
+  height: 819px;
 }
 nav{
   background-color: rgba(4, 4, 4, 0.747);
@@ -25,12 +25,12 @@ a{
 nav >ul >li{
   position: relative;
   padding: 20px 20px;
-  font-size: 2em;
+  font-size: 1.2em;
 }
 
 nav >ul >Li >ul li{
   position: relative;
-  width: 325px;
+  width: 225px;
   padding: 20px 20px;
 }
 nav ul{
@@ -50,7 +50,7 @@ nav >ul >li >ul{
 nav >ul >li >ul >li >ul{
   display: none;
   position: absolute;
-  top: -8%;
+  top: -10%;
   left: 100.4%;
 }
 

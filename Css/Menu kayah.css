@@ -81,3 +81,7 @@
     border-radius: 4px;
    
 }
+
+nav ul li:hover i, nav i:hover{
+    color:rgba(5, 5, 5, 0.91); 
+}

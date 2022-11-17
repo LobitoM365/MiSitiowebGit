@@ -1,77 +1,85 @@
-*{
+* {
     padding: 0%;
     margin: 0%;
 }
 
-.main-box{
+.main-box {
     display: flex;
     flex-direction: row;
 }
 
-.div-box-static{
+.div-box-static {
 
     margin: 30px;
     width: 250px;
     height: 250px;
 }
-.div-box-fixed{
+
+.div-box-fixed {
     width: 250px;
     height: 250px;
 }
-.div-box-fixed-sofia{
+
+.div-box-fixed-sofia {
     width: 50px;
     height: 250px;
 }
-.div-box-absolute{
+
+.div-box-absolute {
     width: 250px;
     width: 250px;
 }
-h1{
+
+h1 {
     text-align: center;
 }
-p{
+
+p {
     margin: 0em 20em;
     line-height: 20px;
     font-size: 1.2em;
 
 }
 
-div{
+div {
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 
-.box-1-static{
+.box-1-static {
     background-color: antiquewhite;
     position: static;
 
 }
-.box-2-static{
+
+.box-2-static {
     background-color: darkcyan;
     position: static;
-    
+
 }
-.box-3-static{
+
+.box-3-static {
     background-color: violet;
-    
+
 }
-.box-4-static{
+
+.box-4-static {
     background-color: aquamarine;
-    
+
 }
 
 
-.box-2-fixed{
+.box-2-fixed {
     background-color: aqua;
     position: fixed;
-    bottom: 0  ;
+    bottom: 0;
     right: 0;
 
 }
 
-.box-3-fixed{
+.box-3-fixed {
     background-color: rgb(0, 255, 34);
     position: fixed;
     top: 15em;
@@ -79,8 +87,8 @@ div{
 
 }
 
-.box-1-absolute{
-    bottom:  0;
+.box-1-absolute {
+    bottom: 0;
     left: 0;
     background-color: aqua;
     width: 250px;
@@ -88,7 +96,7 @@ div{
     position: absolute;
 }
 
-.box-2-absolute{
+.box-2-absolute {
     position: absolute;
     width: 100%;
     top: 0;
@@ -97,21 +105,39 @@ div{
     display: flex;
     align-items: center;
     text-align: right;
-    
+    font-size: 1.2em;
 }
-li{
+.inicio a{
+    color: white;
+    text-decoration: none;
+}
+.inicio{
+    list-style: none;
+    float: left;
+}
+
+.inicio a:hover{
+    background-color:rgba(179, 184, 184, 0.432);
+    border-radius: 4px;
+}
+
+
+li {
     display: inline-block;
     color: aliceblue;
     text-align: right;
 }
-ul{
+
+ul {
     width: 100%;
 }
-ul li a{
+
+ul li a {
     padding: 20px;
     font-size: 1.2em;
 }
-.box-1-fixed{
+
+.box-1-fixed {
     background-color: burlywood;
     position: fixed;
     top: 0;

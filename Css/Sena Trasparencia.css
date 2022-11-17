@@ -28,21 +28,13 @@ li {
     font-weight: bolder;
 }
 
-.menu_principal li:hover,.submenu_logos li:hover, a{
-    background-color: rgba(0, 0, 0, 0.171);
-}
-.menu_principal li:hover{
-    background-color: rgba(0, 0, 0, 0.171);
-}
-.focus_principal {
+.color_focus{
     background-color: rgb(87, 87, 86);
     color: white;
     text-decoration: none;
     font-size: 12px;
 }
-
 .focus {
-    background-color: rgb(87, 87, 86);
     color: white;
     text-decoration: none;
     font-size: 21px;
@@ -201,4 +193,11 @@ h4 {
     font-size: 26px;
     color: white;
     margin-right: 6px;
+}
+.submenu li:hover {
+    background-color: rgba(0, 0, 0, 0.472);
+}
+
+.menu_principal li:hover {
+    background-color: rgba(0, 0, 0, 0.171);
 }
