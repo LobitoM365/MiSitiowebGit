@@ -3,8 +3,8 @@
     margin: 0%;
 }
 
-nav {
-    background-color: rgba(0, 0, 0, 0.897);
+.nav{
+    background-color: black;
 }
 
 ul {
@@ -37,8 +37,16 @@ p{
 }
 
 @media only screen and (min-width:200px) and (max-width:800px) {
-    ul {
+    .nav{
         position: fixed;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    label{
+        background-color: bisque;
+        width: 100%;
+    }
+    .main_menu_visible {
         display: block;
         text-align: center;
     }
@@ -55,6 +63,9 @@ p{
     .hamburguer {
         display: block;
         padding: 12px;
+        background-color: rgba(0, 0, 0, 0.897);
     }
-
+    .main_Menu{
+        display: none;
+    }
 }
