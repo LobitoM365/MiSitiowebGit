@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.box_1{
+    background-image: url(../img/Paisaje_1920x1200.jpg);
+    width: 100%;
+    height: 100VH;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ul{
+    background-color: rgba(0, 255, 255, 0.168);
+    justify-content: right;
+    display: flex;
+    
+}
+
+li{
+    display: inline;
+    padding: 30px;
+    font-size: 1.5em;
+
+}
+a{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+li:hover{
+    background-color: rgba(0, 0, 0, 0.185);
+}
