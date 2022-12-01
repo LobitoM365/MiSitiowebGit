@@ -5,7 +5,6 @@
 }
 
 ul {
-
     justify-content: right;
     list-style: none;
 }
@@ -13,9 +12,9 @@ ul {
 li {
     padding: 30px;
     display: inline-block;
-    position: relative;
     width: 140px;
     text-align: center;
+    position: relative;
 }
 
 a {
@@ -35,7 +34,7 @@ nav {
 
 nav>ul>li>ul {
     display: none;
-    position: absolute;
+
 }
 
 
@@ -68,6 +67,10 @@ body {
 }
 
 @media screen and (max-width:1040px) {
+ /*    nav>ul>Li:hover>ul {
+        display: none;
+
+    } */
     .hamburguer {
         display: block;
         width: 100%;
@@ -85,11 +88,21 @@ body {
         display: block;
         width: 260px;
     }
+   
     nav {
         justify-content: left;
         width: 320px;
         overflow-y: auto;
         overflow-x: hidden;
+    }
+    .submenu{
+        display:block;
+    }
+    nav>ul>li>ul {
+        display: none;
+
+        top: 100%;
+        left: 0%;
     }
 
 }
