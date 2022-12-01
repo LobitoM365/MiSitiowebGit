@@ -12,6 +12,11 @@
     background-repeat: no-repeat;
 }
 
+nav{
+    position: fixed;
+    width: 100%;
+}
+
 ul{
     background-color: rgba(0, 255, 255, 0.168);
     justify-content: right;
