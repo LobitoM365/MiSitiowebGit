@@ -32,25 +32,26 @@ nav {
     background-color: rgb(199, 225, 247);
 }
 
-nav>ul>li>ul {
+
+
+nav >ul >Li .submenu2{
     display: none;
-
 }
-
-
+nav >ul >li >ul {
+    position: absolute;
+}
 .parrafo {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-nav>ul>Li:hover>ul {
+nav ul Li:hover  .submenu2 {
     display: block;
     background-color: rgb(199, 225, 247);
     top: 100%;
     left: 0%;
 }
-
 p {
     width: 800px;
     margin-top: 90px;
@@ -100,7 +101,6 @@ body {
     }
     nav>ul>li>ul {
         display: none;
-
         top: 100%;
         left: 0%;
     }
