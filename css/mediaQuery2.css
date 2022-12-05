@@ -4,67 +4,56 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-ul {
-    justify-content: right;
-    list-style: none;
+nav{
+    background-color: rgb(39, 49, 111);
+    }
+li{
+    cursor: pointer;
 }
-
-li {
-    padding: 30px;
-    display: inline-block;
-    width: 140px;
-    text-align: center;
-    position: relative;
-}
-
-a {
-    text-decoration: none;
-    font-size: 1.5em;
-}
-
-li:hover {
-    background-color: rgba(0, 0, 0, 0.199);
-}
-
-nav {
-    display: flex;
-    justify-content: right;
-    background-color: rgb(199, 225, 247);
-}
-
-
-
-nav >ul >Li .submenu2{
-    display: none;
-}
-nav >ul >li >ul {
-    position: absolute;
-}
-.parrafo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-nav ul Li:hover  .submenu2 {
-    display: block;
-    background-color: rgb(199, 225, 247);
-    top: 100%;
-    left: 0%;
-}
-p {
-    width: 800px;
-    margin-top: 90px;
-    text-align: justify;
-}
-
-body {
-    background-color: aliceblue;
-}
-
-.hamburguer {
-    display: none;
-    background-color: rgb(199, 225, 247);
+@media screen  and (min-width:1040px){
+    nav{
+        width: 100%;
+        position: fixed;
+    }
+    a{
+        padding: 30px;
+        display: block;
+        width: 120px;
+        font-size: 1.2em;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+    }
+    li{
+        display: inline-block;
+    }
+ 
+    nav >ul >li ul >li{
+        display: none;
+    }
+    nav >ul >li:hover >ul >li{
+        display: block;
+    }
+    a:hover{
+        background-color: rgba(0, 0, 0, 0.225);
+    }
+    .hamburguer{
+        display: none;
+    }
+    nav >ul >li >ul{
+        position: absolute ;
+        background-color: rgb(39, 49, 111);
+    }
+    .parrafo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p {
+        width: 800px;
+        margin-top: 90px;
+        text-align: justify;
+    }
 }
 
 @media screen and (max-width:1040px) {
@@ -72,37 +61,57 @@ body {
         display: none;
 
     } */
+    i{
+        cursor: pointer;
+    }
+    li{
+        background-color: rgb(39, 49, 111);
+    }
     .hamburguer {
         display: block;
         width: 100%;
+        background-color: rgb(39, 49, 111);
     }
     .fa-bars{
         padding: 30px;
+        color: white;
     }
-    p{
+    .parrafo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p {
         width: 80%;
+        margin-top: 90px;
+        text-align: justify;
     }
-    .menu_invisible {
-        display: none
-    }
-    li{
-        display: block;
-        width: 260px;
-    }
-   
-    nav {
-        justify-content: left;
-        width: 320px;
-        overflow-y: auto;
-        overflow-x: hidden;
-    }
-    .submenu{
-        display:block;
-    }
-    nav>ul>li>ul {
+    .menu_invisible, .submenu_invisible {
         display: none;
-        top: 100%;
-        left: 0%;
+
+    }
+
+    nav {
+        position: absolute;
+        justify-content: left;
+        width: 260px;
+        overflow-y: auto;
+        overflow-x: auto;
+        
+    }
+    a{
+        border-bottom: 1px solid white;
+        color: white;
+        padding: 30px;
+        display: block;
+        width: 200px;
+        font-size: 1.2em;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    a:hover{
+        background-color: rgba(0, 0, 0, 0.321);
     }
 
 }
