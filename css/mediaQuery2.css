@@ -71,6 +71,7 @@ li{
         display: block;
         width: 100%;
         background-color: rgb(39, 49, 111);
+        border-bottom: 1px solid white;
     }
     .fa-bars{
         padding: 30px;
