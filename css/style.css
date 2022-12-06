@@ -6,6 +6,9 @@
   list-style: none;
   text-decoration: none;
 }
+a{
+  cursor: pointer;
+}
 @media screen and (min-width:1024px){
   .hamburguer{
     display: none;
@@ -81,7 +84,7 @@
   }
   body{
     background-color:aliceblue;
-    height: 1019px;
+    height: 2819px;
   }
   img{
     width: 50px;
@@ -109,24 +112,19 @@
   a:hover{
     background-color: rgba(255, 255, 255, 0.204);
   }
-  .menuPrincipalInvisible{
+  .menuPrincipalInvisible, .subMenuPrincipalInvisible, .subMenuInvisible, .subMenuInvisible2, .subMenuInvisible3, .subMenuInvisible4, .subMenuInvisible5, .subMenuInvisible6, .subMenuInvisible7, .subMenuInvisible8, .subMenuInvisible9, .subMenuInvisible10, .subMenuInvisible11, .subMenuInvisible12, .subMenuInvisible13{
     display: none;
   }
   nav >ul{
     background-color:  rgb(0, 0, 0, 100%);
   }
   nav >ul >li >ul{
-    display: none;
     background-color: rgb(45, 45, 45);
   }
 
   nav >ul >li >ul >li >ul{
-    display: none;
     background-color: rgb(72, 72, 72);
 
-  }
-  nav >ul >li:hover >ul, nav >ul >li >ul >li:hover >ul{
-    display: block;
   }
   nav >ul >li >a{
     border-bottom: 2px solid rgb(255, 255, 255);
@@ -137,17 +135,6 @@
   nav >ul >li >ul >li >ul >Li >a{
     border-bottom: 2px solid rgb(0, 0, 0, 100%);
   }
-  li{
-    position: relative;
-  }
-
-  nav >ul >li >ul >li >ul{
-    display: none;
-    position: absolute;
-    top:  0%;
-    left: 100%;
-  }
-
 }
 
 
