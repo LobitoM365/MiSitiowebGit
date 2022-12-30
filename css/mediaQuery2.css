@@ -78,11 +78,11 @@ li {
         list-style: none;
     }
 
-    nav>ul>li {
+    nav>ul>li>a {
         background-color: rgb(39, 49, 111);
     }
 
-    nav>ul>li>ul>Li {
+    nav>ul>li>ul>Li>a {
         background-color: rgb(57, 74, 182);
     }
 
@@ -91,6 +91,7 @@ li {
         width: 100%;
         background-color: rgb(39, 49, 111);
         border-bottom: 1px solid white;
+        text-align: right;
     }
 
     .fa-bars {
@@ -128,7 +129,16 @@ li {
     }
 
     .submenu_invisible {
-        display: none;
+        position: absolute;
+        top: -300%;
+        transition: top 1s;
+
+    }
+
+    .submenu_invisible2 {
+        position: absolute;
+        top: 100%;
+        transition: top 1s;
     }
 
     a {
@@ -142,10 +152,33 @@ li {
         text-decoration: none;
     }
 
+    li {
+        position: relative;
+    }
+
+    .margin {
+        margin-bottom: 0px;
+        transition: margin 1s;
+    }
+
+    .margin2 {
+        margin-bottom: 346px;
+        transition: margin 1s;
+    }
+
+    .z-index {
+        position: relative;
+        z-index: 1;
+    }
+
+    .submenuInvisible,
+    .menuInvisible {
+        display: none;
+    }
 }
 
 
 
 a:hover {
-    background-color: rgba(0, 0, 0, 0.321);
+    background-color: rgb(135, 139, 164);
 }
