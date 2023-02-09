@@ -53,4 +53,30 @@ h3 {
     background-color: beige;
     height: 420px;
     overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.main-box-space-between {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    background-color: bisque;
+}
+
+.main-box-space-evelyng {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    background-color: bisque;
+}
+
+.main-box-space-around {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    background-color: bisque;
+}
+
+img {
+    border-radius: 100%;
 }
