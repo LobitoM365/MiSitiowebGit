@@ -3,12 +3,37 @@
     margin: 0;
 }
 
-.box{
+.nav {
+    padding: 30px;
+}
+
+.nav nav ul li a {
+    color: black;
+    font-size: 3em;
+    text-decoration: none;
+    padding: 7px;
+    font-family: 'waltograph42';
+}
+
+.nav nav ul li {
+    list-style: none;
+
+}
+
+.nav nav ul li a:hover {
+    background-color: rgb(129, 204, 175);
+    padding: 7px;
+    border-radius: 4px;
+
+}
+
+.box {
     width: 300px;
     height: 300px;
     margin: 5px 0px 0px 5px;
     display: inline-block;
 }
+
 .box-1 {
     background-color: darkcyan;
 }
@@ -17,45 +42,47 @@
     background-color: rgb(0, 139, 81);
 }
 
-.box-3{
+.box-3 {
     background-color: aliceblue;
     transition: margin-left 1s;
 }
+
 .box-1:hover {
     background-color: rgba(0, 0, 0, 0.438);
     transition: background-color 00.5s;
 }
 
-.box-31{
+.box-31 {
     margin-left: 300px;
     background-color: rgba(0, 0, 0, 0.321);
-   
+
 }
 
-.box-3{ 
+.box-3 {
     background-color: aquamarine;
 }
 
-.divRedondo{
+.divRedondo {
     margin: 200px 0px 0px 60px;
     background-color: rgb(233, 233, 233);
     width: 400px;
     height: 200px;
-    border-radius: 100px ;
+    border-radius: 100px;
     display: block;
     border: 1px solid aliceblue;
 }
-.divRedondoOn{
+
+.divRedondoOn {
     margin: 200px 0px 0px 60px;
-    background-color:aliceblue;
+    background-color: aliceblue;
     width: 400px;
     height: 200px;
-    border-radius: 100px ;
+    border-radius: 100px;
     display: block;
     border: 1px solid rgb(39, 197, 197);
 }
 
-.toogle{
+.toogle {
     background-color: rgb(192, 192, 192);
     width: 200px;
     height: 200px;
@@ -64,23 +91,23 @@
     transition: margin-left 1s;
 }
 
-.positionToogle{
+.positionToogle {
     background-color: rgb(39, 197, 197);
     margin-left: 200px;
-    right:  -100%;
+    right: -100%;
 
 }
 
-.divRedondo2{
+.divRedondo2 {
     margin: 200px 0px 0px 60px;
     background-color: aliceblue;
     width: 400px;
     height: 200px;
-    border-radius: 100px ;
+    border-radius: 100px;
     display: block;
 }
 
-.toogle2{
+.toogle2 {
     background-color: rgb(39, 197, 60);
     width: 200px;
     height: 200px;
@@ -89,12 +116,12 @@
     transition: margin-left 1s;
 }
 
-.positionToogleOn{
+.positionToogleOn {
     margin-left: 200px;
-    right:  -100%;
+    right: -100%;
 }
 
-.box-5{
+.box-5 {
     background-color: blueviolet;
     width: 400px;
     height: 400px;
@@ -105,6 +132,6 @@
     transition: padding 2s;
 }
 
-.box-5:hover{
+.box-5:hover {
     padding: 100px;
 }

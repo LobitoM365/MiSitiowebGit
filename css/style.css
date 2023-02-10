@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0%;
   margin: 0%;
   color: white;
@@ -6,135 +6,174 @@
   list-style: none;
   text-decoration: none;
 }
-a{
+
+a {
   cursor: pointer;
 }
-@media screen and (min-width:1024px){
-  .hamburguer{
+
+@media screen and (min-width:1024px) {
+  .hamburguer {
     display: none;
   }
-  img{
+
+  img {
     float: left;
     width: 50px;
     padding: 10px;
     margin: 0px 20px;
   }
-  body{
-    background-color:aliceblue;
+
+  body {
+    background-color: aliceblue;
     height: 919px;
   }
-  nav{
+
+  nav {
     background-color: rgba(4, 4, 4, 0.747);
   }
 
-  nav >ul >li{
+  nav>ul>li {
     position: relative;
   }
 
-  nav >ul >Li >a{
+  nav>ul>Li>a {
     padding: 20px 20px;
     font-size: 1.2em;
     display: block;
   }
 
-  nav >ul >Li >ul li{
+  nav>ul>Li>ul li {
     position: relative;
   }
-  nav >ul >Li >ul >li a{
+
+  nav>ul>Li>ul>li a {
     width: 225px;
     padding: 20px 20px;
     font-size: 1.2em;
     display: block;
   }
-  nav ul{
+
+  nav ul {
     display: table;
   }
-  
-  nav >ul >li{
+
+  nav>ul>li {
     float: left;
   }
-  
-  nav >ul >li >ul{
+
+  nav>ul>li>ul {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
   }
-  nav >ul >li >ul >li >ul{
+
+  nav>ul>li>ul>li>ul {
     display: none;
     position: absolute;
     top: -10%;
     left: 100.4%;
   }
-  
-  nav >ul >li:hover >ul, nav >ul >li >ul li:hover >ul{
+
+  nav>ul>li:hover>ul,
+  nav>ul>li>ul li:hover>ul {
     display: block;
     background-color: rgba(4, 4, 4, 0.747);
     border: 6px solid black;
   }
-  li:hover{
+
+  li:hover {
     background-color: rgba(255, 255, 255, 0.204);
   }
-  
+
 }
 
-@media screen and (max-width:1024px){
-  .iconWolfMenuNormal{
+@media screen and (max-width:1024px) {
+  .fa-solid {
+    cursor: pointer;
+  }
+
+  .iconWolfMenuNormal {
     display: none;
   }
-  body{
-    background-color:aliceblue;
+
+  body {
+    background-color: aliceblue;
     height: 2819px;
   }
-  img{
+
+  img {
     width: 50px;
     padding: 10px;
     margin: 0px 20px;
     float: right;
   }
-  #icon_hamburguer{ 
+
+  #icon_hamburguer {
     padding: 14px 0px;
     margin: 0px 20px;
   }
-  nav{
+
+  nav {
     width: 205px;
   }
-  .hamburguer{
+
+  .hamburguer {
     background-color: rgba(4, 4, 4, 0.747);
     width: 100%;
   }
-  a{
+
+  a {
     width: 165px;
     padding: 20px 20px;
     display: block;
     font-size: 10px;
   }
-  a:hover{
+
+  a:hover {
     background-color: rgba(255, 255, 255, 0.204);
   }
-  .menuPrincipalInvisible, .subMenuPrincipalInvisible, .subMenuInvisible, .subMenuInvisible2, .subMenuInvisible3, .subMenuInvisible4, .subMenuInvisible5, .subMenuInvisible6, .subMenuInvisible7, .subMenuInvisible8, .subMenuInvisible9, .subMenuInvisible10, .subMenuInvisible11, .subMenuInvisible12, .subMenuInvisible13{
+
+  .menuPrincipalInvisible,
+  .subMenuPrincipalInvisible,
+  .subMenuInvisible,
+  .subMenuInvisible2,
+  .subMenuInvisible3,
+  .subMenuInvisible4,
+  .subMenuInvisible5,
+  .subMenuInvisible6,
+  .subMenuInvisible7,
+  .subMenuInvisible8,
+  .subMenuInvisible9,
+  .subMenuInvisible10,
+  .subMenuInvisible11,
+  .subMenuInvisible12,
+  .subMenuInvisible13 {
     display: none;
   }
-  nav >ul{
-    background-color:  rgb(0, 0, 0, 100%);
+
+  nav>ul {
+    background-color: rgb(0, 0, 0, 100%);
   }
-  nav >ul >li >ul{
+
+  nav>ul>li>ul {
     background-color: rgb(45, 45, 45);
   }
 
-  nav >ul >li >ul >li >ul{
+  nav>ul>li>ul>li>ul {
     background-color: rgb(72, 72, 72);
 
   }
-  nav >ul >li >a{
+
+  nav>ul>li>a {
     border-bottom: 2px solid rgb(255, 255, 255);
   }
-  nav >ul >li >ul >Li >a{
+
+  nav>ul>li>ul>Li>a {
     border-bottom: 2px solid rgb(123, 123, 123);
   }
-  nav >ul >li >ul >li >ul >Li >a{
+
+  nav>ul>li>ul>li>ul>Li>a {
     border-bottom: 2px solid rgb(0, 0, 0, 100%);
   }
 }
-
-
