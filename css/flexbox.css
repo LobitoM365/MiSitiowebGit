@@ -150,12 +150,27 @@ h3 {
     width: 650px;
 }
 
+.cantidad_atributos {
+    font-size: 1.5em;
+    margin-bottom: 14px;
+}
+
 .box-align-end-1 {
     height: 480px;
 }
 
 .box-align-end-2 {
     height: 210px;
+}
+
+hr {
+    margin-bottom: 44.3px;
+    width: 650px;
+}
+
+.lineas {
+    position: absolute;
+    z-index: -1;
 }
 
 .box-alighn-end-1 {
@@ -167,8 +182,14 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
-
+.puntaje{
+    width: 0px;
+    position: relative;
+    bottom: 55%;
+    left: 40%;
+}
 .box-alighn-end-2 {
     box-shadow: 0px 0px 20px 0px white;
     border-radius: 10px;
