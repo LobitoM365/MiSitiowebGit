@@ -163,16 +163,6 @@ h3 {
     height: 210px;
 }
 
-hr {
-    margin-bottom: 44.3px;
-    width: 650px;
-}
-
-.lineas {
-    position: absolute;
-    z-index: -1;
-}
-
 .box-alighn-end-1 {
     box-shadow: 0px 0px 20px 0px white;
     border-radius: 10px;
@@ -184,12 +174,13 @@ hr {
     justify-content: center;
     position: relative;
 }
-.puntaje{
-    width: 0px;
-    position: relative;
-    bottom: 55%;
-    left: 40%;
+
+.puntaje {
+    font-size: 2em;
+    position: absolute;
+    bottom: 100%;
 }
+
 .box-alighn-end-2 {
     box-shadow: 0px 0px 20px 0px white;
     border-radius: 10px;
@@ -199,6 +190,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .box-alighn-end-3 {
@@ -210,6 +202,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .box-alighn-end-4 {
@@ -220,6 +213,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .box-alighn-end-5 {
@@ -230,6 +224,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .border-box-align-end {
@@ -257,4 +252,19 @@ h4 {
 h5 {
     font-size: 2em;
     text-align: center;
+}
+
+
+hr {
+    margin-bottom: 7.3px;
+    width: 650px;
+}
+
+.sublineas {
+    width: 5px;
+    margin-bottom: 7.3px;
+}
+
+.lineas {
+    position: absolute;
 }
