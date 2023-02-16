@@ -1,8 +1,36 @@
 * {
     padding: 0%;
     margin: 0%;
+    font-family: "diciembre";
 }
 
+@font-face {
+    font-family: "diciembre";
+    src: url(../fonts/Billionstar\ Italic.ttf);
+}
+
+.nav {
+    position: absolute;
+    padding: 30px;
+}
+
+.nav nav ul li a {
+    color: rgba(0, 0, 0, 0.842);
+    font-size: 2.2em;
+    text-decoration: none;
+    padding: 9px;
+}
+
+.nav nav ul li {
+    list-style: none;
+
+}
+
+.nav nav ul li a:hover {
+    background-color: rgba(179, 184, 184, 0.432);
+    padding: 9px;
+    border-radius: 4px;
+}
 
 .calendario {
     display: grid;
@@ -26,12 +54,13 @@
     background-color: darkcyan;
     margin: 10px 10px 10px 0px;
     color: white;
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: lighter;
     text-align: center;
     justify-content: center;
     display: flex;
     align-items: center;
+    border-radius: 5px;
 }
 
 .diasMes {
@@ -39,6 +68,16 @@
     margin: 0px 10px 10px 0px;
     padding: 3px 0px 0px 6px;
     border-radius: 5px;
+    font-size: 1.4em;
+}
+
+h4 {
+    font-size: 0.7em;
+    text-align: right;
+    bottom: 0;
+    right: 7%;
+    position: absolute;
+    font-weight: lighter;
 }
 
 .mes {
@@ -52,4 +91,15 @@
 .festivo {
     background-color: rgb(238, 69, 142);
     color: white;
+    position: relative;
+}
+
+.diasMes:hover {
+    border: 3px solid darkcyan;
+    cursor: pointer;
+}
+
+.diasSemana:hover {
+    border: 3px solid aqua;
+    cursor: pointer;
 }
