@@ -69,7 +69,10 @@ h2 {
     grid-column-end: 4;
     background-color: rgb(189, 189, 189);
 }
+.box3-8:hover{
+    background-color: rgba(112, 112, 112, 0.692);
+}
 
 .box3-1:hover {
-    background-color: rgb(81, 210, 250);
+    background-color: rgb(129, 222, 250);
 }

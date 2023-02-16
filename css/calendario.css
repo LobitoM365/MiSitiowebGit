@@ -1,0 +1,55 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+
+.calendario {
+    display: grid;
+    grid-template-columns: repeat(7, 140px);
+    grid-template-rows: 60px 70px repeat(7, 100px);
+    margin-top: 100px;
+}
+
+.dia1 {
+    grid-column-start: 6;
+    grid-column-end: 7;
+}
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diasSemana {
+    background-color: darkcyan;
+    margin: 10px 10px 10px 0px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: lighter;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.diasMes {
+    background-color: rgb(242, 244, 235);
+    margin: 0px 10px 10px 0px;
+    padding: 3px 0px 0px 6px;
+    border-radius: 5px;
+}
+
+.mes {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    border-bottom: 1px solid rgb(218, 135, 32);
+    text-align: center;
+    margin: 0px 10px 0px 0px;
+}
+
+.festivo {
+    background-color: rgb(238, 69, 142);
+    color: white;
+}
