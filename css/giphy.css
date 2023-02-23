@@ -1,0 +1,188 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+.div-header {
+    display: grid;
+    grid-template-columns: repeat(7, 150px);
+    grid-template-rows: 230px 90px 140px;
+}
+.texto-trending{
+    grid-column-start: 1;
+    grid-column-end: 9;
+}
+.div-artist {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 280px;
+}
+
+.trending {
+    background-color: rgb(153,51,255);
+    margin: 3px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    background-color: rgb(110, 88, 242);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.artist {
+    margin: 3px;
+    background-color: aqua;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-clips {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 200px);
+}
+
+.clips {
+    background-color: darkcyan;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clip1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin-right: 9px;
+}
+
+.clip2 {
+    margin-bottom: 40px;
+}
+
+.clip3 {
+    margin-top: 40px;
+}
+
+.contenido-header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px repeat(8, 1fr) 150px;
+    grid-template-rows: 55px 75px 45px 45px;
+}
+
+.menu {
+    margin: 10px 3px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 5px solid rgb(28,176,255);
+}
+.upload, .create{
+    border: unset;
+    background-color: rgb(235, 101, 180);
+    border-radius: 4px;
+}
+.login {
+    background-color: azure;
+    margin: 10px 3px;
+}
+
+.logo {
+    background-color: rgb(255,102,102);
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.buscador {
+    display: grid;
+    grid-template: "fraccion-buscar icono-buscar" 100% / 1fr 60px;
+    grid-column-start: 1;
+    grid-column-end: 11;
+    background-color: azure;
+    margin: 10px 3px;
+    border-radius: 4px;
+    color: black;
+}
+
+.anuncio {
+    background-color: rgb(225,34,44);
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    margin: 0px 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono-buscar {
+    grid-area: icono-buscar;
+    background-color: rgb(231,91,139);
+    border-radius: 4px;
+}
+
+.fraccion-buscar {
+    grid-area: fraccion-buscar;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    display: grid;
+    grid-template: "icono-login fraccion-login" 100% / 40px 1fr;
+}
+
+.fraccion-login {
+    grid-area: fraccion-login;
+    background-color: rgb(134, 134, 134);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icono-login {
+    grid-area: icono-login;
+    background-color: rgb(170, 170, 170);
+}
+h2{
+    margin-top: 60px;
+    color: white;
+}
+h4{
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+.texto-buscador{
+    color: black;
+}
