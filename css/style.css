@@ -6,7 +6,10 @@
   list-style: none;
   text-decoration: none;
 }
-
+body{
+  background-image: url(../img/lobo-en-el-cielo-del-bosque_2560x1440_xtrafondos.com.jpg);
+  background-size: cover;
+}
 a {
   cursor: pointer;
 }
