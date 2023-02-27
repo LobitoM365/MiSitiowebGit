@@ -495,7 +495,7 @@ h4 {
 
 .div-header-smartphone {
     display: grid;
-    grid-template-columns: repeat(7, 50px);
+    grid-template-columns: repeat(7, 60px);
     grid-template-rows: 200px;
 }
 
