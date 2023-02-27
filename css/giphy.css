@@ -2,18 +2,23 @@
     padding: 0;
     margin: 0;
 }
-body{
+
+/* Compuadtor */
+body {
     background-color: black;
 }
+
 .div-header {
     display: grid;
     grid-template-columns: repeat(7, 150px);
     grid-template-rows: 230px 90px 140px;
 }
-.texto-trending{
+
+.texto-trending {
     grid-column-start: 1;
     grid-column-end: 9;
 }
+
 .div-artist {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -21,7 +26,7 @@ body{
 }
 
 .trending {
-    background-color: rgb(153,51,255);
+    background-color: rgb(153, 51, 255);
     margin: 3px;
     border-radius: 8px;
     display: flex;
@@ -99,20 +104,23 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 5px solid rgb(28,176,255);
+    border-bottom: 5px solid rgb(28, 176, 255);
 }
-.upload, .create{
+
+.upload,
+.create {
     border: unset;
     background-color: rgb(235, 101, 180);
     border-radius: 4px;
 }
+
 .login {
     background-color: azure;
     margin: 10px 3px;
 }
 
 .logo {
-    background-color: rgb(255,102,102);
+    background-color: rgb(255, 102, 102);
     margin: 3px;
     display: flex;
     justify-content: center;
@@ -132,7 +140,7 @@ body{
 }
 
 .anuncio {
-    background-color: rgb(225,34,44);
+    background-color: rgb(225, 34, 44);
     grid-column-start: 1;
     grid-column-end: 11;
     grid-row-start: 3;
@@ -145,7 +153,7 @@ body{
 
 .icono-buscar {
     grid-area: icono-buscar;
-    background-color: rgb(231,91,139);
+    background-color: rgb(231, 91, 139);
     border-radius: 4px;
 }
 
@@ -173,16 +181,578 @@ body{
     grid-area: icono-login;
     background-color: rgb(170, 170, 170);
 }
-h2{
+
+h2 {
     margin-top: 60px;
     color: white;
 }
-h4{
+
+h4 {
     color: white;
     font-weight: bolder;
     font-size: 1.2em;
 }
 
-.texto-buscador{
+.texto-buscador {
     color: black;
+}
+
+.storie {
+    background-color: rgb(129, 217, 253);
+    border-radius: 8px;
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-stories {
+    display: grid;
+    grid-template: "storie-1    storie-1   storie-2 storie-3" 330px
+        "storie-4    storie-5   storie-6 storie-6" 330px
+        "storie-7    storie-8   storie-9 storie-10" 330px/
+        1fr 1fr 1fr 1fr;
+}
+
+.storie-1 {
+    grid-area: storie-1;
+}
+
+.storie-2 {
+    grid-area: storie-2;
+}
+
+.storie-3 {
+    grid-area: storie-3;
+}
+
+.storie-4 {
+    grid-area: storie-4;
+}
+
+.storie-5 {
+    grid-area: storie-5;
+}
+
+.storie-6 {
+    grid-area: storie-6;
+}
+
+.storie-7 {
+    grid-area: storie-7;
+}
+
+.storie-8 {
+    grid-area: storie-8;
+}
+
+.storie-9 {
+    grid-area: storie-9;
+}
+
+.storie-10 {
+    grid-area: storie-10;
+}
+
+
+
+
+/* Tablet */
+
+.div-header-tablet {
+    display: grid;
+    grid-template-columns: repeat(7, 100px);
+    grid-template-rows: 230px;
+}
+
+.texto-trending-tablet {
+    grid-column-start: 1;
+    grid-column-end: 9;
+}
+
+.div-artist-tablet {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 280px;
+}
+
+.trending-tablet {
+    background-color: rgb(153, 51, 255);
+    margin: 3px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-trending-table {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px;
+}
+
+.header-tablet {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    background-color: rgb(110, 88, 242);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.contenido-tablet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.artist-tablet {
+    margin: 3px;
+    background-color: aqua;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-clips-tablet {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px;
+}
+
+.clip1-tablet {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: darkcyan;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+}
+
+
+
+.contenido-header-tablet {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px repeat(3, 1fr) 70px;
+    grid-template-rows: 55px 75px 45px 45px;
+}
+
+.menu-tablet {
+    margin: 10px 3px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(178, 178, 178);
+}
+
+.upload-tablet,
+.create-tablet {
+    border: unset;
+    background-color: rgb(235, 101, 180);
+    border-radius: 4px;
+}
+
+.login-tablet {
+    background-color: azure;
+    margin: 10px 3px;
+}
+
+.logo-tablet {
+    background-color: rgb(255, 102, 102);
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.buscador-tablet {
+    display: grid;
+    grid-template: "fraccion-buscar icono-buscar" 100% / 1fr 60px;
+    grid-column-start: 1;
+    grid-column-end: 11;
+    background-color: azure;
+    margin: 10px 3px;
+    border-radius: 4px;
+    color: black;
+}
+
+.anuncio-tablet {
+    background-color: rgb(225, 34, 44);
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    margin: 0px 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono-buscar-tablet {
+    grid-area: icono-buscar;
+    background-color: rgb(231, 91, 139);
+    border-radius: 4px;
+}
+
+.fraccion-buscar-tablet {
+    grid-area: fraccion-buscar;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-tablet {
+    display: grid;
+    grid-template: "icono-login fraccion-login" 100% / 40px 1fr;
+}
+
+.fraccion-login-tablet {
+    grid-area: fraccion-login;
+    background-color: rgb(134, 134, 134);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icono-login-tablet {
+    grid-area: icono-login;
+    background-color: rgb(170, 170, 170);
+}
+
+h2 {
+    margin-top: 60px;
+    color: white;
+}
+
+h4 {
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+.texto-buscador-tablet {
+    color: black;
+}
+
+.storie-tablet {
+    background-color: rgb(129, 217, 253);
+    border-radius: 8px;
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-stories-tablet {
+    display: grid;
+    grid-template: "storie-1-tablet    storie-1-tablet    storie-2-tablet" 330px
+        "storie-3-tablet    storie-4-tablet   storie-4-tablet" 330px
+        "storie-5-tablet    storie-6-tablet   storie-7-tablet" 330px/
+        1fr 1fr 1fr;
+}
+
+.storie-1-tablet {
+    grid-area: storie-1-tablet;
+}
+
+.storie-2-tablet {
+    grid-area: storie-2-tablet;
+}
+
+.storie-3-tablet {
+    grid-area: storie-3-tablet;
+}
+
+.storie-4-tablet {
+    grid-area: storie-4-tablet;
+}
+
+.storie-5-tablet {
+    grid-area: storie-5-tablet;
+}
+
+.storie-6-tablet {
+    grid-area: storie-6-tablet;
+}
+
+.storie-7-tablet {
+    grid-area: storie-7-tablet;
+}
+
+
+/* Smartphone */
+
+.div-header-smartphone {
+    display: grid;
+    grid-template-columns: repeat(7, 45px);
+    grid-template-rows: 200px;
+}
+
+.texto-trending-smartphone {
+    grid-column-start: 1;
+    grid-column-end: 9;
+}
+
+.div-artist-smartphone {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 280px;
+}
+
+.trending-smartphone {
+    background-color: rgb(153, 51, 255);
+    margin: 3px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-trending-smartphone {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px;
+}
+
+.header-smartphone {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    background-color: rgb(110, 88, 242);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.contenido-smartphone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.artist-smartphone {
+    margin: 3px;
+    background-color: aqua;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-clips-smartphone {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px;
+}
+
+.clip1-smartphone {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: darkcyan;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+}
+
+
+
+.contenido-header-smartphone {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80px repeat(4, 1fr);
+    grid-template-rows: 55px 65px 35px 35px;
+}
+
+.menu-smartphone {
+    margin: 10px 3px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(178, 178, 178);
+}
+
+.upload-smartphone,
+.create-smartphone {
+    border: unset;
+    background-color: rgb(235, 101, 180);
+    border-radius: 4px;
+}
+
+.login-smartphone {
+    background-color: rgb(70, 203, 203);
+}
+
+.logo-smartphone {
+    background-color: rgb(255, 102, 102);
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.buscador-smartphone {
+    display: grid;
+    grid-template: "fraccion-buscar icono-buscar" 100% / 1fr 60px;
+    grid-column-start: 1;
+    grid-column-end: 11;
+    background-color: azure;
+    margin: 10px 3px;
+    border-radius: 4px;
+    color: black;
+}
+
+.anuncio-smartphone {
+    background-color: rgb(225, 34, 44);
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    margin: 0px 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono-buscar-smartphone {
+    grid-area: icono-buscar;
+    background-color: rgb(231, 91, 139);
+    border-radius: 4px;
+}
+
+.fraccion-buscar-smartphone {
+    grid-area: fraccion-buscar;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    margin-top: 60px;
+    color: white;
+}
+
+h4 {
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+.texto-buscador-smartphone {
+    color: black;
+}
+
+.storie-smartphone {
+    background-color: rgb(129, 217, 253);
+    border-radius: 8px;
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-stories-smartphone {
+    display: grid;
+    grid-template: "storie-1-smartphone    storie-1-smartphone  " 230px
+        "storie-2-smartphone    storie-3-smartphone  " 230px/
+        1fr 1fr;
+}
+
+.storie-1-smartphone {
+    grid-area: storie-1-smartphone;
+}
+
+.storie-2-smartphone {
+    grid-area: storie-2-smartphone;
+}
+
+.storie-3-smartphone {
+    grid-area: storie-3-smartphone;
+}
+
+.storie-4-smartphone {
+    grid-area: storie-4-smartphone;
+}
+
+.storie-5-smartphone {
+    grid-area: storie-5-smartphone;
+}
+
+.storie-6-smartphone {
+    grid-area: storie-6-smartphone;
+}
+
+.storie-7-smartphone {
+    grid-area: storie-7-smartphone;
+}
+
+h3 {
+    color: white;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+nav>ul>li {
+    position: relative;
+    width: 160px;
+    border-radius: 20px;
+    margin: 10px 20px;
+    list-style: none;
+    transition: padding 0.7s;
+}
+
+nav>ul>li span {
+    padding: 30px;
+    display: block;
+    background-color: rgb(52, 183, 183);
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+nav>ul>li span:hover {
+    background-color: rgb(68, 250, 250);
+    border: 3px solid rgb(18, 250, 18);
+}
+
+nav>ul>li:hover {
+    padding: 10px;
+}
+
+.nav {
+    position: absolute;
+    width: 200px;
+}
+
+.tablet,
+.smartphone,
+.computador {
+    display: none;
+}
+
+.maquetacion-giphy {
+    margin-top: 40px;
 }
