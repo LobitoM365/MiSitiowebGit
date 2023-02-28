@@ -6,10 +6,7 @@
   list-style: none;
   text-decoration: none;
 }
-body{
-  background-image: url(../img/lobo-en-el-cielo-del-bosque_2560x1440.jpg);
-  background-size: cover;
-}
+
 a {
   cursor: pointer;
 }
@@ -87,6 +84,20 @@ a {
 
   li:hover {
     background-color: rgba(255, 255, 255, 0.204);
+
+  }
+
+  .fondo {
+    position: absolute;
+    z-index: -1;
+  }
+
+  .img-fondo {
+    position: fixed;
+    width: 100%;
+    height: 110%;
+    margin: unset;
+    padding: unset;
   }
 
 }
@@ -178,5 +189,17 @@ a {
 
   nav>ul>li>ul>li>ul>Li>a {
     border-bottom: 2px solid rgb(0, 0, 0, 100%);
+  }
+
+  .fondo {
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+
+  .img-fondo {
+    width: 100%;
+    height: 100%;
   }
 }
