@@ -2,14 +2,11 @@
     padding: 0%;
     margin: 0%;
 }
-body{
-    background-color: rgba(240, 248, 255, 0.904);
 
-}
 H1{
     font-family:"DS-DIGI";
     font-size: 11em;
-    color: black;
+    color: white;
 }
 
 @font-face{
@@ -17,18 +14,13 @@ H1{
     src: url(../fonts/DS-DIGI.TTF);
 }
 
-.H{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+
 .nav {
     position: absolute;
     padding: 30px;
 }
 .nav nav ul li a{
-    color: black;
+    color: white;
     font-size: 2.5em;
     text-decoration: none;
     padding: 9px;
@@ -40,8 +32,20 @@ H1{
     
 }
 .nav nav ul li a:hover{
-    background-color: rgba(146, 150, 150, 0.247);
+    background-color: rgba(82, 81, 81, 0.247);
     padding: 9px;
     border-radius: 4px;
    
+}
+img{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+.hora{
+    position: absolute;
+    top: 32%;
+    left: 15%;
+    rotate: -2deg;
 }
