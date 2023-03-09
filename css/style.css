@@ -41,9 +41,9 @@ a {
   .rgb3::after {
     content: '';
     position: absolute;
-    background: linear-gradient(45deg, rgb(38, 56, 180), rgb(102, 254, 251), rgb(67, 62, 128), rgb(255, 54, 228), rgb(22, 37, 94), rgb(245, 249, 203), rgb(141, 21, 83), rgb(31, 1, 87), rgb(46, 255, 255));
-    animation: animate 20s linear infinite;
-    background-size: 200%;
+    background: linear-gradient(45deg, rgb(128, 62, 121), rgb(38, 56, 180), rgb(153, 102, 254), rgb(67, 62, 128), rgb(255, 54, 228), rgb(22, 37, 94), rgb(245, 249, 203), rgb(141, 21, 83), rgb(31, 1, 87), rgb(46, 255, 255), rgb(128, 62, 121));
+    animation: animate 80s linear infinite;
+    background-size: 220%;
   }
 
   .rgb4::before,
@@ -52,8 +52,8 @@ a {
   .rgb5::after {
     content: '';
     position: absolute;
-    background: linear-gradient(100deg, rgb(38, 56, 180), rgb(102, 254, 251), rgb(67, 62, 128), rgb(255, 54, 228), rgb(22, 37, 94), rgb(245, 249, 203), rgb(141, 21, 83), rgb(31, 1, 87), rgb(46, 255, 255));
-    animation: animate 20s linear infinite;
+    background: linear-gradient(100deg, rgb(128, 62, 121), rgb(38, 56, 180), rgb(153, 102, 254), rgb(67, 62, 128), rgb(255, 54, 228), rgb(22, 37, 94), rgb(245, 249, 203), rgb(141, 21, 83), rgb(31, 1, 87), rgb(46, 255, 255), rgb(128, 62, 121));
+    animation: animate 80s linear infinite;
     background-size: 1000%;
   }
 
@@ -78,35 +78,30 @@ a {
     rotate: 180deg;
   }
 
-  .rgb4::after,
-  .rgb4::before {
-    height: calc(100% + 12px);
-    width: 6px;
-    left: 100%;
-    top: -6px;
-    rotate: 180deg;
-  }
-
   .rgb5::after,
   .rgb5::before {
     height: calc(100% + 12px);
     width: 6px;
-    right: 100%;
+    left: 100%;
     top: -6px;
   }
 
+  .rgb4::after,
+  .rgb4::before {
+    height: calc(100% + 12px);
+    width: 6px;
+    right: 100%;
+    top: -6px;
+    rotate: 180deg;
+  }
 
   @keyframes animate {
     0% {
       background-position: 0 0;
     }
 
-    50% {
-      background-position: 400% 0;
-    }
-
     100% {
-      background-position: 0 0;
+      background-position: 2600% ;
     }
   }
 
