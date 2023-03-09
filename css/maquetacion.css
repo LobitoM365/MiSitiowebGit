@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: justify;
+    border-radius: 8px;
+
+}
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    grid-area: header;
+    background-color: red;
+    border: 2px solid black;
+}
+
+.img-principal {
+    background-color: darkcyan;
+    grid-area: img-principal;
+    border: 2px solid black;
+}
+
+.img1 {
+    background-color: rgb(64, 64, 64);
+    grid-area: img1;
+    border: 2px solid black;
+}
+
+.img2 {
+    background-color: rgb(64, 64, 64);
+    grid-area: img2;
+    border: 2px solid black;
+}
+
+.img3 {
+    background-color: rgb(64, 64, 64);
+    grid-area: img3;
+    border: 2px solid black;
+}
+
+.texto1 {
+    grid-area: texto1;
+}
+
+.texto2 {
+    grid-area: texto2;
+}
+
+.texto3 {
+    grid-area: texto3;
+}
+
+.img-principal,
+.header,
+.img1,
+.img2,
+.img3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width:1100px) {
+    .maquetacion {
+        margin-top: 80px;
+        border: unset;
+        gap: 10px;
+        display: grid;
+        grid-template: "header          empty           empty" 80px
+            "img-principal   img-principal   img-principal" 700px
+            "img1            img2            img3" 150px
+            "texto1          texto2          texto3" 400px/
+            350px 350px 350px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+
+    .maquetacion {
+        margin-top: 80px;
+        border: unset;
+        gap: 10px;
+        display: grid;
+        grid-template: "header  header" 80px
+                       "img-principal  img-principal" 400px
+                       "img1   img2" 100px
+                       "texto1  texto2" 550px
+                       "img3  empty" 100px
+                       "texto3 empty" 200px/
+                       250px 250px;
+    }
+
+    body {
+        background-color: aqua;
+    }
+
+}
