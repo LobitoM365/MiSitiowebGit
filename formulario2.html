@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Usuario</title>
+    <link rel="stylesheet" href="css/formulario2.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li> <a href="index.html"> Inicio </a></li>
+        </ul>
+
+    </nav>
+    <div class="fondo"> <img class="img-fondo" src="img/Fondo_Dinosaurio_3840x2160.png" alt=""></div>
+    <div class="formulario">
+        <form>
+            <h1> Registro usuario </h1>
+            <div class="div_img">
+                <img class="iconUser" src="icons/Icono_Usuario.png" alt="">
+            </div>
+            <label> Nombre(s)</label>
+            <input class="input_datos" type="text" name="nombre" id="" required placeholder="Ingrese su(s) nombre(s)">
+            <label> Apellidos </label>
+            <input class="input_datos" type="text" name="apellido" id="" required placeholder="Ingrese sus apellidos">
+            <label> Edad</label>
+            <input class="input_datos" type="number" name="edad" id="" required placeholder="Ingrese su edad">
+            <label> Teléfono</label>
+            <input class="input_datos" type="text" name="telefono" id="" required
+                placeholder="Ingrese su número de teléfono">
+            <label> Correo electronico</label>
+            <input class="input_datos" type="text" name="email" id="" required
+                placeholder="Ingrese su corrreo electrónico">
+            <label> Dirección</label>
+            <input class="input_datos" type="text" name="direccion" id="" required placeholder="Ingrese su dirección">
+            <label> Sexo</label>
+            <select name="sexo" required>
+                <option value=""> Seleccione una opción</option>
+                <option value="Femenino"> Femenino</option>
+                <option value="Masculino"> Masculino</option>
+                <option value="otro"> Otro</option>
+            </select>
+            <label> Estado civil</label>
+            <select name="estadoCivil" required>
+                <option value=""> Seleccione una opción</option>
+                <option value="Soltero"> Soltero(a)</option>
+                <option value="Casado"> Casado(a)</option>
+                <option value="Divorciado"> Divorciado(a)</option>
+                <option value="Viudo"> Viudo(a)</option>
+                <option value="otro"> Otro</option>
+            </select>
+            <div class="div_input_registro">
+                <input class="input_registro" type="submit" value="Registrar" name="boton_registrar">
+            </div>
+        </form>
+    </div>

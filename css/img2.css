@@ -37,7 +37,6 @@ img{
 .box{
     width:  382px;
     display: inline-block;
-    margin-left: 46px;
     margin-bottom: 70px;
     vertical-align: top;
 }
@@ -58,4 +57,9 @@ h1{
     padding: 2em 0px 100px 0px;
     text-align: center;
     font-size: 4em;
+}
+
+.contenedor-imagenes{
+    display: flex;
+    justify-content: center;
 }
