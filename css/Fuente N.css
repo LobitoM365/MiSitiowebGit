@@ -1,23 +1,30 @@
 * {
     padding: 0%;
     margin: 0%;
+    border: transparent;
 }
 
 h1 {
     font-family: 'Bebas Neue', cursive;
-    font-size: 1000%;
+    font-size: 10vh;
     color: red;
-    letter-spacing: 9px;
+    letter-spacing: 0.5vw;
 }
 
-.Netflix {
+.div-netflix {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: -2;
+    z-index: 1;
+}
+
+.Netflix {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
 }
 
 
@@ -25,6 +32,10 @@ h1 {
     position: absolute;
     padding: 30px;
     z-index: 2;
+}
+
+span {
+    display: flex;
 }
 
 .nav nav ul li a {
@@ -53,48 +64,272 @@ h1 {
 .div-curva {
     display: flex;
     justify-content: center;
-    background-color: aqua;
+    background-color: rgb(132, 255, 0);
 }
 
 .curva {
     position: absolute;
-    top: 53.4%;
-    width: 53%;
-    height: 27%;
+    overflow: hidden;
+    top: 51.9%;
+    width: 100%;
+    height: 220vh;
     border-radius: 100%;
     background-size: cover;
     position: fixed;
-    overflow: hidden;
-    z-index: -1;
+    z-index: 2;
 }
 
 .fondo {
-    width: 100%;
-    height: 100%;
+    width: 200vh;
+    height: 100vh;
     position: fixed;
-    z-index: -2;
+    z-index: 1;
 }
 
 .complemento {
-    position: relative;
-    top: -198%;
-    left: -44%;
-    width: 188.2%;
-    height: 370.5%;
+    position: absolute;
+    width: 200vh;
+    height: 100vh;
+    top: -23.6%;
 }
 
 .fondo-transparente {
-    background-color: rgba(0, 0, 0, 0.463);
-    width: 100%;
-    height: 100%;
+    background-color: rgba(0, 0, 0, 0.563);
+    width: 200vh;
+    height: 100vh;
     position: fixed;
-    z-index: -2;
+    z-index: 1;
 }
 
 .fondo-transparente2 {
-    background-color: rgba(0, 0, 0, 0.463);
-    width: 100%;
-    height: 100%;
+    background-color: rgba(0, 0, 0, 0.563);
+    width: 200vh;
+    height: 100vh;
     position: absolute;
-    z-index: 3;
+    z-index: 2;
+}
+
+.n {
+    font-size: 11vh;
+}
+
+.e {
+    font-size: 10vh;
+
+}
+
+.t {
+    font-size: 10.17vh;
+}
+
+.f {
+    font-size: 9.3vh;
+}
+
+.l {
+    font-size: 9.52vh;
+}
+
+.i {
+    font-size: 10.17vh;
+}
+
+.x {
+    font-size: 11vh;
+}
+
+
+
+@media screen and (max-width:1650px) {
+    h1 {
+        margin-top: 5px;
+    }
+
+    .n {
+        font-size: 12vh;
+        margin-top: unset;
+    }
+
+    .e {
+        font-size: 10.723vh;
+    }
+
+    .t {
+        font-size: 11.17vh;
+    }
+
+    .f {
+        font-size: 11.17vh;
+    }
+
+    .l {
+        font-size: 10.3vh;
+    }
+
+    .i {
+        font-size: 11.17vh;
+    }
+
+    .x {
+        font-size: 12vh;
+    }
+
+    .curva {
+        top: 51.9%;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .complemento {
+        position: absolute;
+        width: 200vh;
+        height: 100vh;
+        top: -52%;
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+    h1 {
+        margin-top: 5px;
+    }
+
+    .n {
+        font-size: 13.3vh;
+    }
+
+    .e {
+        font-size: 11.6vh;
+    }
+
+    .t {
+        font-size: 11.2vh;
+    }
+
+    .f {
+        font-size: 11.2vh;
+    }
+
+    .l {
+        font-size: 11.6vh;
+    }
+
+    .i {
+        font-size: 11.6vh;
+    }
+
+    .x {
+        font-size: 13.3vh;
+    }
+
+    .curva {
+        top: 51.9%;
+        width: 100%;
+        height: 50vh;
+    }
+
+    .complemento {
+        position: absolute;
+        width: 200vh;
+        height: 100vh;
+        top: -103.9%;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+    h1 {
+        margin-top: 5px;
+    }
+
+    .n {
+        font-size: 12vh;
+        margin-top: unset;
+    }
+
+    .e {
+        font-size: 10.723vh;
+    }
+
+    .t {
+        font-size: 11.17vh;
+    }
+
+    .f {
+        font-size: 11.17vh;
+    }
+
+    .l {
+        font-size: 10.3vh;
+    }
+
+    .i {
+        font-size: 11.17vh;
+    }
+
+    .x {
+        font-size: 12vh;
+    }
+
+    .curva {
+        top: 51.9%;
+        width: 100%;
+        height: 25vh;
+    }
+
+    .complemento {
+        position: absolute;
+        width: 200vh;
+        height: 100vh;
+        top: -207.8%;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    h1 {
+        margin-top: 5px;
+    }
+
+    .n {
+        font-size: 12vh;
+        margin-top: unset;
+    }
+
+    .e {
+        font-size: 10.723vh;
+    }
+
+    .t {
+        font-size: 11.17vh;
+    }
+
+    .f {
+        font-size: 11.17vh;
+    }
+
+    .l {
+        font-size: 10.3vh;
+    }
+
+    .i {
+        font-size: 11.17vh;
+    }
+
+    .x {
+        font-size: 12vh;
+    }
+
+    .curva {
+        top: 51.9%;
+        width: 100%;
+        height: 15vh;
+    }
+
+    .complemento {
+        position: absolute;
+        width: 200vh;
+        height: 100vh;
+        top: -344%;
+    }
 }

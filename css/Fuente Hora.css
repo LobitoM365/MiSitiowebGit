@@ -5,7 +5,7 @@
 
 H1{
     font-family:"DS-DIGI";
-    font-size: 11em;
+    font-size: 9vw;
     color: white;
 }
 
@@ -17,13 +17,15 @@ H1{
 
 .nav {
     position: absolute;
-    padding: 30px;
+    padding: 2vw;
+    width: 6%;
+    height: 5%;
 }
 .nav nav ul li a{
     color: white;
-    font-size: 2.5em;
+    font-size: 4.2vh;
     text-decoration: none;
-    padding: 9px;
+    padding: 0.6vw;
     font-family:"DS-DIGI" ;
     font-weight:bold;
 }
@@ -33,9 +35,8 @@ H1{
 }
 .nav nav ul li a:hover{
     background-color: rgba(82, 81, 81, 0.247);
-    padding: 9px;
-    border-radius: 4px;
-   
+    padding: 0.6vw;
+    border-radius: 4%;
 }
 img{
     width: 100%;
@@ -45,7 +46,41 @@ img{
 }
 .hora{
     position: absolute;
-    top: 32%;
-    left: 15%;
+    top: 23%;
+    left: 11.7%;
+    width: 29%;
+    height: 37%;
     rotate: -2deg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:1200px){
+    img{
+        width: 120%;
+    }
+    .hora{
+        top: 23%;
+        left: 13.7%;
+        width: 36%;
+        height: 37%;
+    }
+    h1{
+        font-size: 12vw;
+    }
+}
+@media screen and (max-width:800px){
+    img{
+        width: 160%;
+    }
+    .hora{
+        top: 23%;
+        left: 19%;
+        width: 46%;
+        height: 37%;
+    }
+    h1{
+        font-size: 15vw;
+    }
 }
