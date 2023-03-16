@@ -69,42 +69,42 @@ span {
 
 .curva {
     position: absolute;
-    overflow: hidden;
     top: 51.9%;
     width: 100%;
-    height: 220vh;
+    height: 200%;
     border-radius: 100%;
     background-size: cover;
     position: fixed;
     z-index: 2;
+    overflow: hidden;
 }
 
 .fondo {
-    width: 200vh;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     position: fixed;
     z-index: 1;
 }
 
 .complemento {
     position: absolute;
-    width: 200vh;
-    height: 100vh;
-    top: -23.6%;
+    width: 100%;
+    height: 50%;
+    top: -26%;
 }
 
 .fondo-transparente {
     background-color: rgba(0, 0, 0, 0.563);
-    width: 200vh;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     position: fixed;
     z-index: 1;
 }
 
 .fondo-transparente2 {
     background-color: rgba(0, 0, 0, 0.563);
-    width: 200vh;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     position: absolute;
     z-index: 2;
 }
@@ -119,279 +119,438 @@ span {
 }
 
 .t {
-    font-size: 10.17vh;
+    font-size: 10vh;
 }
 
 .f {
-    font-size: 9.3vh;
+    font-size: 10vh;
 }
 
 .l {
-    font-size: 9.52vh;
+    font-size: 10vh;
 }
 
 .i {
-    font-size: 10.17vh;
+    font-size: 10vh;
 }
 
 .x {
     font-size: 11vh;
 }
 
-
-
-@media screen and (max-width:1650px) {
-    h1 {
-        margin-top: 5px;
-    }
-
+@media screen and (max-width:1570px) {
     .n {
-        font-size: 12vh;
-        margin-top: unset;
-    }
-
-    .e {
-        font-size: 10.723vh;
-    }
-
-    .t {
-        font-size: 11.17vh;
-    }
-
-    .f {
-        font-size: 11.17vh;
-    }
-
-    .l {
-        font-size: 10.3vh;
-    }
-
-    .i {
-        font-size: 11.17vh;
-    }
-
-    .x {
-        font-size: 12vh;
-    }
-
-    .curva {
-        top: 51.9%;
-        width: 100%;
-        height: 100vh;
-    }
-
-    .complemento {
-        position: absolute;
-        width: 200vh;
-        height: 100vh;
-        top: -52%;
-    }
-
-}
-
-@media screen and (max-width:1000px) {
-    h1 {
-        margin-top: 5px;
-    }
-
-    .n {
-        font-size: 13.3vh;
-    }
-
-    .e {
-        font-size: 11.6vh;
-    }
-
-    .t {
-        font-size: 11.2vh;
-    }
-
-    .f {
-        font-size: 11.2vh;
-    }
-
-    .l {
-        font-size: 11.6vh;
-    }
-
-    .i {
-        font-size: 11.6vh;
-    }
-
-    .x {
-        font-size: 13.3vh;
-    }
-
-    .curva {
-        top: 51.9%;
-        width: 100%;
-        height: 50vh;
-    }
-
-    .complemento {
-        position: absolute;
-        width: 200vh;
-        height: 100vh;
-        top: -103.9%;
-    }
-
-}
-
-@media screen and (max-width:700px) {
-    h1 {
-        margin-top: 5px;
-    }
-
-    .n {
-        font-size: 12vh;
-        margin-top: unset;
-    }
-
-    .e {
-        font-size: 10.723vh;
-    }
-
-    .t {
-        font-size: 11.17vh;
-    }
-
-    .f {
-        font-size: 11.17vh;
-    }
-
-    .l {
-        font-size: 10.3vh;
-    }
-
-    .i {
-        font-size: 11.17vh;
-    }
-
-    .x {
-        font-size: 12vh;
-    }
-
-    .curva {
-        top: 51.9%;
-        width: 100%;
-        height: 25vh;
-    }
-
-    .complemento {
-        position: absolute;
-        width: 200vh;
-        height: 100vh;
-        top: -207.8%;
+        font-size: 13.2vh;
     }
     
+    .e {
+        font-size: 12vh;
+    
+    }
+    
+    .t {
+        font-size: 12vh;
+    }
+    
+    .f {
+        font-size: 12vh;
+    }
+    
+    .l {
+        font-size: 11.35vh;
+    }
+    
+    .i {
+        font-size: 12vh;
+    }
+    
+    .x {
+        font-size: 13.2vh;
+    }
+    .curva {
+        top: 51.9%;
+        width: 100%;
+        height: 120%;
+    }
+    .complemento {
+        width: 100%;
+        height: 83.3%;
+        top: -43.2%;
+    }
+    
+}
+@media screen and (max-width:1185px) {
+    .n {
+        font-size: 13.2vh;
+    }
+    
+    .e {
+        font-size: 12vh;
+    
+    }
+    
+    .t {
+        font-size: 12vh;
+    }
+    
+    .f {
+        font-size: 12vh;
+    }
+    
+    .l {
+        font-size: 11.35vh;
+    }
+    
+    .i {
+        font-size: 12vh;
+    }
+    
+    .x {
+        font-size: 13.2vh;
+    }
+    .curva {
+        top: 51.9%;
+        width: 100%;
+        height: 100%;
+    }
+    .complemento {
+        width: 140%;
+        height: 100%;
+        top: -51.9%;
+    }
     .fondo {
-        width: 200vh;
-        height: 100vh;
+        width: 140%;
+        height: 100%;
         position: fixed;
         z-index: 1;
     }
-
 }
 
-@media screen and (max-width:500px) {
-    h1 {
-        margin-top: 5px;
-    }
-
+@media screen and (max-width:1065px) {
     .n {
-        font-size: 12vh;
-        margin-top: unset;
+        font-size: 13.2vh;
     }
-
+    
     .e {
-        font-size: 10.723vh;
+        font-size: 12vh;
+    
     }
-
+    
     .t {
-        font-size: 11.17vh;
-    }
-
-    .f {
-        font-size: 11.17vh;
-    }
-
-    .l {
-        font-size: 10.3vh;
-    }
-
-    .i {
-        font-size: 11.17vh;
-    }
-
-    .x {
         font-size: 12vh;
     }
-
+    
+    .f {
+        font-size: 12vh;
+    }
+    
+    .l {
+        font-size: 11.35vh;
+    }
+    
+    .i {
+        font-size: 12vh;
+    }
+    
+    .x {
+        font-size: 13.2vh;
+    }
     .curva {
         top: 51.9%;
         width: 100%;
-        height: 12vh;
+        height: 70%;
     }
-
     .complemento {
-        position: absolute;
-        width: 200vh;
-        height: 100vh;
-        top: -433%;
+        width: 140%;
+        height: 142.9%;
+        top: -74.1%;
     }
-    body{
-        height: 110vh;
+    .fondo {
+        width: 140%;
+        height: 100%;
+        position: fixed;
+        z-index: 1;
     }
-
 }
-
-@media screen and (max-width:350px) {
-    h1 {
-        margin-top: 5px;
-    }
-
+@media screen and (max-width:892px) {
     .n {
-        font-size: 12vh;
-        margin-top: unset;
+        font-size: 13.2vh;
     }
-
+    
     .e {
-        font-size: 10.723vh;
+        font-size: 12vh;
+    
     }
-
+    
     .t {
-        font-size: 11.17vh;
-    }
-
-    .f {
-        font-size: 11.17vh;
-    }
-
-    .l {
-        font-size: 10.3vh;
-    }
-
-    .i {
-        font-size: 11.17vh;
-    }
-
-    .x {
         font-size: 12vh;
     }
-
+    
+    .f {
+        font-size: 12vh;
+    }
+    
+    .l {
+        font-size: 11.35vh;
+    }
+    
+    .i {
+        font-size: 12vh;
+    }
+    
+    .x {
+        font-size: 13.2vh;
+    }
     .curva {
         top: 51.9%;
         width: 100%;
-        height: 5vh;
+        height: 40%;
     }
-
     .complemento {
-        position: absolute;
-        width: 200vh;
-        height: 100vh;
-        top: -1038%;
+        width: 140%;
+        height: 249.6%;
+        top: -129.4%;
     }
-    body{
-        height: 110vh;
+    .fondo {
+        width: 140%;
+        height: 100%;
+        position: fixed;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width:660px) {
+    .n {
+        font-size: 13.2vh;
+    }
+    
+    .e {
+        font-size: 12vh;
+    
+    }
+    
+    .t {
+        font-size: 12vh;
+    }
+    
+    .f {
+        font-size: 12vh;
+    }
+    
+    .l {
+        font-size: 11.35vh;
+    }
+    
+    .i {
+        font-size: 12vh;
+    }
+    
+    .x {
+        font-size: 13.2vh;
+    }
+    .curva {
+        top: 51.9%;
+        width: 100%;
+        height: 25%;
+    }
+    .complemento {
+        width: 260%;
+        height: 399.2%;
+        top: -207%;
+    }
+    .fondo {
+        width: 260%;
+        height: 100%;
+        position: fixed;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width:527px) {
+    .n {
+        font-size: 13.2vh;
+    }
+    
+    .e {
+        font-size: 12vh;
+    
+    }
+    
+    .t {
+        font-size: 12vh;
+    }
+    
+    .f {
+        font-size: 12vh;
+    }
+    
+    .l {
+        font-size: 11.35vh;
+    }
+    
+    .i {
+        font-size: 12vh;
+    }
+    
+    .x {
+        font-size: 13.2vh;
+    }
+    .curva {
+        top: 51.9%;
+        width: 100%;
+        height: 15%;
+    }
+    .complemento {
+        width: 320%;
+        height: 665.4%;
+        top: -345%;
+    }
+    .fondo {
+        width: 320%;
+        height: 100%;
+        position: fixed;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .n {
+        font-size: 13.2vh;
+    }
+    
+    .e {
+        font-size: 12vh;
+    
+    }
+    
+    .t {
+        font-size: 12vh;
+    }
+    
+    .f {
+        font-size: 12vh;
+    }
+    
+    .l {
+        font-size: 11.35vh;
+    }
+    
+    .i {
+        font-size: 12vh;
+    }
+    
+    .x {
+        font-size: 13.2vh;
+    }
+    .curva {
+        top: 51.9%;
+        width: 100%;
+        height: 12%;
+    }
+    .complemento {
+        width: 480%;
+        height: 833%;
+        top: -432.2%;
+    }
+    .fondo {
+        width: 480%;
+        height: 100%;
+        position: fixed;
+        z-index: 1;
+    }
+}
+
+
+@media screen and (max-width:385px) {
+    .n {
+        font-size: 13.2vh;
+    }
+    
+    .e {
+        font-size: 12vh;
+    
+    }
+    
+    .t {
+        font-size: 12vh;
+    }
+    
+    .f {
+        font-size: 12vh;
+    }
+    
+    .l {
+        font-size: 11.35vh;
+    }
+    
+    .i {
+        font-size: 12vh;
+    }
+    
+    .x {
+        font-size: 13.2vh;
+    }
+    .curva {
+        top: 51.9%;
+        width: 100%;
+        height:10%;
+    }
+    .complemento {
+        width: 580%;
+        height: 999.2%;
+        top: -518.6%;
+    }
+    .fondo {
+        width: 580%;
+        height: 100%;
+        position: fixed;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .n {
+        font-size: 13.2vh;
+    }
+    
+    .e {
+        font-size: 12vh;
+    
+    }
+    
+    .t {
+        font-size: 12vh;
+    }
+    
+    .f {
+        font-size: 12vh;
+    }
+    
+    .l {
+        font-size: 11.35vh;
+    }
+    
+    .i {
+        font-size: 12vh;
+    }
+    
+    .x {
+        font-size: 13.2vh;
+    }
+    .curva {
+        top: 51.9%;
+        width: 100%;
+        height:6.6%;
+    }
+    .complemento {
+        width: 580%;
+        height: 1513.8%;
+        top: -785.7%;
+    }
+    .fondo {
+        width: 580%;
+        height: 100%;
+        position: fixed;
+        z-index: 1;
     }
 }
