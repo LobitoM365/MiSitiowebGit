@@ -25,6 +25,7 @@ h1 {
     display: flex;
     justify-content: center;
     z-index: 1;
+    position: fixed;
 }
 
 
@@ -282,6 +283,13 @@ span {
         height: 100vh;
         top: -207.8%;
     }
+    
+    .fondo {
+        width: 200vh;
+        height: 100vh;
+        position: fixed;
+        z-index: 1;
+    }
 
 }
 
@@ -331,6 +339,10 @@ span {
         height: 100vh;
         top: -433%;
     }
+    body{
+        height: 110vh;
+    }
+
 }
 
 @media screen and (max-width:350px) {
@@ -378,5 +390,8 @@ span {
         width: 200vh;
         height: 100vh;
         top: -1038%;
+    }
+    body{
+        height: 110vh;
     }
 }
