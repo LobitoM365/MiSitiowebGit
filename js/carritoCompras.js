@@ -16,106 +16,106 @@ let imgPredeterminada = document.getElementById("imgPredeterminada");
 imgMini1.addEventListener("click", function () {
     imgPredeterminada.classList.add("img-box-invisible")
     /*     idImgMain.setAttribute("src", "img/imgCarrito/image-product-1.jpg") */
-    if (imgMini1.classList.contains("img-opacity")) {
-        imgMini1.classList.remove("img-opacity");
-        idFocus1.classList.remove("focus")
-        idImgMain1.classList.remove("img-main-animation1")
-    } else {
-        idImgMain1.classList.add("img-main-animation1")
-        idImgMain2.classList.remove("img-main-animation2")
-        idImgMain3.classList.remove("img-main-animation3")
-        idImgMain4.classList.remove("img-main-animation4")
-        idImgMain1.classList.remove("img-box-invisible")
-        idImgMain2.classList.add("img-box-invisible")
-        idImgMain3.classList.add("img-box-invisible")
-        idImgMain4.classList.add("img-box-invisible")
-        imgMini1.classList.add("img-opacity");
-        idFocus1.classList.add("focus")
-        idFocus2.classList.remove("focus")
-        idFocus3.classList.remove("focus")
-        idFocus4.classList.remove("focus")
-        imgMini2.classList.remove("img-opacity");
-        imgMini3.classList.remove("img-opacity");
-        imgMini4.classList.remove("img-opacity");
-    }
+    /*     if (imgMini1.classList.contains("img-opacity")) {
+            imgMini1.classList.remove("img-opacity");
+            idFocus1.classList.remove("focus")
+            idImgMain1.classList.remove("img-main-animation1")
+        } else {  } */
+    idImgMain1.classList.add("img-main-animation1")
+    idImgMain2.classList.remove("img-main-animation2")
+    idImgMain3.classList.remove("img-main-animation3")
+    idImgMain4.classList.remove("img-main-animation4")
+    idImgMain1.classList.remove("img-box-invisible")
+    idImgMain2.classList.add("img-box-invisible")
+    idImgMain3.classList.add("img-box-invisible")
+    idImgMain4.classList.add("img-box-invisible")
+    imgMini1.classList.add("img-opacity");
+    idFocus1.classList.add("focus")
+    idFocus2.classList.remove("focus")
+    idFocus3.classList.remove("focus")
+    idFocus4.classList.remove("focus")
+    imgMini2.classList.remove("img-opacity");
+    imgMini3.classList.remove("img-opacity");
+    imgMini4.classList.remove("img-opacity");
+
 })
 imgMini2.addEventListener("click", function () {
     imgPredeterminada.classList.add("img-box-invisible")
     /* idImgMain.setAttribute("src", "img/imgCarrito/image-product-2.jpg") */
-    if (imgMini2.classList.contains("img-opacity")) {
-        imgMini2.classList.remove("img-opacity");
-        idFocus2.classList.remove("focus")
-        idImgMain2.classList.remove("img-main-animation2")
-    } else {
-        idImgMain2.classList.add("img-main-animation2")
-        idImgMain3.classList.remove("img-main-animation3")
-        idImgMain4.classList.remove("img-main-animation4")
-        idImgMain1.classList.remove("img-main-animation1")
-        idImgMain2.classList.remove("img-box-invisible")
-        idImgMain1.classList.add("img-box-invisible")
-        idImgMain3.classList.add("img-box-invisible")
-        idImgMain4.classList.add("img-box-invisible")
-        imgMini2.classList.add("img-opacity");
-        idFocus2.classList.add("focus")
-        idFocus1.classList.remove("focus")
-        idFocus3.classList.remove("focus")
-        idFocus4.classList.remove("focus")
-        imgMini1.classList.remove("img-opacity");
-        imgMini3.classList.remove("img-opacity");
-        imgMini4.classList.remove("img-opacity");
+    /*     if (imgMini2.classList.contains("img-opacity")) {
+            imgMini2.classList.remove("img-opacity");
+            idFocus2.classList.remove("focus")
+            idImgMain2.classList.remove("img-main-animation2")
+        } else {} */
+    idImgMain2.classList.add("img-main-animation2")
+    idImgMain3.classList.remove("img-main-animation3")
+    idImgMain4.classList.remove("img-main-animation4")
+    idImgMain1.classList.remove("img-main-animation1")
+    idImgMain2.classList.remove("img-box-invisible")
+    idImgMain1.classList.add("img-box-invisible")
+    idImgMain3.classList.add("img-box-invisible")
+    idImgMain4.classList.add("img-box-invisible")
+    imgMini2.classList.add("img-opacity");
+    idFocus2.classList.add("focus")
+    idFocus1.classList.remove("focus")
+    idFocus3.classList.remove("focus")
+    idFocus4.classList.remove("focus")
+    imgMini1.classList.remove("img-opacity");
+    imgMini3.classList.remove("img-opacity");
+    imgMini4.classList.remove("img-opacity");
 
-    }
+
 })
 imgMini3.addEventListener("click", function () {
     imgPredeterminada.classList.add("img-box-invisible")
     /* idImgMain.setAttribute("src", "img/imgCarrito/image-product-3.jpg") */
-    if (imgMini3.classList.contains("img-opacity")) {
-        imgMini3.classList.remove("img-opacity");
-        idFocus3.classList.remove("focus")
-        idImgMain3.classList.remove("img-main-animation3")
-    } else {
-        idImgMain3.classList.add("img-main-animation3")
-        idImgMain2.classList.remove("img-main-animation2")
-        idImgMain1.classList.remove("img-main-animation1")
-        idImgMain4.classList.remove("img-main-animation4")
-        idImgMain3.classList.remove("img-box-invisible")
-        idImgMain2.classList.add("img-box-invisible")
-        idImgMain1.classList.add("img-box-invisible")
-        idImgMain4.classList.add("img-box-invisible")
-        imgMini3.classList.add("img-opacity");
-        idFocus3.classList.add("focus")
-        idFocus2.classList.remove("focus")
-        idFocus1.classList.remove("focus")
-        idFocus4.classList.remove("focus")
-        imgMini2.classList.remove("img-opacity");
-        imgMini1.classList.remove("img-opacity");
-        imgMini4.classList.remove("img-opacity");
+    /*     if (imgMini3.classList.contains("img-opacity")) {
+            imgMini3.classList.remove("img-opacity");
+            idFocus3.classList.remove("focus")
+            idImgMain3.classList.remove("img-main-animation3")
+        } else {  } */
+    idImgMain3.classList.add("img-main-animation3")
+    idImgMain2.classList.remove("img-main-animation2")
+    idImgMain1.classList.remove("img-main-animation1")
+    idImgMain4.classList.remove("img-main-animation4")
+    idImgMain3.classList.remove("img-box-invisible")
+    idImgMain2.classList.add("img-box-invisible")
+    idImgMain1.classList.add("img-box-invisible")
+    idImgMain4.classList.add("img-box-invisible")
+    imgMini3.classList.add("img-opacity");
+    idFocus3.classList.add("focus")
+    idFocus2.classList.remove("focus")
+    idFocus1.classList.remove("focus")
+    idFocus4.classList.remove("focus")
+    imgMini2.classList.remove("img-opacity");
+    imgMini1.classList.remove("img-opacity");
+    imgMini4.classList.remove("img-opacity");
 
-    }
+
 })
 imgMini4.addEventListener("click", function () {
     imgPredeterminada.classList.add("img-box-invisible")
     /* idImgMain.setAttribute("src", "img/imgCarrito/image-product-4.jpg") */
-    if (imgMini4.classList.contains("img-opacity")) {
-        imgMini4.classList.remove("img-opacity");
-        idFocus4.classList.remove("focus")
-        idImgMain4.classList.remove("img-main-animation4")
-    } else {
-        idImgMain4.classList.add("img-main-animation4")
-        idImgMain2.classList.remove("img-main-animation2")
-        idImgMain3.classList.remove("img-main-animation3")
-        idImgMain1.classList.remove("img-main-animation1")
-        idImgMain4.classList.remove("img-box-invisible")
-        idImgMain2.classList.add("img-box-invisible")
-        idImgMain1.classList.add("img-box-invisible")
-        idImgMain3.classList.add("img-box-invisible")
-        imgMini4.classList.add("img-opacity");
-        idFocus4.classList.add("focus")
-        idFocus2.classList.remove("focus")
-        idFocus3.classList.remove("focus")
-        idFocus1.classList.remove("focus")
-        imgMini2.classList.remove("img-opacity");
-        imgMini3.classList.remove("img-opacity");
-        imgMini1.classList.remove("img-opacity");
-    }
+    /*     if (imgMini4.classList.contains("img-opacity")) {
+            imgMini4.classList.remove("img-opacity");
+            idFocus4.classList.remove("focus")
+            idImgMain4.classList.remove("img-main-animation4")
+        } else {  } */
+    idImgMain4.classList.add("img-main-animation4")
+    idImgMain2.classList.remove("img-main-animation2")
+    idImgMain3.classList.remove("img-main-animation3")
+    idImgMain1.classList.remove("img-main-animation1")
+    idImgMain4.classList.remove("img-box-invisible")
+    idImgMain2.classList.add("img-box-invisible")
+    idImgMain1.classList.add("img-box-invisible")
+    idImgMain3.classList.add("img-box-invisible")
+    imgMini4.classList.add("img-opacity");
+    idFocus4.classList.add("focus")
+    idFocus2.classList.remove("focus")
+    idFocus3.classList.remove("focus")
+    idFocus1.classList.remove("focus")
+    imgMini2.classList.remove("img-opacity");
+    imgMini3.classList.remove("img-opacity");
+    imgMini1.classList.remove("img-opacity");
+
 })
