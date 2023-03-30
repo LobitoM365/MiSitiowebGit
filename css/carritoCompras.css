@@ -8,8 +8,8 @@
     grid-template: "img-box img-box img-box img-box" 460px
         "img-mini1 img-mini2 img-mini3 img-mini4" 120px/
         105px 105px 105px 105px;
-    left: 150px;
-    top: 30px;
+    left: 120px;
+    top: 105px;
     position: relative;
     width: 460PX;
 }
@@ -26,8 +26,14 @@
 }
 
 .img-main {
-    width: 100%;
     border-radius: 8px;
+    width: 20px;
+}
+
+.img-predeterminada {
+    border-radius: 8px;
+    width: 400px;
+    position: absolute;
 }
 
 .img-main-animation1,
@@ -35,13 +41,17 @@
 .img-main-animation3,
 .img-main-animation4 {
     rotate: -360deg;
-    transition: rotate 1.5s;
+    transition: all 1.5s;
+    width: 400px;
 }
 
 .img-box {
     grid-area: img-box;
     margin: 30px 10px;
     border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .img-mini1,
@@ -82,4 +92,85 @@
 
 .img-box-invisible {
     visibility: hidden;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    margin: 0px 30px;
+    width: 100%;
+    border-bottom: 1px solid rgb(235, 234, 234);
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto 1fr auto;
+}
+
+.container{
+    width: 120vh;
+}
+.all{
+    display: flex;
+    justify-content: center;
+}
+.titulo-nav {
+    font-size: 2.2em;
+    margin-right: 50px;
+}
+
+li {
+    margin: 0px 15px;
+    height: 72.8px;
+}
+
+a {
+    cursor: pointer;
+    font-size: 1.1em;
+    color: rgb(119, 119, 119);
+    display: block;
+    text-decoration: none;
+    padding: 25.3px 0px;
+}
+
+a:hover {
+    border-bottom: 2px solid rgb(255, 125, 26);
+    color: black;
+}
+
+.svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fill-current {
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.avatar{
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+.avatar:hover {
+    border-radius: 100%;
+    border: 1px solid red;
+}
+.div-avatar{
+    width: 48px;
+    height: 48px;
 }
