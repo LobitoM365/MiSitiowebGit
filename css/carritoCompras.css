@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.imgs {
+    display: grid;
+    grid-template: "img-box img-box img-box img-box" 460px
+        "img-mini1 img-mini2 img-mini3 img-mini4" 120px/
+        105px 105px 105px 105px;
+    left: 150px;
+    top: 30px;
+    position: relative;
+    width: 460PX;
+}
+
+.imgs-carrito {
+    width: 90px;
+    height: 90px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.img-opacity {
+    opacity: .4;
+}
+
+.img-main {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.img-main-animation1,
+.img-main-animation2,
+.img-main-animation3,
+.img-main-animation4 {
+    rotate: -360deg;
+    transition: rotate 1.5s;
+}
+
+.img-box {
+    grid-area: img-box;
+    margin: 30px 10px;
+    border-radius: 8px;
+}
+
+.img-mini1,
+.img-mini2,
+.img-mini3,
+.img-mini4 {
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.img-mini1 {
+    grid-area: img-mini1;
+}
+
+.img-mini2 {
+    grid-area: img-mini2;
+}
+
+.img-mini3 {
+    grid-area: img-mini3;
+}
+
+.img-mini4 {
+    grid-area: img-mini4;
+}
+
+.focus {
+    width: 90px;
+    height: 90px;
+    border: 3px solid rgb(255, 125, 26);
+    border-radius: 11px;
+    top: -2.5px;
+    position: relative;
+}
+
+.img-box-invisible {
+    visibility: hidden;
+}
