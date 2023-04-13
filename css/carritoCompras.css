@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .imgs {
@@ -8,8 +9,8 @@
     grid-template: "img-box img-box img-box img-box" 460px
         "img-mini1 img-mini2 img-mini3 img-mini4" 120px/
         105px 105px 105px 105px;
-    left: 3.9vw;
-    margin-top: 14.5vh;
+    margin-left: 4.9vw;
+    margin-top: 8.5vh;
 }
 
 .imgs-carrito {
@@ -177,6 +178,126 @@ a:hover {
 
 .div-avatar {
     width: 32px;
+}
+
+.containAddProduct {
+    left: 100px;
+    position: absolute;
+    bottom: 105px;
+    display: grid;
+    grid-template: "informacion informacion" auto
+        "precios   empty  " auto 
+        "cantidad  addProducts  " 60px/
+        150px 370px;
+}
+
+.informacion {
+    grid-area: informacion;
+    margin-bottom: 30px;
+}
+
+.precios {
+    grid-area: precios;
+    display: grid;
+    grid-template: "precioTotal porcentajeDescuento" auto
+               "precioInicial  empty" auto/
+               1fr  1fr;
+}
+.precioTotal{
+    grid-area: precioTotal;
+    font-size: 2em;
+    font-weight: bolder;
+}
+.porcentajeDescuento{
+    grid-area: porcentajeDescuento;
+    background-color: rgb(255,237,224);
+    display: flex;
+    justify-content: center;
+    margin: 6px 3px;
+    padding: 0px 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 125, 26);
+    border-radius: 8px;
+    font-weight: bolder;
+    font-size: 0.9em;
+}
+.precioInicial{
+    grid-area: precioInicial;
+    margin: 10px 0px 15px 0px;
+    text-decoration: line-through;
+    color: rgb(182,188,200);
+    font-weight: bolder;
+}
+.cantidad {
+    grid-area: cantidad;
+    background-color: rgb(247, 248, 253);
+    border-radius: 8px;
+}
+
+.addProducts {
+    grid-area: addProducts;
+    background-color: rgb(255, 125, 26);
+    margin: 0px 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+    box-shadow: 1px 10px 15px rgb(245, 193, 153);
+    margin:  3px 20px;
+    cursor: pointer;
+}
+
+.contenido {
+    display: flex;
+}
+
+.opciones {
+    position: relative;
+}
+
+.cantidad {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+}
+
+.plus,
+.minus {
+    font-weight: 900;
+    font-size: 20px;
+    color: rgb(255, 125, 26);
+}
+
+.divMinus,
+.divPlus,
+.cantidadNumero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cantidadNumero {
+    cursor: unset;
+}
+
+h1 {
+    font-size: 3em;
+    line-height: 50px;
+}
+
+p {
+    margin-top: 30px;
+    font-size: 1.1em;
+    color: rgb(128, 112, 125);
+}
+h5{
+    color: rgb(255,125,26);
+    margin-bottom: 10px;
 }
 
 @media screen and (max-width: 735px) {

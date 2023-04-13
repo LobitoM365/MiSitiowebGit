@@ -12,6 +12,10 @@ let idFocus3 = document.getElementById("idFocus3");
 let idFocus4 = document.getElementById("idFocus4");
 let idImgMain = document.getElementById("idImgMain");
 let imgPredeterminada = document.getElementById("imgPredeterminada");
+let idMinus = document.getElementById("idMinus");
+let idPlus = document.getElementById("idPlus");
+let idPrecioTotal = document.getElementById("idPrecioTotal");
+let idCantidadNumero = document.getElementById("idCantidadNumero");
 
 imgMini1.addEventListener("click", function () {
     imgPredeterminada.classList.add("img-box-invisible")
@@ -37,7 +41,6 @@ imgMini1.addEventListener("click", function () {
     imgMini2.classList.remove("img-opacity");
     imgMini3.classList.remove("img-opacity");
     imgMini4.classList.remove("img-opacity");
-
 })
 imgMini2.addEventListener("click", function () {
     imgPredeterminada.classList.add("img-box-invisible")
@@ -63,8 +66,6 @@ imgMini2.addEventListener("click", function () {
     imgMini1.classList.remove("img-opacity");
     imgMini3.classList.remove("img-opacity");
     imgMini4.classList.remove("img-opacity");
-
-
 })
 imgMini3.addEventListener("click", function () {
     imgPredeterminada.classList.add("img-box-invisible")
@@ -90,8 +91,6 @@ imgMini3.addEventListener("click", function () {
     imgMini2.classList.remove("img-opacity");
     imgMini1.classList.remove("img-opacity");
     imgMini4.classList.remove("img-opacity");
-
-
 })
 imgMini4.addEventListener("click", function () {
     imgPredeterminada.classList.add("img-box-invisible")
@@ -117,5 +116,19 @@ imgMini4.addEventListener("click", function () {
     imgMini2.classList.remove("img-opacity");
     imgMini3.classList.remove("img-opacity");
     imgMini1.classList.remove("img-opacity");
+})
+
+idMinus.addEventListener("click", function () {
+    /*     let nodeToAdd = document.createElement("p");
+        let nodeText = document.createTextNode("Holis");
+        nodeToAdd.appendChild(nodeText);
+        idCantidadNumero.appendChild(nodeToAdd); */
+})
+idPlus.addEventListener("click", function () {
+    let numeroCantidadProducto = document.getElementById("numeroCantidadProducto").innerHTML;
+    let numeroCantidadProductoInt = parseInt(numeroCantidadProducto);
+    let totalNumeroCantidadProductoInt = numeroCantidadProductoInt + 1;
+    let numeroCantidadProductoTxt = totalNumeroCantidadProductoInt.toString();
+    idCantidadNumero.innerHTML = numeroCantidadProductoTxt;
 
 })
