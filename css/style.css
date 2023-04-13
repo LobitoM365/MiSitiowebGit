@@ -11,7 +11,7 @@ a {
   cursor: pointer;
 }
 
-@media screen and (min-width:700px) {
+@media screen and (min-width:701px) {
   .hamburguer {
     display: none;
   }
@@ -177,23 +177,26 @@ a {
     display: none;
   }
 
+  .iconWolfMenuNormal {
+    width: 50px;
+    transform: scaleX(-1);
+    transition: width 2s;
+  }
 }
 
-.iconWolfMenuNormal {
-  width: 50px;
-  transform: scaleX(-1);
-  transition: width 2s;
-}
+
 
 @media screen and (max-width:700px) {
+  .iconWolfMenuNormal {
+    width: 40px;
+    transform: scaleX(-1);
+    transition: width 2s;
+  }
 
   .fa-solid {
     cursor: pointer;
   }
 
-  .iconWolfMenuNormal {
-    display: none;
-  }
 
   body {
     background-color: aliceblue;

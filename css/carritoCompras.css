@@ -8,9 +8,8 @@
     grid-template: "img-box img-box img-box img-box" 460px
         "img-mini1 img-mini2 img-mini3 img-mini4" 120px/
         105px 105px 105px 105px;
-    left: 5vw;
-    top: 9vh;
-    position: relative;
+    left: 3.9vw;
+    margin-top: 14.5vh;
 }
 
 .imgs-carrito {
@@ -107,6 +106,7 @@ ul {
 .header {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 header {
@@ -119,9 +119,7 @@ header {
 }
 
 .container {
-    height: 800px;
-    width: 80vw;
-    overflow: hidden;
+    width: 1210px;
 }
 
 .titulo-nav {
@@ -165,20 +163,34 @@ a:hover {
 }
 
 .avatar {
-    width: 45px;
-    height: 45px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
 }
 
 .avatar:hover {
     border-radius: 100%;
-    border: 1px solid red;
-    top: -1px;
-    left: -1px;
+    border: 2px solid red;
     position: relative;
+    left: -2px;
 }
 
 .div-avatar {
-    width: 48px;
-    height: 48px;
+    width: 32px;
+}
+
+@media screen and (max-width: 735px) {
+    .container {
+        overflow-x: scroll;
+    }
+
+    .img-predeterminada {
+        position: relative;
+        left: 10px;
+    }
+
+    #idImgMain1 {
+        position: relative;
+        left: -200px;
+    }
 }
