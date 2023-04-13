@@ -15,7 +15,8 @@ let imgPredeterminada = document.getElementById("imgPredeterminada");
 let idMinus = document.getElementById("idMinus");
 let idPlus = document.getElementById("idPlus");
 let idPrecioTotal = document.getElementById("idPrecioTotal");
-let idCantidadNumero = document.getElementById("idCantidadNumero");
+let idcantidadNumero = document.getElementById("idcantidadNumero");
+
 
 imgMini1.addEventListener("click", function () {
     imgPredeterminada.classList.add("img-box-invisible")
@@ -123,12 +124,27 @@ idMinus.addEventListener("click", function () {
         let nodeText = document.createTextNode("Holis");
         nodeToAdd.appendChild(nodeText);
         idCantidadNumero.appendChild(nodeToAdd); */
+        let idcantidadNumeroProducto = document.getElementById("idcantidadNumeroProducto").innerHTML;
+        let cantidadNumeroInt = parseInt(idcantidadNumeroProducto);
+        let totalCantidadNumeroInt = cantidadNumeroInt + -1;
+        let totalCantidadNumeroTxt = totalCantidadNumeroInt.toString();
+        document.getElementById("idcantidadNumeroProducto").innerHTML = totalCantidadNumeroTxt;
+        console.log(totalCantidadNumeroTxt)
+        if(cantidadNumeroInt == 0){
+            console.log(cantidadNumeroInt)
+            document.getElementById("idcantidadNumeroProducto").innerHTML = 0;
+        }
+
 })
 idPlus.addEventListener("click", function () {
-    let numeroCantidadProducto = document.getElementById("numeroCantidadProducto").innerHTML;
-    let numeroCantidadProductoInt = parseInt(numeroCantidadProducto);
-    let totalNumeroCantidadProductoInt = numeroCantidadProductoInt + 1;
-    let numeroCantidadProductoTxt = totalNumeroCantidadProductoInt.toString();
-    idCantidadNumero.innerHTML = numeroCantidadProductoTxt;
-
+        let idcantidadNumeroProducto = document.getElementById("idcantidadNumeroProducto").innerHTML;
+        let cantidadNumeroInt = parseInt(idcantidadNumeroProducto);
+        let totalCantidadNumeroInt = cantidadNumeroInt + 1;
+        let totalCantidadNumeroTxt = totalCantidadNumeroInt.toString();
+        document.getElementById("idcantidadNumeroProducto").innerHTML = totalCantidadNumeroTxt;
+        console.log(totalCantidadNumeroTxt)
+        if(cantidadNumeroInt == 50){
+            console.log(cantidadNumeroInt)
+            document.getElementById("idcantidadNumeroProducto").innerHTML = 50;
+        }
 })
