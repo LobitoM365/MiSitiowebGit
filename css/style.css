@@ -187,10 +187,13 @@ a {
 
 
 @media screen and (max-width:700px) {
-  .iconWolfMenuNormal {
+  .iconWolfMenuHamburguer {
     width: 40px;
     transform: scaleX(-1);
     transition: width 2s;
+  }
+  .iconWolfMenuNormal{
+    display: none;
   }
 
   .fa-solid {
