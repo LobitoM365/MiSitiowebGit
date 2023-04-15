@@ -124,27 +124,37 @@ idMinus.addEventListener("click", function () {
         let nodeText = document.createTextNode("Holis");
         nodeToAdd.appendChild(nodeText);
         idCantidadNumero.appendChild(nodeToAdd); */
-        let idcantidadNumeroProducto = document.getElementById("idcantidadNumeroProducto").innerHTML;
-        let cantidadNumeroInt = parseInt(idcantidadNumeroProducto);
-        let totalCantidadNumeroInt = cantidadNumeroInt + -1;
-        let totalCantidadNumeroTxt = totalCantidadNumeroInt.toString();
-        document.getElementById("idcantidadNumeroProducto").innerHTML = totalCantidadNumeroTxt;
-        console.log(totalCantidadNumeroTxt)
-        if(cantidadNumeroInt == 0){
-            console.log(cantidadNumeroInt)
-            document.getElementById("idcantidadNumeroProducto").innerHTML = 0;
-        }
+    let idcantidadNumeroProducto = document.getElementById("idcantidadNumeroProducto").innerHTML;
+    let cantidadNumeroInt = parseInt(idcantidadNumeroProducto);
+    let totalCantidadNumeroInt = cantidadNumeroInt + -1;
+    let totalCantidadNumeroTxt = totalCantidadNumeroInt.toString();
+    document.getElementById("idcantidadNumeroProducto").innerHTML = totalCantidadNumeroTxt;
+    let precioZapatos = 250000;
+    let descuento = precioZapatos * 0.5;
+    let precioTotal = (precioZapatos - descuento) * totalCantidadNumeroInt;
+    if (cantidadNumeroInt == 0) {
+        document.getElementById("idcantidadNumeroProducto").innerHTML = 0;
+        precioTotal = (precioZapatos - descuento) * 0;
+        console.log(precioTotal)
+    }
+    idPrecioTotal.innerHTML = "$" + precioTotal.toLocaleString('mx') ;
 
 })
 idPlus.addEventListener("click", function () {
-        let idcantidadNumeroProducto = document.getElementById("idcantidadNumeroProducto").innerHTML;
-        let cantidadNumeroInt = parseInt(idcantidadNumeroProducto);
-        let totalCantidadNumeroInt = cantidadNumeroInt + 1;
-        let totalCantidadNumeroTxt = totalCantidadNumeroInt.toString();
-        document.getElementById("idcantidadNumeroProducto").innerHTML = totalCantidadNumeroTxt;
-        console.log(totalCantidadNumeroTxt)
-        if(cantidadNumeroInt == 50){
-            console.log(cantidadNumeroInt)
-            document.getElementById("idcantidadNumeroProducto").innerHTML = 50;
-        }
+    let idcantidadNumeroProducto = document.getElementById("idcantidadNumeroProducto").innerHTML;
+    let cantidadNumeroInt = parseInt(idcantidadNumeroProducto);
+    let totalCantidadNumeroInt = cantidadNumeroInt + 1;
+    let totalCantidadNumeroTxt = totalCantidadNumeroInt.toString();
+    document.getElementById("idcantidadNumeroProducto").innerHTML = totalCantidadNumeroTxt;
+    console.log(totalCantidadNumeroTxt)
+    let precioZapatos = 250000;
+    let descuento = precioZapatos * 0.5;
+    let precioTotal = (precioZapatos - descuento) * totalCantidadNumeroInt;
+    if (cantidadNumeroInt == 50) {
+        document.getElementById("idcantidadNumeroProducto").innerHTML = 50;
+        precioTotal = (precioZapatos - descuento) * 50;
+    }
+    idPrecioTotal.innerHTML = "$" + precioTotal.toLocaleString('mx') ;
+
 })
+

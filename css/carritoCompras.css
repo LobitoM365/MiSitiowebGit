@@ -186,7 +186,7 @@ a:hover {
     bottom: 105px;
     display: grid;
     grid-template: "informacion informacion" auto
-        "precios   empty  " auto 
+        "precios   precios  " auto 
         "cantidad  addProducts  " 60px/
         150px 370px;
 }
@@ -201,7 +201,7 @@ a:hover {
     display: grid;
     grid-template: "precioTotal porcentajeDescuento" auto
                "precioInicial  empty" auto/
-               1fr  1fr;
+               170px  50px;
 }
 .precioTotal{
     grid-area: precioTotal;
@@ -216,7 +216,6 @@ a:hover {
     margin: 6px 3px;
     padding: 0px 9px;
     display: flex;
-    justify-content: center;
     align-items: center;
     color: rgb(255, 125, 26);
     border-radius: 8px;
@@ -299,7 +298,30 @@ h5{
     color: rgb(255,125,26);
     margin-bottom: 10px;
 }
-
+.contenidoFocus{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.731);
+    top: 0;
+    left: 0;
+}
+.contenidoFocusCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.imgsFocus {
+    display: grid;
+    grid-template: "img-box img-box img-box img-box" 460px
+        "img-mini1 img-mini2 img-mini3 img-mini4" 120px/
+        105px 105px 105px 105px;
+}
+.insivible{
+    display: none;
+}
 @media screen and (max-width: 735px) {
     .container {
         overflow-x: scroll;
