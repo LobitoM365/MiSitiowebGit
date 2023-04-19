@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/carritoCompras2.css">
+    <title>Carrito Compras 2</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li> <a href="index.html"> Inicio </a></li>
+        </ul>
+
+    </nav>
+    <div class="contenido">
+        <div class="header">
+            <h4 class="subTotal">Subtotal cop <span id="total" class="total">$0</span></h4>
+            <h5 class="procederPago"> Proceder al pago ( <span id="cantidadPago">0</span> productos) </h5>
+        </div>
+        <div class="compra">
+            <img class="rinoceronte" src="img/librojava.jpeg" alt="">
+            <div class="addProductos">
+                <div id="menos" class="menos">-</div>
+                <div id="cantidad" class="cantidad">0</div>
+                <div id="mas" class="mas">+</div>
+            </div>
+        </div>
+        <div class="descripcion">
+            <div class="tamaño">
+                <h3>Javascript The Definitive Guide Master the World's Most-Used Programing Languaje</h3>
+                <h3>por David Flanagan</h3>
+                <h3>Tapa blanda</h3>
+                <h2>cop <span id="precio" class="precio">$112.350</span></h2>
+                <input id="eliminar" class="button" type="button" value="Eliminar">
+                <input class="button" type="button" value="Guardar para mas tarde">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="js/funciones.js"></script>
+<script src="js/carritoCompras2.js"></script>

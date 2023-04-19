@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav ul li a {
+    color: rgba(0, 0, 0, 0.842);
+    font-size: 2.2em;
+    text-decoration: none;
+    padding: 9px;
+
+}
+
+nav ul li {
+    list-style: none;
+
+}
+
+nav {
+    margin: 20px 40px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(179, 184, 184, 0.432);
+    padding: 9px;
+    border-radius: 4px;
+
+}
+
+.addProductos {
+    width: 100%;
+    display: grid;
+    grid-template: "menos cantidad mas" auto/
+        1fr 1fr 1fr;
+}
+
+.menos,
+.mas,
+.cantidad {
+    border: 1px solid rgb(181, 181, 181);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 0px;
+
+}
+
+.menos,
+.mas {
+    background-color: rgb(239, 239, 239);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.cantidad {
+    grid-area: cantidad;
+}
+
+.menos {
+    grid-area: menos;
+    border-radius: 8px 0px 0px 8px;
+    border-right: unset;
+}
+
+.mas {
+    grid-area: mas;
+    border-radius: 0px 8px 8px 0px;
+    border-left: unset;
+}
+
+.compra {
+    width: 210px;
+}
+
+.rinoceronte {
+    width: 100%;
+}
+
+.contenido {
+    margin: 70px 40px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid black;
+    width: 560px;
+    display: grid;
+    grid-template: "header header" auto
+        "compra  descripcion" auto/
+        auto 1fr;
+}
+
+.header {
+    grid-area: header;
+}
+
+.compra {
+    grid-area: compra;
+}
+
+.descripcion {
+    grid-area: descripcion;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tamaño {
+    width: 270px;
+}
+
+h3,
+h2 {
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.precio {
+    font-weight: 700;
+}
+
+.button {
+    padding: 10px;
+    width: 200px;
+    text-align: unset;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: white;
+    font-weight: 600;
+}
+
+.procederPago {
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(247, 231, 8);
+    margin: 0px 5px 30px 0px;
+    font-size: 1.2em;
+}
+
+.subTotal {
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+.total {
+    font-size: 1.5em;
+    font-weight: 600;
+}
