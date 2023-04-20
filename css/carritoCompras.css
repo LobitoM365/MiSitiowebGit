@@ -9,8 +9,8 @@
     grid-template: "img-box img-box img-box img-box" 460px
         "img-mini1 img-mini2 img-mini3 img-mini4" 120px/
         105px 105px 105px 105px;
-    margin-left: 4.9vw;
-    margin-top: 8.5vh;
+    grid-area: imgs;
+    justify-content: center;
 }
 
 .imgs-carrito {
@@ -121,6 +121,21 @@ header {
 
 .container {
     width: 1210px;
+    height: 100%;
+}
+
+.contenidoCenter {
+    height: calc(100% - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido {
+    display: grid;
+    grid-template: "imgs  opciones" auto/
+        1fr 1fr;
+    width: 100%;
 }
 
 .titulo-nav {
@@ -131,6 +146,7 @@ header {
 .all {
     display: flex;
     justify-content: center;
+    height: 100vh;
 }
 
 li {
@@ -184,9 +200,7 @@ a:hover {
 }
 
 .containAddProduct {
-    left: 100px;
     position: absolute;
-    bottom: 105px;
     display: grid;
     grid-template: "informacion informacion" auto
         "precios   precios  " auto "cantidad  addProducts  " 60px/
@@ -256,12 +270,12 @@ a:hover {
     cursor: pointer;
 }
 
-.contenido {
-    display: flex;
-}
+
 
 .opciones {
-    position: relative;
+    display: flex;
+    grid-area: opciones;
+    align-items: center;
 }
 
 .cantidad {
@@ -310,7 +324,6 @@ h5 {
     width: 100%;
     height: 100%;
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.731);
     top: 0;
     left: 0;
 }
@@ -322,6 +335,8 @@ h5 {
     width: 100%;
     height: 100%;
 }
+
+
 
 .imgsFocus {
     display: grid;
@@ -378,19 +393,34 @@ h5 {
     top: 0;
     position: absolute;
     cursor: pointer;
+    font-size: 2em;
 }
+
 .imgs-carrito-focus {
     width: 90px;
     height: 90px;
     border-radius: 8px;
     cursor: pointer;
+    position: relative;
 }
-.img-main-focus{
+
+.img-main-focus {
     width: 480px;
+    position: relative;
 }
-.img-predeterminada-focus{
+
+/* .img-predeterminada-focus{
     width: 480px;
+    position: relative;
+} */
+.fondoOscuro {
+    background-color: rgba(0, 0, 0, 0.776);
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
+
+
 @media screen and (max-width: 735px) {
     .container {
         overflow-x: scroll;

@@ -18,6 +18,7 @@ let idPrecioTotal = document.getElementById("idPrecioTotal");
 let idcantidadNumero = document.getElementById("idcantidadNumero");
 let contenidoFocus = document.getElementById("contenidoFocus");
 let quitContenidoFocus = document.getElementById("quitContenidoFocus");
+let fondoOscuro = document.getElementById("fondoOscuro");
 
 imgPredeterminada.addEventListener("click", function(){
     containVisibilidad(contenidoFocus)
@@ -37,7 +38,7 @@ idImgMain4.addEventListener("click", function(){
 quitContenidoFocus.addEventListener("click", function(){
     containVisibilidad(contenidoFocus)
 })
-contenidoFocus.addEventListener("click", function(){
+fondoOscuro.addEventListener("click", function(){
     containVisibilidad(contenidoFocus)
 })
 
