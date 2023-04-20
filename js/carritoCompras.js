@@ -16,6 +16,30 @@ let idMinus = document.getElementById("idMinus");
 let idPlus = document.getElementById("idPlus");
 let idPrecioTotal = document.getElementById("idPrecioTotal");
 let idcantidadNumero = document.getElementById("idcantidadNumero");
+let contenidoFocus = document.getElementById("contenidoFocus");
+let quitContenidoFocus = document.getElementById("quitContenidoFocus");
+
+imgPredeterminada.addEventListener("click", function(){
+    containVisibilidad(contenidoFocus)
+})
+idImgMain1.addEventListener("click", function(){
+    containVisibilidad(contenidoFocus)
+})
+idImgMain2.addEventListener("click", function(){
+    containVisibilidad(contenidoFocus)
+})
+idImgMain3.addEventListener("click", function(){
+    containVisibilidad(contenidoFocus)
+})
+idImgMain4.addEventListener("click", function(){
+    containVisibilidad(contenidoFocus)
+})
+quitContenidoFocus.addEventListener("click", function(){
+    containVisibilidad(contenidoFocus)
+})
+contenidoFocus.addEventListener("click", function(){
+    containVisibilidad(contenidoFocus)
+})
 
 
 imgMini1.addEventListener("click", function () {
@@ -137,7 +161,7 @@ idMinus.addEventListener("click", function () {
         precioTotal = (precioZapatos - descuento) * 0;
         console.log(precioTotal)
     }
-    idPrecioTotal.innerHTML = "$" + precioTotal.toLocaleString('mx') ;
+    idPrecioTotal.innerHTML = "$" + precioTotal.toLocaleString('mx');
 
 })
 idPlus.addEventListener("click", function () {
@@ -154,7 +178,7 @@ idPlus.addEventListener("click", function () {
         document.getElementById("idcantidadNumeroProducto").innerHTML = 50;
         precioTotal = (precioZapatos - descuento) * 50;
     }
-    idPrecioTotal.innerHTML = "$" + precioTotal.toLocaleString('mx') ;
+    idPrecioTotal.innerHTML = "$" + precioTotal.toLocaleString('mx');
 
 })
 

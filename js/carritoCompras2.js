@@ -7,18 +7,14 @@ let precio = 112350;
 let eliminar = document.getElementById("eliminar");
 
 mas.addEventListener("click", function () {
-    cantidadProductosPlus(cantidad.innerHTML, cantidad, 20)
+    cantidadProductosPlus(cantidad.innerHTML, cantidad, 20, precio, 0, total)
     let valorCantidad = cantidad.innerHTML;
     cantidadPago.innerHTML = valorCantidad;
-    let valorTotal = precio * parseFloat(valorCantidad);
-    total.innerHTML = "$" + valorTotal.toLocaleString("mx");
 });
 menos.addEventListener("click", function () {
-    cantidadProductosMenos(cantidad.innerHTML, cantidad, 0)
+    cantidadProductosMenos(cantidad.innerHTML, cantidad, 0, precio, 0, total)
     let valorCantidad = cantidad.innerHTML;
     cantidadPago.innerHTML = valorCantidad;
-    let valorTotal = precio * parseFloat(valorCantidad);
-    total.innerHTML = "$" + valorTotal.toLocaleString("mx");
 });
 
 eliminar.addEventListener("click", function () {
