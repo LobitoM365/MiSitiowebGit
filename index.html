@@ -12,17 +12,19 @@
 </head>
 
 <body>
-    <div class="fondo"> <img class="img-fondo-pc" src="img/lobo-en-el-cielo-del-bosque_2560x1440.jpg" alt=""><img
-            class="img-fondo-smarphone" src="img/Lobo-en-el-cielo-del-bosque_564x1002-smarphone.jpg" alt="">
+    <div class="fondo"> <img id="imgFondoPcBlack" class="img-fondo-pc "
+            src="img/lobo-en-el-cielo-del-bosque_2560x1440.jpg" alt="">
+        <img id="imgFondoPcWhite" class="img-fondo-pc-white invisible " src="img/FondoWhite.jpg" alt="">
+        <img class="img-fondo-smarphone" src="img/Lobo-en-el-cielo-del-bosque_564x1002-smarphone.jpg" alt="">
     </div>
 
-    <div class="hamburguer"> <img class="iconWolfMenuHamburguer" src="icons/IconoIndex_preview_rev_1.png"> <i id="icon_hamburguer" class="fa-solid fa-bars"
-            style="font-size:35px ;"></i>
+    <div class="hamburguer"> <img class="iconWolfMenuHamburguer" src="icons/IconoIndex_preview_rev_1.png"> <i
+            id="icon_hamburguer" class="fa-solid fa-bars" style="font-size:35px ;"></i>
         <div class="rgb"></div>
     </div>
     <nav id="menuPrincipal" class="menuPrincipalInvisible">
 
-        <ul>
+        <ul id="ulWhite">
             <img class="iconWolfMenuNormal" src="icons/IconoIndex_preview_rev_1.png" alt="">
             <li><a> Inicio </a></li>
             <li> <a>Mi portafolio</a> </li>
@@ -217,12 +219,14 @@
                     </li>
                     <li> <a>Carrito compras <i class="fa-solid fa-caret-right"></i></a>
                         <ul>
-                            <li><a href="carritoCompras.html"> <span style="font-size: 0.99em;"> Fall Limit Edition Sneakers</span></a></li>
+                            <li><a href="carritoCompras.html"> <span style="font-size: 0.99em;"> Fall Limit Edition
+                                        Sneakers</span></a></li>
                             <div class="rgb2"></div>
                             <div class="rgb3"></div>
                             <div class="rgb4"></div>
                             <div class="rgb5"></div>
-                            <li><a href="carritoCompras2.html"> <span style="font-size: 0.99em;"> The Definitive Guide</span></a></li>
+                            <li><a href="carritoCompras2.html"> <span style="font-size: 0.99em;"> The Definitive
+                                        Guide</span></a></li>
                             <div class="rgb2"></div>
                             <div class="rgb3"></div>
                             <div class="rgb4"></div>
@@ -231,10 +235,21 @@
                     </li>
                 </ul>
             </li>
+            <li class="liToogle"> <a class="aToogle">
+                    <div id="toogle" class="toogle">
+                        <div id="circuloToogle" class="circuloToogle"> 
+                            <img class="GinYang" src="icons/GinYang.png"
+                                alt="">
+                        </div>
+                    </div>
+                </a></li>
         </ul>
+
     </nav>
+
     <div class="rgb rgb-pc"></div>
 </body>
 
 </html>
+<script src="js/funciones.js"></script>
 <script src="js/script.js"> </script>

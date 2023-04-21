@@ -1,7 +1,6 @@
 * {
   padding: 0%;
   margin: 0%;
-  color: white;
   font-family: Arial, Helvetica, sans-serif;
   list-style: none;
   text-decoration: none;
@@ -16,7 +15,7 @@ a {
     display: none;
   }
 
-  img {
+  .iconWolfMenuNormal {
     float: left;
     width: 50px;
     padding: 10px;
@@ -123,10 +122,12 @@ a {
     padding: 20px 20px;
     font-size: 1.2em;
     display: block;
+    color: white;
   }
 
   nav ul {
     display: table;
+    color: white;
   }
 
   nav>ul>li {
@@ -161,8 +162,13 @@ a {
   }
 
   .fondo {
+    width: 100%;
+    height: 100%;
     position: absolute;
     z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .img-fondo-pc {
@@ -171,6 +177,8 @@ a {
     height: 110%;
     margin: unset;
     padding: unset;
+    transition: all 1s;
+    z-index: 1;
   }
 
   .img-fondo-smarphone {
@@ -182,6 +190,90 @@ a {
     transform: scaleX(-1);
     transition: width 2s;
   }
+
+  .toogle {
+    width: 40px;
+    height: 20px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 12px;
+    border: 2px solid rgb(233, 233, 233);
+    cursor: pointer;
+    position: relative;
+  }
+
+  .toogleTransition {
+    background-color: rgba(4,2,8  );
+    border: 2px solid rgba(0, 0, 0, 0);
+  }
+
+  .aToogle {
+    cursor: unset;
+  }
+
+  .liToogle:hover {
+    background-color: unset;
+  }
+
+  .liToogle {
+    right: 0;
+    position: absolute;
+  }
+
+  .circuloToogle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 12px;
+    margin-right: 20px;
+    transition: margin 1s;
+  }
+
+  .circuloToogleTransition {
+    position: absolute;
+    margin-left: 20px;
+    background-color: white;
+    transition: margin 1s;
+  }
+
+  .navWhite {
+    background-color: rgba(123, 123, 122, 0.534);
+  }
+
+  .ulWhite {
+    color: white;
+  }
+
+  .img-fondo-pc-white {
+    position: fixed;
+    width: 10%;
+    height: 10%;
+    margin: unset;
+    padding: unset;
+    transition: all 1s;
+  }
+
+  .invisible {
+    visibility: hidden;
+  }
+
+  .transitionWhite {
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+    z-index: 1;
+  }
+
+  .transitionBlack {
+    width: 10%;
+    height: 10%;
+    transition: all 1s;
+  }
+
+  .GinYang {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
 }
 
 
@@ -192,7 +284,8 @@ a {
     transform: scaleX(-1);
     transition: width 2s;
   }
-  .iconWolfMenuNormal{
+
+  .iconWolfMenuNormal {
     display: none;
   }
 

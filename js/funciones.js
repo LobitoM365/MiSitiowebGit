@@ -41,7 +41,9 @@ function containVisibilidad(elementToAction) {
     document.getElementById(elementToAction);
     if (elementToAction.classList.contains("invisible")) {
         elementToAction.classList.remove("invisible")
+        elementToAction.classList.add("visible")
     } else {
+        elementToAction.classList.remove("visible")
         elementToAction.classList.add("invisible")
     }
 }

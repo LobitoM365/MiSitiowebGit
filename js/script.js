@@ -28,126 +28,152 @@ let iconSubMenu12 = document.getElementById("iconSubMenu12");
 let subMenu12 = document.getElementById("subMenu12");
 let iconSubMenu13 = document.getElementById("iconSubMenu13");
 let subMenu13 = document.getElementById("subMenu13");
+let toogle = document.getElementById("toogle");
 
-iconHamburguer.addEventListener("click" ,function(){
-    if(menuPrincipal.classList.contains("menuPrincipalInvisible")){
+iconHamburguer.addEventListener("click", function () {
+    if (menuPrincipal.classList.contains("menuPrincipalInvisible")) {
         menuPrincipal.classList.remove("menuPrincipalInvisible")
-    } else{
+    } else {
         menuPrincipal.classList.add("menuPrincipalInvisible")
     }
 }
 )
-iconSubMenuPrincipal.addEventListener("click" ,function(){
-    if(subMenuPrincipal.classList.contains("subMenuPrincipalInvisible")){
+iconSubMenuPrincipal.addEventListener("click", function () {
+    if (subMenuPrincipal.classList.contains("subMenuPrincipalInvisible")) {
         subMenuPrincipal.classList.remove("subMenuPrincipalInvisible")
-    } else{
+    } else {
         subMenuPrincipal.classList.add("subMenuPrincipalInvisible")
     }
 }
 )
-iconSubMenu.addEventListener("click" ,function(){
-    if(subMenu.classList.contains("subMenuInvisible")){
+iconSubMenu.addEventListener("click", function () {
+    if (subMenu.classList.contains("subMenuInvisible")) {
         subMenu.classList.remove("subMenuInvisible")
-    } else{
+    } else {
         subMenu.classList.add("subMenuInvisible")
     }
 }
 )
-iconSubMenu2.addEventListener("click" ,function(){
-    if(subMenu2.classList.contains("subMenuInvisible2")){
+iconSubMenu2.addEventListener("click", function () {
+    if (subMenu2.classList.contains("subMenuInvisible2")) {
         subMenu2.classList.remove("subMenuInvisible2")
-    } else{
+    } else {
         subMenu2.classList.add("subMenuInvisible2")
     }
 }
 )
-iconSubMenu3.addEventListener("click" ,function(){
-    if(subMenu3.classList.contains("subMenuInvisible3")){
+iconSubMenu3.addEventListener("click", function () {
+    if (subMenu3.classList.contains("subMenuInvisible3")) {
         subMenu3.classList.remove("subMenuInvisible3")
-    } else{
+    } else {
         subMenu3.classList.add("subMenuInvisible3")
     }
 }
 )
-iconSubMenu4.addEventListener("click" ,function(){
-    if(subMenu4.classList.contains("subMenuInvisible4")){
+iconSubMenu4.addEventListener("click", function () {
+    if (subMenu4.classList.contains("subMenuInvisible4")) {
         subMenu4.classList.remove("subMenuInvisible4")
-    } else{
+    } else {
         subMenu4.classList.add("subMenuInvisible4")
     }
 }
 )
-iconSubMenu5.addEventListener("click" ,function(){
-    if(subMenu5.classList.contains("subMenuInvisible5")){
+iconSubMenu5.addEventListener("click", function () {
+    if (subMenu5.classList.contains("subMenuInvisible5")) {
         subMenu5.classList.remove("subMenuInvisible5")
-    } else{
+    } else {
         subMenu5.classList.add("subMenuInvisible5")
     }
 }
 )
-iconSubMenu6.addEventListener("click" ,function(){
-    if(subMenu6.classList.contains("subMenuInvisible6")){
+iconSubMenu6.addEventListener("click", function () {
+    if (subMenu6.classList.contains("subMenuInvisible6")) {
         subMenu6.classList.remove("subMenuInvisible6")
-    } else{
+    } else {
         subMenu6.classList.add("subMenuInvisible6")
     }
 }
 )
-iconSubMenu7.addEventListener("click" ,function(){
-    if(subMenu7.classList.contains("subMenuInvisible7")){
+iconSubMenu7.addEventListener("click", function () {
+    if (subMenu7.classList.contains("subMenuInvisible7")) {
         subMenu7.classList.remove("subMenuInvisible7")
-    } else{
+    } else {
         subMenu7.classList.add("subMenuInvisible7")
     }
 }
 )
-iconSubMenu8.addEventListener("click" ,function(){
-    if(subMenu8.classList.contains("subMenuInvisible8")){
+iconSubMenu8.addEventListener("click", function () {
+    if (subMenu8.classList.contains("subMenuInvisible8")) {
         subMenu8.classList.remove("subMenuInvisible8")
-    } else{
+    } else {
         subMenu8.classList.add("subMenuInvisible8")
     }
 }
 )
-iconSubMenu9.addEventListener("click" ,function(){
-    if(subMenu9.classList.contains("subMenuInvisible9")){
+iconSubMenu9.addEventListener("click", function () {
+    if (subMenu9.classList.contains("subMenuInvisible9")) {
         subMenu9.classList.remove("subMenuInvisible9")
-    } else{
+    } else {
         subMenu9.classList.add("subMenuInvisible9")
     }
 }
 )
-iconSubMenu10.addEventListener("click" ,function(){
-    if(subMenu10.classList.contains("subMenuInvisible10")){
+iconSubMenu10.addEventListener("click", function () {
+    if (subMenu10.classList.contains("subMenuInvisible10")) {
         subMenu10.classList.remove("subMenuInvisible10")
-    } else{
+    } else {
         subMenu10.classList.add("subMenuInvisible10")
     }
 }
 )
-iconSubMenu11.addEventListener("click" ,function(){
-    if(subMenu11.classList.contains("subMenuInvisible11")){
+iconSubMenu11.addEventListener("click", function () {
+    if (subMenu11.classList.contains("subMenuInvisible11")) {
         subMenu11.classList.remove("subMenuInvisible11")
-    } else{
+    } else {
         subMenu11.classList.add("subMenuInvisible11")
     }
 }
 )
-iconSubMenu12.addEventListener("click" ,function(){
-    if(subMenu12.classList.contains("subMenuInvisible12")){
+iconSubMenu12.addEventListener("click", function () {
+    if (subMenu12.classList.contains("subMenuInvisible12")) {
         subMenu12.classList.remove("subMenuInvisible12")
-    } else{
+    } else {
         subMenu12.classList.add("subMenuInvisible12")
     }
 }
 )
-iconSubMenu13.addEventListener("click" ,function(){
-    if(subMenu13.classList.contains("subMenuInvisible13")){
+iconSubMenu13.addEventListener("click", function () {
+    if (subMenu13.classList.contains("subMenuInvisible13")) {
         subMenu13.classList.remove("subMenuInvisible13")
-    } else{
+    } else {
         subMenu13.classList.add("subMenuInvisible13")
     }
 }
 )
 
+let circuloToogle = document.getElementById("circuloToogle");
+let ulWhite = document.getElementById("ulWhite");
+let imgFondoPcBlack= document.getElementById("imgFondoPcBlack");
+let imgFondoPcWhite= document.getElementById("imgFondoPcWhite");
+toogle.addEventListener("click", function () {
+    if(circuloToogle.classList.contains("circuloToogleTransition")){
+        circuloToogle.classList.remove("circuloToogleTransition")
+        toogle.classList.remove("toogleTransition")
+        ulWhite.classList.remove("ulWhite")
+        menuPrincipal.classList.remove("navWhite")
+        containVisibilidad(imgFondoPcBlack);
+        containVisibilidad(imgFondoPcWhite);
+        imgFondoPcWhite.classList.remove("transitionWhite")
+        imgFondoPcBlack.classList.remove("transitionBlack")
+    }else{
+        circuloToogle.classList.add("circuloToogleTransition")
+        toogle.classList.add("toogleTransition")
+        menuPrincipal.classList.add("navWhite")
+        ulWhite.classList.add("ulWhite")
+        containVisibilidad(imgFondoPcWhite);
+        containVisibilidad(imgFondoPcBlack);
+        imgFondoPcWhite.classList.add("transitionWhite")
+        imgFondoPcBlack.classList.add("transitionBlack")
+    }
+})
 
