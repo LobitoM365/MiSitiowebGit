@@ -202,7 +202,7 @@ a {
   }
 
   .toogleTransition {
-    background-color: rgba(4,2,8  );
+    background-color: rgb(79, 67, 104);
     border: 2px solid rgba(0, 0, 0, 0);
   }
 
@@ -225,14 +225,18 @@ a {
     height: 20px;
     border-radius: 12px;
     margin-right: 20px;
-    transition: margin 1s;
+    transition: all 1s;
+    rotate: 0deg;
+    background-color: white;
   }
 
   .circuloToogleTransition {
     position: absolute;
     margin-left: 20px;
     background-color: white;
-    transition: margin 1s;
+    transition: all 1s;
+    rotate: 180deg;
+    background-color: white;
   }
 
   .navWhite {
