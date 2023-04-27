@@ -5,7 +5,7 @@ let borderFocus = document.querySelectorAll(".borderFocus");
 let divRight = document.getElementById("divRight")
 let divLeft = document.getElementById("divLeft")
 let imgPredeterminada = document.getElementById("imgPredeterminada");
-
+let posicionImgMini = document.getElementById("posicionImgMini");
 
 let idImgMain = document.getElementById("idImgMain");
 
@@ -16,6 +16,16 @@ let idcantidadNumero = document.getElementById("idcantidadNumero");
 let contenidoFocus = document.getElementById("contenidoFocus");
 let quitContenidoFocus = document.getElementById("quitContenidoFocus");
 let fondoOscuro = document.getElementById("fondoOscuro");
+
+quitContenidoFocus.addEventListener("click", function () {
+    containVisibilidad(contenidoFocus)
+})
+fondoOscuro.addEventListener("click", function () {
+    containVisibilidad(contenidoFocus)
+})
+imgPredeterminada.addEventListener("click", function () {
+    containVisibilidad(contenidoFocus)
+})
 
 
 idMinus.addEventListener("click", function () {
@@ -63,22 +73,28 @@ idPlus.addEventListener("click", function () {
 })
  */
 
-quitContenidoFocus.addEventListener("click", function () {
-    containVisibilidad(contenidoFocus)
-})
-fondoOscuro.addEventListener("click", function () {
-    containVisibilidad(contenidoFocus)
-})
 
 
-let clickRight =  0;
+let clickRight = 0;
 let focusBehindRight = 3;
 divRight.addEventListener("click", function () {
+    let valorPosicionMini = document.getElementById("posicionImgMini").innerHTML;
+    if (valorPosicionMini > 3) {
+        if (valorPosicionMini == 0) {
+            clickRight = clickRight;
+            focusBehindRight = focusBehindRight;
+        } else {
+            clickRight = valorPosicionMini;
+            focusBehindRight = valorPosicionMini - 4;
+            posicionImgMini.innerHTML = parseInt(clickRight) + 1;
+        }
+    }
     imgPredeterminada.classList.add("invisible")
     clickRight = clickRight + 1;
     focusBehindRight = focusBehindRight + 1;
+
     for (let i = 0; i <= 8; i++) {
-        if (clickRight >= 8 || focusBehindRight >=4) {
+        if (clickRight >= 8 || focusBehindRight >= 4) {
             clickRight = 4;
             focusBehindRight = 0;
         }
@@ -93,17 +109,30 @@ divRight.addEventListener("click", function () {
             imgMini[i].classList.remove("img-opacity");
             imgMain[i].classList.remove("prueba");
         }
-        console.log(i, clickRight,focusBehindRight)
+        console.log(i, clickRight, focusBehindRight)
     }
 })
 
 
 divLeft.addEventListener("click", function () {
+    let valorPosicionMini = document.getElementById("posicionImgMini").innerHTML;
+    if (valorPosicionMini > 3) {
+        if (valorPosicionMini == 0) {
+            clickRight = clickRight;
+            focusBehindRight = focusBehindRight;
+        } else {
+            clickRight = valorPosicionMini;
+            focusBehindRight = valorPosicionMini - 4;
+            posicionImgMini.innerHTML = clickRight - 1;
+        }
+
+    }
+    console.log(clickRight)
     imgPredeterminada.classList.add("invisible")
     clickRight = clickRight - 1;
     focusBehindRight = focusBehindRight - 1;
     for (let i = 0; i <= 8; i++) {
-        if (clickRight <= 2 || focusBehindRight <=-1) {
+        if (clickRight <= 2 || focusBehindRight <= -1) {
             clickRight = 7;
             focusBehindRight = 3;
         }
@@ -118,7 +147,7 @@ divLeft.addEventListener("click", function () {
             imgMini[i].classList.remove("img-opacity");
             imgMain[i].classList.remove("prueba");
         }
-       
+
     }
     console.log(i, clickRight)
 })
@@ -131,33 +160,29 @@ for (let i = 0; i <= 3; i++) {
     })
 }
 
+
 for (let i = 0; i <= imgMini.length; i++) {
     imgMini[i].addEventListener("click", function () {
         imgPredeterminada.classList.add("invisible")
+        posicionImgMini.innerHTML = i;
         for (let x = 0; x <= imgMini.length; x++) {
-            focus(x, i)
+            if (x == i || x == i + 4 || x == i - 4) {
+                borderFocus[x].classList.add("borderFocusActive");
+                imgMain[x].classList.remove("img-box-invisible");
+                imgMini[x].classList.add("img-opacity");
+                imgMain[x].classList.add("prueba");
+                /*  imgPredeterminada.classList.add("invisible") */
+            } else {
+                imgMini[x].classList.remove("img-opacity");
+                borderFocus[x].classList.remove("borderFocusActive");
+                imgMain[x].classList.add("img-box-invisible");
+                imgMain[x].classList.remove("prueba");
+
+            }
         }
 
     });
 
-}
-
-
-function focus(x, i) {
-
-    if (x == i || x == i + 4 || x == i - 4) {
-        borderFocus[x].classList.add("borderFocusActive");
-        imgMain[x].classList.remove("img-box-invisible");
-        imgMini[x].classList.add("img-opacity");
-        imgMain[x].classList.add("prueba");
-        /*  imgPredeterminada.classList.add("invisible") */
-    } else {
-        imgMini[x].classList.remove("img-opacity");
-        borderFocus[x].classList.remove("borderFocusActive");
-        imgMain[x].classList.add("img-box-invisible");
-        imgMain[x].classList.remove("prueba");
-
-    }
 }
 
 
