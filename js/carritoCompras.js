@@ -4,12 +4,11 @@ let imgMini = document.querySelectorAll(".imgMini");
 let borderFocus = document.querySelectorAll(".borderFocus");
 let divRight = document.getElementById("divRight")
 let divLeft = document.getElementById("divLeft")
-
-
+let imgPredeterminada = document.getElementById("imgPredeterminada");
 
 
 let idImgMain = document.getElementById("idImgMain");
-let imgPredeterminada = document.getElementById("imgPredeterminada");
+
 let idMinus = document.getElementById("idMinus");
 let idPlus = document.getElementById("idPlus");
 let idPrecioTotal = document.getElementById("idPrecioTotal");
@@ -33,6 +32,59 @@ fondoOscuro.addEventListener("click", function () {
 })
 
 
+let clickRight =  0;
+let focusBehindRight = 3;
+divRight.addEventListener("click", function () {
+    imgPredeterminada.classList.add("invisible")
+    clickRight = clickRight + 1;
+    focusBehindRight = focusBehindRight + 1;
+    for (let i = 0; i <= 8; i++) {
+        if (clickRight >= 8 || focusBehindRight >=4) {
+            clickRight = 4;
+            focusBehindRight = 0;
+        }
+        if (i == clickRight || i == focusBehindRight) {
+            borderFocus[i].classList.add("borderFocusActive");
+            imgMain[i].classList.remove("img-box-invisible");
+            imgMini[i].classList.add("img-opacity");
+            imgMain[i].classList.add("prueba");
+        } else {
+            borderFocus[i].classList.remove("borderFocusActive");
+            imgMain[i].classList.add("img-box-invisible");
+            imgMini[i].classList.remove("img-opacity");
+            imgMain[i].classList.remove("prueba");
+        }
+        console.log(i, clickRight,focusBehindRight)
+    }
+})
+
+
+divLeft.addEventListener("click", function () {
+    imgPredeterminada.classList.add("invisible")
+    clickRight = clickRight - 1;
+    focusBehindRight = focusBehindRight - 1;
+    for (let i = 0; i <= 8; i++) {
+        if (clickRight <= 2 || focusBehindRight <=-1) {
+            clickRight = 7;
+            focusBehindRight = 3;
+        }
+        if (i == clickRight || i == focusBehindRight) {
+            borderFocus[i].classList.add("borderFocusActive");
+            imgMain[i].classList.remove("img-box-invisible");
+            imgMini[i].classList.add("img-opacity");
+            imgMain[i].classList.add("prueba");
+        } else {
+            borderFocus[i].classList.remove("borderFocusActive");
+            imgMain[i].classList.add("img-box-invisible");
+            imgMini[i].classList.remove("img-opacity");
+            imgMain[i].classList.remove("prueba");
+        }
+       
+    }
+    console.log(i, clickRight)
+})
+
+
 
 for (let i = 0; i <= 3; i++) {
     imgMain[i].addEventListener("click", function () {
@@ -42,43 +94,36 @@ for (let i = 0; i <= 3; i++) {
 
 for (let i = 0; i <= imgMini.length; i++) {
     imgMini[i].addEventListener("click", function () {
-        for (let x = 0; x <= 8; x++) {
-            xd(x, i)
+        imgPredeterminada.classList.add("invisible")
+        for (let x = 0; x <= imgMini.length; x++) {
+            focus(x, i)
         }
+
     });
 
-
-    divRight.addEventListener("click", function () {
-        for (let x = 3; x <= 8; x++) {
-            console.log(x, i)
-            xd(x, i)
-        }
-    });
-
-    divLeft.addEventListener("click", function () {
-        for (let x = 3; x <= 8; x++) {
-            console.log(x, i)
-            x = x - 1;
-            xd(x, i)
-        }
-    });
 }
 
-function xd(x, i) {
+
+function focus(x, i) {
 
     if (x == i || x == i + 4 || x == i - 4) {
         borderFocus[x].classList.add("borderFocusActive");
         imgMain[x].classList.remove("img-box-invisible");
         imgMini[x].classList.add("img-opacity");
-
+        imgMain[x].classList.add("prueba");
         /*  imgPredeterminada.classList.add("invisible") */
     } else {
         imgMini[x].classList.remove("img-opacity");
         borderFocus[x].classList.remove("borderFocusActive");
         imgMain[x].classList.add("img-box-invisible");
+        imgMain[x].classList.remove("prueba");
 
     }
 }
+
+
+
+
 
 
 /* 
