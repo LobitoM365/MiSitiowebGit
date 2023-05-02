@@ -76,9 +76,14 @@ idPlus.addEventListener("click", function () {
  */
 
 
+borderFocus[0].classList.add("borderFocusActive");
+imgMini[0].classList.add("img-opacity");
+borderFocus[4].classList.add("borderFocusActive");
+imgMini[4].classList.add("img-opacity");
 
-let clickRight = 0;
-let focusBehindRight = 3;
+
+let clickRight = 4;
+let focusBehindRight = 0;
 divRight.addEventListener("click", function () {
     let valorPosicionMini = document.getElementById("posicionImgMini").innerHTML;
     if (valorPosicionMini > 3 && valorPosicionMini < 8) {
