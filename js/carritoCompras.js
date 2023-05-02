@@ -28,9 +28,6 @@ fondoOscuro.addEventListener("click", function () {
 imgPredeterminada.addEventListener("click", function () {
     containVisibilidad(contenidoFocus)
 })
-imgPredeterminada2.addEventListener("click", function () {
-    alert("xd")
-})
 
 
 idMinus.addEventListener("click", function () {
@@ -84,7 +81,6 @@ let clickRight = 0;
 let focusBehindRight = 3;
 divRight.addEventListener("click", function () {
     let valorPosicionMini = document.getElementById("posicionImgMini").innerHTML;
-
     if (valorPosicionMini > 3 && valorPosicionMini < 8) {
         if (valorPosicionMini == 0) {
             clickRight = clickRight;
@@ -94,7 +90,6 @@ divRight.addEventListener("click", function () {
             focusBehindRight = valorPosicionMini - 4;
             posicionImgMini.innerHTML = parseInt(clickRight) + 1;
         }
-
     }
     if (valorPosicionMini < 3) {
         if (valorPosicionMini == 0) {
@@ -104,17 +99,12 @@ divRight.addEventListener("click", function () {
             focusBehindRight = valorPosicionMini;
             clickRight = parseFloat(valorPosicionMini) + 4;
             posicionImgMini.innerHTML = parseFloat(focusBehindRight) + 1;
-
         }
-
     }
-    imgPredeterminada.classList.add("invisible")
-
     clickRight = parseFloat(clickRight) + 1;
-
+    imgPredeterminada.classList.add("invisible")
     focusBehindRight = parseFloat(focusBehindRight) + 1;
     for (let i = 0; i <= 8; i++) {
-
         imgMain[i].classList.remove("focus-transition1");
         imgMain[i].classList.remove("focus-transition2");
         if (clickRight >= 8 || focusBehindRight >= 4) {
@@ -123,67 +113,53 @@ divRight.addEventListener("click", function () {
         }
         if (i == clickRight || i == focusBehindRight) {
             borderFocus[i].classList.add("borderFocusActive");
-            imgMain[i].classList.remove("img-box-invisible");
             imgMini[i].classList.add("img-opacity");
             if (i < 4) {
                 imgMain[i].classList.add("prueba");
+                imgMain[i].classList.remove("img-box-invisible");
             }
-            imgPredeterminada2.classList.add("invisible")
-            if (i => 3 && i < 8) {
-                imgMain[i].classList.remove("focus-transition3")
-
-                let xdxd = i - 1;
-                console.log(xdxd)
-
-
-                divRight.addEventListener("click", function () {
-                    let ju = i - 1;
-                    imgMain[i].classList.remove("hidden")
-                    imgMain[ju].classList.remove("hidden")
-                    if (i == 7) {
-                        imgMain[7].classList.add("focus-transition4")
-
-                    }
-                    if (i == 4) {
-                        imgMain[7].classList.remove("focus-transition4")
-
-                    }
-                    console.log(i)
-                    if (i == 7) {
-                        imgMain[4].classList.remove("hidden")
-                    }
-                    if (i > 3) {
-                        imgMain[i].classList.add("focus-transition4")
-                        imgMain[xdxd].classList.remove("focus-transition4")
-                    }
-
-
-                })
-
-
+            for (let u = 0; u <= imgMini.length; u++) {
+                if (i > 3) {
+                    imgMain[i].classList.remove("img-position-" + u);
+                    imgMain[i].classList.add("img-position-4")
+                }
             }
-
         } else {
             borderFocus[i].classList.remove("borderFocusActive");
-            imgMain[i].classList.add("img-box-invisible");
             imgMini[i].classList.remove("img-opacity");
             if (i < 4) {
                 imgMain[i].classList.remove("prueba");
+                imgMain[i].classList.add("img-box-invisible");
             }
-            if (i > 3 && i < 8) {
-                imgMain[i].classList.add("focus-transition3")
-                imgMain[i].classList.remove("img-box-invisible");
-
+            for (let u = 0; u <= imgMini.length; u++) {
+                if (i > 3) {
+                    console.log(clickRight)
+                    if (clickRight == 4) {
+                        let contador = i - 0;
+                        imgMain[i].classList.remove("img-position-" + u);
+                        imgMain[i].classList.add("img-position-" + contador);
+                    } else if (clickRight == 5) {
+                        let contador = i - 1;
+                        imgMain[i].classList.remove("img-position-" + u);
+                        imgMain[i].classList.add("img-position-" + contador);
+                    } else if (clickRight == 6) {
+                        let contador = i - 2;
+                        imgMain[i].classList.remove("img-position-" + u);
+                        imgMain[i].classList.add("img-position-" + contador);
+                    } else if (clickRight == 7) {
+                        let contador = i - 3;
+                        imgMain[i].classList.remove("img-position-" + u);
+                        imgMain[i].classList.add("img-position-" + contador);
+                    }
+                }
             }
         }
 
     }
 })
 
-
 divLeft.addEventListener("click", function () {
     let valorPosicionMini = document.getElementById("posicionImgMini").innerHTML;
-
     if (valorPosicionMini > 3) {
         if (valorPosicionMini == 0) {
             clickRight = clickRight;
@@ -204,7 +180,6 @@ divLeft.addEventListener("click", function () {
             posicionImgMini.innerHTML = focusBehindRight - 1;
         }
     }
-
     imgPredeterminada.classList.add("invisible")
     clickRight = clickRight - 1;
     focusBehindRight = focusBehindRight - 1;
@@ -217,57 +192,50 @@ divLeft.addEventListener("click", function () {
         }
         if (i == clickRight || i == focusBehindRight) {
             borderFocus[i].classList.add("borderFocusActive");
-            imgMain[i].classList.remove("img-box-invisible");
             imgMini[i].classList.add("img-opacity");
             if (i < 4) {
                 imgMain[i].classList.add("prueba");
+                imgMain[i].classList.remove("img-box-invisible");
             }
-
-            if (i > 3 && i < 8) {
-                imgMain[i].classList.remove("focus-transition1")
-
-                let xdxd = i + 1;
-
-                if (xdxd == 8) {
-                    xdxd = xdxd - 4;
-                    imgMain[xdxd].classList.add("focus-transition2")
+            for (let u = 0; u <= imgMini.length; u++) {
+                if (i > 3) {
+                    imgMain[i].classList.remove("img-position-" + u);
+                    imgMain[i].classList.add("img-position-4")
                 }
-
-
-                divLeft.addEventListener("click", function () {
-                    let ju = i - 1;
-                    imgMain[i].classList.remove("hidden")
-                    imgMain[ju].classList.remove("hidden")
-                    if (i == 4) {
-                        imgMain[7].classList.remove("hidden")
-                    }
-
-                    imgMain[i].classList.add("focus-transition2")
-                    imgMain[xdxd].classList.remove("focus-transition2")
-                    imgMain[xdxd].classList.add("hidden")
-                })
-                console.log(xdxd);
-
             }
-
         } else {
             borderFocus[i].classList.remove("borderFocusActive");
-            imgMain[i].classList.add("img-box-invisible");
             imgMini[i].classList.remove("img-opacity");
             if (i < 4) {
                 imgMain[i].classList.remove("prueba");
+                imgMain[i].classList.add("img-box-invisible");
             }
-            if (i > 3 && i < 8) {
-                imgMain[i].classList.add("focus-transition1")
-                imgMain[i].classList.remove("img-box-invisible");
+            for (let u = 0; u <= imgMini.length; u++) {
+                if (i > 3) {
+                    console.log(clickRight)
+                    if (clickRight == 4) {
+                        let contador = i - 0;
+                        imgMain[i].classList.remove("img-position-" + u);
+                        imgMain[i].classList.add("img-position-" + contador);
+                    } else if (clickRight == 5) {
+                        let contador = i - 1;
+                        imgMain[i].classList.remove("img-position-" + u);
+                        imgMain[i].classList.add("img-position-" + contador);
+                    } else if (clickRight == 6) {
+                        let contador = i - 2;
+                        imgMain[i].classList.remove("img-position-" + u);
+                        imgMain[i].classList.add("img-position-" + contador);
+                    } else if (clickRight == 7) {
+                        let contador = i - 3;
+                        imgMain[i].classList.remove("img-position-" + u);
+                        imgMain[i].classList.add("img-position-" + contador);
+                    }
+                }
             }
         }
 
     }
 })
-
-
-
 
 for (let i = 0; i <= 3; i++) {
     imgMain[i].addEventListener("click", function () {
@@ -276,10 +244,6 @@ for (let i = 0; i <= 3; i++) {
 }
 for (let i = 0; i <= imgMini.length; i++) {
     imgMini[i].addEventListener("click", function () {
-        imgMain[i].classList.remove("focus-transition1");
-        imgMain[i].classList.remove("focus-transition2");
-        imgMain[i].classList.remove("focus-transition3");
-        imgMain[i].classList.remove("focus-transition4");
         if (i > 3) {
             imgMain[i].classList.remove("hidden")
         }
@@ -288,20 +252,50 @@ for (let i = 0; i <= imgMini.length; i++) {
         for (let x = 0; x <= imgMini.length; x++) {
             if (x == i || x == i + 4 || x == i - 4) {
                 borderFocus[x].classList.add("borderFocusActive");
-                imgMain[x].classList.remove("img-box-invisible");
                 imgMini[x].classList.add("img-opacity");
                 if (x < 4) {
                     imgMain[x].classList.add("prueba");
+                    imgMain[x].classList.remove("img-box-invisible");
                 }
-                /*  imgPredeterminada.classList.add("invisible") */
+                for (let u = 0; u <= imgMini.length; u++) {
+                    if (x > 3) {
+                        imgMain[x].classList.remove("img-position-" + u);
+                        imgMain[x].classList.add("img-position-4")
+                    }
+                }
             } else {
                 imgMini[x].classList.remove("img-opacity");
                 borderFocus[x].classList.remove("borderFocusActive");
-                imgMain[x].classList.add("img-box-invisible");
                 if (x < 4) {
                     imgMain[x].classList.remove("prueba");
+                    imgMain[x].classList.add("img-box-invisible");
                 }
-
+                for (let u = 0; u <= imgMini.length; u++) {
+                    if (x > 3) {
+                        let valorPosicionMini = document.getElementById("posicionImgMini").innerHTML;
+                        if (parseFloat(valorPosicionMini) <= 3) {
+                            valorPosicionMini = parseFloat(valorPosicionMini) + 4;
+                        }
+                        console.log(valorPosicionMini)
+                        if (valorPosicionMini == 4) {
+                            let contador = x - 0;
+                            imgMain[x].classList.remove("img-position-" + u);
+                            imgMain[x].classList.add("img-position-" + contador);
+                        } else if (valorPosicionMini == 5) {
+                            let contador = x - 1;
+                            imgMain[x].classList.remove("img-position-" + u);
+                            imgMain[x].classList.add("img-position-" + contador);
+                        } else if (valorPosicionMini == 6) {
+                            let contador = x - 2;
+                            imgMain[x].classList.remove("img-position-" + u);
+                            imgMain[x].classList.add("img-position-" + contador);
+                        } else if (valorPosicionMini == 7) {
+                            let contador = x - 3;
+                            imgMain[x].classList.remove("img-position-" + u);
+                            imgMain[x].classList.add("img-position-" + contador);
+                        }
+                    }
+                }
             }
         }
     });

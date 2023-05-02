@@ -423,47 +423,9 @@ h5 {
 
 .img-main-focus {
     width: 100%;
-    position: relative;
-    z-index: 0;
-    margin-left: 0;
-    transition: margin 0.4s;
-    z-index: 1;
+    position: absolute;
 }
 
-.hidden {
-    visibility: hidden;
-}
-
-.focus-transition {
-    margin: 0;
-    transition: margin 0.4s;
-}
-
-.focus-transition1 {
-    margin-left: -200%;
-    background-color: aqua;
-    transition: margin 0.4s;
-}
-
-.focus-transition2 {
-    margin-left: 200%;
-    background-color: aqua;
-    transition: margin 0.4s;
-
-}
-
-.focus-transition3 {
-    margin-left: 200%;
-    background-color: aqua;
-    transition: margin 0.4s;
-}
-
-.focus-transition4 {
-    margin-left: -200%;
-    background-color: aqua;
-    transition: margin 0.4s;
-
-}
 
 .img-predeterminada-focus {
     width: 480px;
@@ -516,6 +478,42 @@ h5 {
     align-items: center;
     border-bottom: 1px solid rgb(219, 219, 219);
     border-radius: 8px 8px 0px 0px;
+}
+
+
+.img-position-1 {
+    margin-left: -600%;
+    transition: margin 0.5s;
+}
+
+.img-position-2 {
+    margin-left: -400%;
+    transition: margin 0.5s;
+}
+
+.img-position-3 {
+    margin-left: -200%;
+    transition: margin 0.5s;
+}
+
+.img-position-4 {
+    margin-left: 0;
+    transition: margin 0.5s;
+}
+
+.img-position-5 {
+    margin-left: 200%;
+    transition: margin 0.5s;
+}
+
+.img-position-6 {
+    margin-left: 400%;
+    transition: margin 0.5s;
+}
+
+.img-position-7 {
+    margin-left: 600%;
+    transition: margin 0.5s;
 }
 
 @media screen and (max-width: 735px) {
