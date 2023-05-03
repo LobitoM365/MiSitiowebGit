@@ -82,230 +82,227 @@ borderFocus[4].classList.add("borderFocusActive");
 imgMini[4].classList.add("img-opacity");
 
 
-let clickRight = 4;
-let focusBehindRight = 0;
-divRight.addEventListener("click", function () {
-    let valorPosicionMini = document.getElementById("posicionImgMini").innerHTML;
-    if (valorPosicionMini > 3 && valorPosicionMini < 8) {
-        if (valorPosicionMini == 0) {
-            clickRight = clickRight;
-            focusBehindRight = focusBehindRight;
-        } else {
-            clickRight = valorPosicionMini;
-            focusBehindRight = valorPosicionMini - 4;
-            posicionImgMini.innerHTML = parseInt(clickRight) + 1;
-        }
-    }
-    if (valorPosicionMini < 3) {
-        if (valorPosicionMini == 0) {
-            clickRight = clickRight;
-            focusBehindRight = focusBehindRight;
-        } else {
-            focusBehindRight = valorPosicionMini;
-            clickRight = parseFloat(valorPosicionMini) + 4;
-            posicionImgMini.innerHTML = parseFloat(focusBehindRight) + 1;
-        }
-    }
-    clickRight = parseFloat(clickRight) + 1;
-    imgPredeterminada.classList.add("invisible")
-    focusBehindRight = parseFloat(focusBehindRight) + 1;
-    for (let i = 0; i <= 8; i++) {
-        imgMain[i].classList.remove("focus-transition1");
-        imgMain[i].classList.remove("focus-transition2");
-        if (clickRight >= 8 || focusBehindRight >= 4) {
-            clickRight = 4;
-            focusBehindRight = 0;
-        }
-        if (i == clickRight || i == focusBehindRight) {
-            borderFocus[i].classList.add("borderFocusActive");
-            imgMini[i].classList.add("img-opacity");
-            if (i < 4) {
-                imgMain[i].classList.add("prueba");
-                imgMain[i].classList.remove("img-box-invisible");
-            }
-            for (let u = 0; u <= imgMini.length; u++) {
-                if (i > 3) {
-                    imgMain[i].classList.remove("img-position-" + u);
-                    imgMain[i].classList.add("img-position-4")
-                }
-            }
-        } else {
-            borderFocus[i].classList.remove("borderFocusActive");
-            imgMini[i].classList.remove("img-opacity");
-            if (i < 4) {
-                imgMain[i].classList.remove("prueba");
-                imgMain[i].classList.add("img-box-invisible");
-            }
-            for (let u = 0; u <= imgMini.length; u++) {
-                if (i > 3) {
-                    console.log(clickRight)
-                    if (clickRight == 4) {
-                        let contador = i - 0;
-                        imgMain[i].classList.remove("img-position-" + u);
-                        imgMain[i].classList.add("img-position-" + contador);
-                    } else if (clickRight == 5) {
-                        let contador = i - 1;
-                        imgMain[i].classList.remove("img-position-" + u);
-                        imgMain[i].classList.add("img-position-" + contador);
-                    } else if (clickRight == 6) {
-                        let contador = i - 2;
-                        imgMain[i].classList.remove("img-position-" + u);
-                        imgMain[i].classList.add("img-position-" + contador);
-                    } else if (clickRight == 7) {
-                        let contador = i - 3;
-                        imgMain[i].classList.remove("img-position-" + u);
-                        imgMain[i].classList.add("img-position-" + contador);
-                    }
-                }
+for (let d = 0; d <= imgMini.length; d++) {
+    let clickRight = 4;
+    let focusBehindRight = 0;
+    divRight.addEventListener("click", function () {
+        let valorPosicionMini = document.getElementById("posicionImgMini").innerHTML;
+        if (valorPosicionMini > 3 && valorPosicionMini < 8) {
+            if (valorPosicionMini == 0) {
+                clickRight = clickRight;
+                focusBehindRight = focusBehindRight;
+            } else {
+                clickRight = valorPosicionMini;
+                focusBehindRight = valorPosicionMini - 4;
+                posicionImgMini.innerHTML = parseInt(clickRight) + 1;
             }
         }
-
-    }
-})
-
-divLeft.addEventListener("click", function () {
-    let valorPosicionMini = document.getElementById("posicionImgMini").innerHTML;
-    if (valorPosicionMini > 3) {
-        if (valorPosicionMini == 0) {
-            clickRight = clickRight;
-            focusBehindRight = focusBehindRight;
-        } else {
-            clickRight = valorPosicionMini;
-            focusBehindRight = valorPosicionMini - 4;
-            posicionImgMini.innerHTML = clickRight - 1;
-        }
-    }
-    if (valorPosicionMini <= 3) {
-        if (valorPosicionMini == 0) {
-            clickRight = clickRight;
-            focusBehindRight = focusBehindRight;
-        } else {
-            focusBehindRight = valorPosicionMini;
-            clickRight = parseFloat(valorPosicionMini) + 4;
-            posicionImgMini.innerHTML = focusBehindRight - 1;
-        }
-    }
-    imgPredeterminada.classList.add("invisible")
-    clickRight = clickRight - 1;
-    focusBehindRight = focusBehindRight - 1;
-    for (let i = 0; i <= 8; i++) {
-        imgMain[i].classList.remove("focus-transition3");
-        imgMain[i].classList.remove("focus-transition4");
-        if (clickRight <= 2 || focusBehindRight <= -1) {
-            clickRight = 7;
-            focusBehindRight = 3;
-        }
-        if (i == clickRight || i == focusBehindRight) {
-            borderFocus[i].classList.add("borderFocusActive");
-            imgMini[i].classList.add("img-opacity");
-            if (i < 4) {
-                imgMain[i].classList.add("prueba");
-                imgMain[i].classList.remove("img-box-invisible");
-            }
-            for (let u = 0; u <= imgMini.length; u++) {
-                if (i > 3) {
-                    imgMain[i].classList.remove("img-position-" + u);
-                    imgMain[i].classList.add("img-position-4")
-                }
-            }
-        } else {
-            borderFocus[i].classList.remove("borderFocusActive");
-            imgMini[i].classList.remove("img-opacity");
-            if (i < 4) {
-                imgMain[i].classList.remove("prueba");
-                imgMain[i].classList.add("img-box-invisible");
-            }
-            for (let u = 0; u <= imgMini.length; u++) {
-                if (i > 3) {
-                    console.log(clickRight)
-                    if (clickRight == 4) {
-                        let contador = i - 0;
-                        imgMain[i].classList.remove("img-position-" + u);
-                        imgMain[i].classList.add("img-position-" + contador);
-                    } else if (clickRight == 5) {
-                        let contador = i - 1;
-                        imgMain[i].classList.remove("img-position-" + u);
-                        imgMain[i].classList.add("img-position-" + contador);
-                    } else if (clickRight == 6) {
-                        let contador = i - 2;
-                        imgMain[i].classList.remove("img-position-" + u);
-                        imgMain[i].classList.add("img-position-" + contador);
-                    } else if (clickRight == 7) {
-                        let contador = i - 3;
-                        imgMain[i].classList.remove("img-position-" + u);
-                        imgMain[i].classList.add("img-position-" + contador);
-                    }
-                }
+        if (valorPosicionMini < 3) {
+            if (valorPosicionMini == 0) {
+                clickRight = clickRight;
+                focusBehindRight = focusBehindRight;
+            } else {
+                focusBehindRight = valorPosicionMini;
+                clickRight = parseFloat(valorPosicionMini) + 4;
+                posicionImgMini.innerHTML = parseFloat(focusBehindRight) + 1;
             }
         }
-
-    }
-})
-
-for (let i = 0; i <= 3; i++) {
-    imgMain[i].addEventListener("click", function () {
-        contenidoFocus.classList.toggle("invisible")
-    })
-}
-for (let i = 0; i <= imgMini.length; i++) {
-    imgMini[i].addEventListener("click", function () {
-        if (i > 3) {
-            imgMain[i].classList.remove("hidden")
-        }
+        clickRight = parseFloat(clickRight) + 1;
         imgPredeterminada.classList.add("invisible")
-        posicionImgMini.innerHTML = i;
-        for (let x = 0; x <= imgMini.length; x++) {
-            if (x == i || x == i + 4 || x == i - 4) {
-                borderFocus[x].classList.add("borderFocusActive");
-                imgMini[x].classList.add("img-opacity");
-                if (x < 4) {
-                    imgMain[x].classList.add("prueba");
-                    imgMain[x].classList.remove("img-box-invisible");
+        focusBehindRight = parseFloat(focusBehindRight) + 1;
+        for (let i = 0; i <= 8; i++) {
+            imgMain[i].classList.remove("focus-transition1");
+            imgMain[i].classList.remove("focus-transition2");
+            if (clickRight >= 8 || focusBehindRight >= 4) {
+                clickRight = 4;
+                focusBehindRight = 0;
+            }
+            if (i == clickRight || i == focusBehindRight) {
+                borderFocus[i].classList.add("borderFocusActive");
+                imgMini[i].classList.add("img-opacity");
+                if (i < 4) {
+                    imgMain[i].classList.add("prueba");
+                    imgMain[i].classList.remove("img-box-invisible");
                 }
                 for (let u = 0; u <= imgMini.length; u++) {
-                    if (x > 3) {
-                        imgMain[x].classList.remove("img-position-" + u);
-                        imgMain[x].classList.add("img-position-4")
+                    if (i > 3) {
+                        imgMain[i].classList.remove("img-position-" + u);
+                        imgMain[i].classList.add("img-position-4")
                     }
                 }
             } else {
-                imgMini[x].classList.remove("img-opacity");
-                borderFocus[x].classList.remove("borderFocusActive");
-                if (x < 4) {
-                    imgMain[x].classList.remove("prueba");
-                    imgMain[x].classList.add("img-box-invisible");
+                borderFocus[i].classList.remove("borderFocusActive");
+                imgMini[i].classList.remove("img-opacity");
+                if (i < 4) {
+                    imgMain[i].classList.remove("prueba");
+                    imgMain[i].classList.add("img-box-invisible");
                 }
                 for (let u = 0; u <= imgMini.length; u++) {
-                    if (x > 3) {
-                        let valorPosicionMini = document.getElementById("posicionImgMini").innerHTML;
-                        if (parseFloat(valorPosicionMini) <= 3) {
-                            valorPosicionMini = parseFloat(valorPosicionMini) + 4;
-                        }
-                        console.log(valorPosicionMini)
-                        if (valorPosicionMini == 4) {
-                            let contador = x - 0;
-                            imgMain[x].classList.remove("img-position-" + u);
-                            imgMain[x].classList.add("img-position-" + contador);
-                        } else if (valorPosicionMini == 5) {
-                            let contador = x - 1;
-                            imgMain[x].classList.remove("img-position-" + u);
-                            imgMain[x].classList.add("img-position-" + contador);
-                        } else if (valorPosicionMini == 6) {
-                            let contador = x - 2;
-                            imgMain[x].classList.remove("img-position-" + u);
-                            imgMain[x].classList.add("img-position-" + contador);
-                        } else if (valorPosicionMini == 7) {
-                            let contador = x - 3;
-                            imgMain[x].classList.remove("img-position-" + u);
-                            imgMain[x].classList.add("img-position-" + contador);
+                    if (i > 3) {
+                        console.log(clickRight)
+                        if (clickRight == 4) {
+                            let contador = i - 0;
+                            imgMain[i].classList.remove("img-position-" + u);
+                            imgMain[i].classList.add("img-position-" + contador);
+                        } else if (clickRight == 5) {
+                            let contador = i - 1;
+                            imgMain[i].classList.remove("img-position-" + u);
+                            imgMain[i].classList.add("img-position-" + contador);
+                        } else if (clickRight == 6) {
+                            let contador = i - 2;
+                            imgMain[i].classList.remove("img-position-" + u);
+                            imgMain[i].classList.add("img-position-" + contador);
+                        } else if (clickRight == 7) {
+                            let contador = i - 3;
+                            imgMain[i].classList.remove("img-position-" + u);
+                            imgMain[i].classList.add("img-position-" + contador);
                         }
                     }
                 }
             }
-        }
-    });
-}
 
+        }
+    })
+
+    divLeft.addEventListener("click", function () {
+        let valorPosicionMini = document.getElementById("posicionImgMini").innerHTML;
+        if (valorPosicionMini > 3) {
+            if (valorPosicionMini == 0) {
+                clickRight = clickRight;
+                focusBehindRight = focusBehindRight;
+            } else {
+                clickRight = valorPosicionMini;
+                focusBehindRight = valorPosicionMini - 4;
+                posicionImgMini.innerHTML = clickRight - 1;
+            }
+        }
+        if (valorPosicionMini <= 3) {
+            if (valorPosicionMini == 0) {
+                clickRight = clickRight;
+                focusBehindRight = focusBehindRight;
+            } else {
+                focusBehindRight = valorPosicionMini;
+                clickRight = parseFloat(valorPosicionMini) + 4;
+                posicionImgMini.innerHTML = focusBehindRight - 1;
+            }
+        }
+        imgPredeterminada.classList.add("invisible")
+        clickRight = clickRight - 1;
+        focusBehindRight = focusBehindRight - 1;
+        for (let i = 0; i <= 8; i++) {
+            if (clickRight <= 2 || focusBehindRight <= -1) {
+                clickRight = 7;
+                focusBehindRight = 3;
+            }
+            if (i == clickRight || i == focusBehindRight) {
+                borderFocus[i].classList.add("borderFocusActive");
+                imgMini[i].classList.add("img-opacity");
+                if (i < 4) {
+                    imgMain[i].classList.add("prueba");
+                    imgMain[i].classList.remove("img-box-invisible");
+                }
+                for (let u = 0; u <= imgMini.length; u++) {
+                    if (i > 3) {
+                        imgMain[i].classList.remove("img-position-" + u);
+                        imgMain[i].classList.add("img-position-4")
+                    }
+                }
+            } else {
+                borderFocus[i].classList.remove("borderFocusActive");
+                imgMini[i].classList.remove("img-opacity");
+                if (i < 4) {
+                    imgMain[i].classList.remove("prueba");
+                    imgMain[i].classList.add("img-box-invisible");
+                }
+                for (let u = 0; u <= imgMini.length; u++) {
+                    if (i > 3) {
+                        console.log(clickRight)
+                        if (clickRight == 4) {
+                            let contador = i - 0;
+                            imgMain[i].classList.remove("img-position-" + u);
+                            imgMain[i].classList.add("img-position-" + contador);
+                        } else if (clickRight == 5) {
+                            let contador = i - 1;
+                            imgMain[i].classList.remove("img-position-" + u);
+                            imgMain[i].classList.add("img-position-" + contador);
+                        } else if (clickRight == 6) {
+                            let contador = i - 2;
+                            imgMain[i].classList.remove("img-position-" + u);
+                            imgMain[i].classList.add("img-position-" + contador);
+                        } else if (clickRight == 7) {
+                            let contador = i - 3;
+                            imgMain[i].classList.remove("img-position-" + u);
+                            imgMain[i].classList.add("img-position-" + contador);
+                        }
+                    }
+                }
+            }
+
+        }
+    })
+
+    for (let i = 0; i <= 3; i++) {
+        imgMain[i].addEventListener("click", function () {
+            contenidoFocus.classList.toggle("invisible")
+        })
+    }
+    for (let i = 0; i <= imgMini.length; i++) {
+        imgMini[i].addEventListener("click", function () {
+            imgPredeterminada.classList.add("invisible")
+            posicionImgMini.innerHTML = i;
+            for (let x = 0; x <= imgMini.length; x++) {
+                if (x == i || x == i + 4 || x == i - 4) {
+                    borderFocus[x].classList.add("borderFocusActive");
+                    imgMini[x].classList.add("img-opacity");
+                    if (x < 4) {
+                        imgMain[x].classList.add("prueba");
+                        imgMain[x].classList.remove("img-box-invisible");
+                    }
+                    for (let u = 0; u <= imgMini.length; u++) {
+                        if (x > 3) {
+                            imgMain[x].classList.remove("img-position-" + u);
+                            imgMain[x].classList.add("img-position-4")
+                        }
+                    }
+                } else {
+                    imgMini[x].classList.remove("img-opacity");
+                    borderFocus[x].classList.remove("borderFocusActive");
+                    if (x < 4) {
+                        imgMain[x].classList.remove("prueba");
+                        imgMain[x].classList.add("img-box-invisible");
+                    }
+                    for (let u = 0; u <= imgMini.length; u++) {
+                        if (x > 3) {
+                            let valorPosicionMini = document.getElementById("posicionImgMini").innerHTML;
+                            if (parseFloat(valorPosicionMini) <= 3) {
+                                valorPosicionMini = parseFloat(valorPosicionMini) + 4;
+                            }
+                            console.log(valorPosicionMini)
+                            if (valorPosicionMini == 4) {
+                                let contador = x - 0;
+                                imgMain[x].classList.remove("img-position-" + u);
+                                imgMain[x].classList.add("img-position-" + contador);
+                            } else if (valorPosicionMini == 5) {
+                                let contador = x - 1;
+                                imgMain[x].classList.remove("img-position-" + u);
+                                imgMain[x].classList.add("img-position-" + contador);
+                            } else if (valorPosicionMini == 6) {
+                                let contador = x - 2;
+                                imgMain[x].classList.remove("img-position-" + u);
+                                imgMain[x].classList.add("img-position-" + contador);
+                            } else if (valorPosicionMini == 7) {
+                                let contador = x - 3;
+                                imgMain[x].classList.remove("img-position-" + u);
+                                imgMain[x].classList.add("img-position-" + contador);
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    }
+
+}
 
 
 

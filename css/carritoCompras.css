@@ -7,7 +7,7 @@
 .imgs {
     display: grid;
     grid-template: "img-box img-box img-box img-box" 460px
-        "img-mini1 img-mini2 img-mini3 img-mini4" 120px/
+        "img-mini1 img-mini2 img-mini3 img-mini4" 190px/
         105px 105px 105px 105px;
     grid-area: imgs;
     justify-content: center;
@@ -355,7 +355,7 @@ h5 {
     position: relative;
     display: grid;
     grid-template: "img-box img-box img-box img-box" 560px
-        "img-mini1 img-mini2 img-mini3 img-mini4" 120px/
+        "img-mini1 img-mini2 img-mini3 img-mini4" auto/
         125px 125px 125px 125px;
     overflow: hidden;
 }
