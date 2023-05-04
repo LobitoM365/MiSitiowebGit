@@ -6,11 +6,11 @@ let divRight = document.getElementById("divRight")
 let divLeft = document.getElementById("divLeft")
 let imgPredeterminada = document.getElementById("imgPredeterminada");
 let imgPredeterminada2 = document.getElementById("imgPredeterminada2");
+let productosAdd = document.getElementById("productosAdd");
+let iconProductosAdd = document.getElementById("iconProductosAdd");
 
 let posicionImgMini = document.getElementById("posicionImgMini");
-
 let idImgMain = document.getElementById("idImgMain");
-
 let idMinus = document.getElementById("idMinus");
 let idPlus = document.getElementById("idPlus");
 let idPrecioTotal = document.getElementById("idPrecioTotal");
@@ -28,7 +28,9 @@ fondoOscuro.addEventListener("click", function () {
 imgPredeterminada.addEventListener("click", function () {
     containVisibilidad(contenidoFocus)
 })
-
+iconProductosAdd.addEventListener("click", function(){
+    containVisibilidad(productosAdd);
+})
 
 idMinus.addEventListener("click", function () {
     /*     let nodeToAdd = document.createElement("p");

@@ -328,6 +328,7 @@ a {
     padding: 20px 20px;
     display: block;
     font-size: 10px;
+    color: white;
   }
 
   a:hover {
@@ -391,6 +392,13 @@ a {
   }
 
   .img-fondo-pc {
+    display: none;
+  }
+  .invisible{
+    display: none;
+    color: white;
+  }
+  .liToogle{
     display: none;
   }
 }

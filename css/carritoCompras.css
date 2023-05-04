@@ -216,13 +216,14 @@ a:hover {
     position: absolute;
     display: grid;
     grid-template: "informacion informacion" auto
-        "precios   precios  " auto "cantidad  addProducts  " 60px/
+        "precios   precios  " auto "cantidad  add-products  " 60px/
         150px 370px;
 }
 
 .informacion {
     grid-area: informacion;
     margin-bottom: 30px;
+    z-index: -1;
 }
 
 .precios {
@@ -268,8 +269,8 @@ a:hover {
     border-radius: 8px;
 }
 
-.addProducts {
-    grid-area: addProducts;
+.add-products {
+    grid-area: add-products;
     background-color: rgb(255, 125, 26);
     margin: 0px 10px;
     border-radius: 8px;
@@ -443,14 +444,14 @@ h5 {
 .productos-add {
     width: 340px;
     height: 215px;
-    background-color: aqua;
     position: absolute;
     right: -70px;
     top: 100%;
     border: 0px solid black;
     border-radius: 8px;
     margin-top: 10px;
-    display: none;
+    border: 1px solid rgb(226, 226, 226);
+    background-color: white;
 }
 
 .fondoOscuro {
@@ -471,7 +472,6 @@ h5 {
 
 .header-productos-add {
     padding: 0px 20px;
-    background-color: aquamarine;
     height: 60px;
     position: relative;
     display: flex;
