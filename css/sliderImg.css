@@ -14,16 +14,17 @@
 }
 
 .imgs {
-    width: 10vw;
-    height: 10vh;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     position: relative;
+    overflow: hidden;
 }
 
 img {
-    width: 10vw;
-    height: 10vh;
-  
+    width: 100vw;
+    height: 100vh;
+
     position: absolute;
 }
 
@@ -58,25 +59,31 @@ img {
     right: 0;
 }
 
-.transition-1{
-    margin-left: -20vw;
+.transition-2 {
+    margin-left: -200vw;
     transition: margin 2s;
 }
-.transition0{
-    margin-left: -10vw;
+
+.transition-1 {
+    margin-left: -100vw;
     transition: margin 2s;
 }
-.transition1{
+
+.transition0 {
     margin-left: 0vw;
     transition: margin 2s;
 }
-.transition2{
-    margin-left: 10vw;
-    transition: margin 2s;
-}
-.transition3{
-    margin-left: 20vw;
+
+.transition1 {
+    margin-left: 100vw;
     transition: margin 2s;
 }
 
+.transition2 {
+    margin-left: 200vw;
+    transition: margin 2s;
+}
 
+.invisible {
+    display: none;
+}
