@@ -3,9 +3,135 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: "rickandmorty";
+    src: url(../fonts/get_schwifty.ttf);
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    width: 70vw;
+    position: relative;
+}
+
+header {
+    margin: 0px 30px;
+    width: 100%;
+    border-bottom: 1px solid rgb(235, 234, 234);
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto 1fr auto;
+
+}
+
+.titulo-nav {
+    font-family: rickandmorty;
+    font-size: 4.2vh;
+    margin-right: 5vh;
+    color: rgb(0, 183, 211);
+    font-weight: 100;
+    z-index: 1;
+    -webkit-text-stroke: 0.1vh black;
+}
+
+.titulo-nav-2 {
+    font-family: rickandmorty;
+    font-size: 4.2vh;
+    margin-right: 5vh;
+    color: rgb(178, 223, 40);
+    -webkit-text-stroke: 0.5vh rgb(178, 223, 40);
+    ;
+    font-weight: 500;
+    position: absolute;
+}
+
+.all {
+    display: flex;
+    justify-content: center;
+
+}
+
+li {
+    margin: 0px 2vh;
+    height: 7.8vh;
+}
+
+a {
+    cursor: pointer;
+    font-size: 2.1vh;
+    color: rgb(119, 119, 119);
+    display: block;
+    text-decoration: none;
+    padding-top: 3.3vh;
+
+}
+
+a:hover {
+    border-bottom: 4px solid rgb(255, 125, 26);
+    color: black;
+    padding-bottom: 20.3px;
+    transition: padding 0.2s;
+}
+
+.svg {
+    right: 0;
+    display: grid;
+    grid-template: "empty iconProductosAdd avatar" auto/
+        1fr auto;
+}
+
+.div-iconProductosAdd {
+    grid-area: iconProductosAdd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.fill-current {
+    margin-right: 3vh;
+    cursor: pointer;
+}
+
+.avatar {
+    width: 3vh;
+    height: 3vh;
+    cursor: pointer;
+    position: relative;
+}
+
+.avatar:hover {
+    border-radius: 100%;
+    border: 2px solid red;
+    position: relative;
+    left: -2px;
+}
+
+.div-avatar {
+    grid-area: avatar;
+    width: 32px;
+}
 
 .contenido {
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -14,16 +140,16 @@
 }
 
 .imgs {
-    width: 100vw;
-    height: 100vh;
+    width: 70vw;
+    height: 80vh;
     display: flex;
     position: relative;
     overflow: hidden;
 }
 
 img {
-    width: 100vw;
-    height: 100vh;
+    width: 70vw;
+    height: 80vh;
 
     position: absolute;
 }
@@ -60,27 +186,27 @@ img {
 }
 
 .transition-2 {
-    margin-left: -200vw;
+    margin-left: -200%;
     transition: margin 2s;
 }
 
 .transition-1 {
-    margin-left: -100vw;
+    margin-left: -100%;
     transition: margin 2s;
 }
 
 .transition0 {
-    margin-left: 0vw;
+    margin-left: 0%;
     transition: margin 2s;
 }
 
 .transition1 {
-    margin-left: 100vw;
+    margin-left: 100%;
     transition: margin 2s;
 }
 
 .transition2 {
-    margin-left: 200vw;
+    margin-left: 200%;
     transition: margin 2s;
 }
 

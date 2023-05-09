@@ -24,7 +24,7 @@ for (let i = 0; i < chevron.length; i++) {
 
                 img[x].classList.remove("transition" + (x - 1));
                 img[x].classList.remove("transition" + (x - 2));
-                img[contador.innerHTML].classList.add("transition0");
+                
                 img[x].classList.remove("transition" + x);
 
 
@@ -53,9 +53,9 @@ for (let i = 0; i < chevron.length; i++) {
                 contadorRight = parseFloat(contador.innerHTML) - 1;
                 document.getElementById("contador").innerHTML = contadorRight;
             } else {
-
                 document.getElementById("contador").innerHTML = 2;
             }
+          
         } for (let x = 0; x < img.length; x++) {
             if (contador.innerHTML == x) {
 
