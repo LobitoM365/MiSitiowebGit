@@ -3,6 +3,7 @@ let chevron = document.querySelectorAll(".chevron");
 let punto = document.querySelectorAll(".punto");
 let contador = document.getElementById("contador");
 let posicionImagen = document.getElementById("posicionImagen");
+let loader = document.getElementById("loader");
 
 for (let i = 0; i < chevron.length; i++) {
     chevron[i].addEventListener("click", function () {
@@ -115,4 +116,8 @@ for (let x = 0; x < punto.length; x++) {
             }
         }
     })
+}
+
+window.onload = function(){
+    loader.classList.add("invisible-loader")
 }
