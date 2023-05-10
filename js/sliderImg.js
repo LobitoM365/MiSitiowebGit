@@ -4,27 +4,20 @@ let punto = document.querySelectorAll(".punto");
 let contador = document.getElementById("contador");
 let posicionImagen = document.getElementById("posicionImagen");
 
-
-
 for (let i = 0; i < chevron.length; i++) {
-
     chevron[i].addEventListener("click", function () {
-
-
         if (i == 1) {
             let numeroPosicionImagen = parseFloat(posicionImagen.innerHTML) + 1;
             posicionImagen.innerHTML = numeroPosicionImagen;
             if (posicionImagen.innerHTML > 3) {
                 posicionImagen.innerHTML = 1;
             }
-
             if (contador.innerHTML < 2) {
                 contadorRight = parseFloat(contador.innerHTML) + 1;
                 document.getElementById("contador").innerHTML = contadorRight;
             } else {
                 document.getElementById("contador").innerHTML = 0;
             }
-
         }
         for (let x = 0; x < img.length; x++) {
             if (contador.innerHTML == x) {
@@ -49,8 +42,6 @@ for (let i = 0; i < chevron.length; i++) {
                             img[x].classList.add("transition" + x);
                         }
             }
-
-
         }
         if (i == 0) {
             let numeroPosicionImagen = parseFloat(posicionImagen.innerHTML) - 1;
@@ -64,8 +55,8 @@ for (let i = 0; i < chevron.length; i++) {
             } else {
                 document.getElementById("contador").innerHTML = 2;
             }
-
-        } for (let x = 0; x < img.length; x++) {
+        }
+        for (let x = 0; x < img.length; x++) {
             if (contador.innerHTML == x) {
                 img[x].classList.remove("transition" + (x - 1));
                 img[x].classList.remove("transition" + (x - 2));
@@ -92,7 +83,6 @@ for (let i = 0; i < chevron.length; i++) {
         }
     })
 }
-
 for (let x = 0; x < punto.length; x++) {
     punto[x].addEventListener("click", function () {
         for (let u = 0; u < punto.length; u++) {
