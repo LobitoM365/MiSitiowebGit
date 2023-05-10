@@ -283,6 +283,12 @@ a {
 
 
 @media screen and (max-width:700px) {
+  .subMenuInvisible {
+    display: none;
+  }
+  .invisible-mobile{
+    display: none;
+  }
   .iconWolfMenuHamburguer {
     width: 40px;
     transform: scaleX(-1);
@@ -335,23 +341,7 @@ a {
     background-color: rgba(255, 255, 255, 0.204);
   }
 
-  .menuPrincipalInvisible,
-  .subMenuPrincipalInvisible,
-  .subMenuInvisible,
-  .subMenuInvisible2,
-  .subMenuInvisible3,
-  .subMenuInvisible4,
-  .subMenuInvisible5,
-  .subMenuInvisible6,
-  .subMenuInvisible7,
-  .subMenuInvisible8,
-  .subMenuInvisible9,
-  .subMenuInvisible10,
-  .subMenuInvisible11,
-  .subMenuInvisible12,
-  .subMenuInvisible13 {
-    display: none;
-  }
+
 
   nav>ul {
     background-color: rgb(0, 0, 0, 100%);
@@ -394,11 +384,16 @@ a {
   .img-fondo-pc {
     display: none;
   }
-  .invisible{
+
+  .invisible {
     display: none;
     color: white;
   }
-  .liToogle{
+
+  .liToogle {
     display: none;
   }
+
+
+
 }

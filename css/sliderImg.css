@@ -164,17 +164,18 @@ a:hover {
 }
 
 .contenido {
-    height: 86.5vh;
+    height: 86.1vh;
+    position: absolute;
+    bottom: 0;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .imgs {
     width: 72vw;
-    height: 82vh;
+    height: 40vw;
     display: flex;
     position: relative;
     overflow: hidden;
@@ -182,7 +183,7 @@ a:hover {
 
 img {
     width: 72vw;
-    height: 82vh;
+    height: 40vw;
 
     position: absolute;
 }
