@@ -173,7 +173,6 @@ a:hover {
 
 .contenido {
     height: 100vh;
-    width: 99vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -210,10 +209,14 @@ img {
     font-size: 3vw;
     color: white;
     cursor: pointer;
-    width: 3vw;
-    height: 3vw;
-    border-radius: 100vw;
+}
 
+.div-left:hover,
+.div-right:hover {
+    background-color: black;
+    width: auto;
+    height: 4vw;
+    transition: background-color 0.8s;
 }
 
 .div-left {
@@ -259,16 +262,48 @@ img {
     width: 100%;
     height: 100%;
 }
-.puntos{
+
+.puntos {
     width: 100%;
-    height: 100%;
     position: absolute;
     display: flex;
     justify-content: center;
+    bottom: 0;
 }
-.punto1 {
-    border: 0.1vw solid white;
-    width: 0.5vw;
-    height: 0.5vw;
+
+.punto {
+    border: 0.15vw solid white;
+    width: 0.6vw;
+    height: 0.6vw;
     border-radius: 100%;
+    margin: 0.2vw;
+    transition: background-color 0.8s;
+    cursor: pointer;
+}
+
+.punto:hover {
+    background-color: rgba(255, 255, 255, 0.397);
+    border: 0.15vw solid rgba(255, 255, 255, 0.384);
+    transition: all 0.8s;
+}
+
+.puntoFocus {
+    background-color: white;
+    transition: background-color 0.8s;
+}
+
+.puntoFocus:hover {
+    background-color: white;
+    border: 0.15vw solid white;
+}
+
+.guia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    font-weight: bolder;
+    padding: 10px;
 }
