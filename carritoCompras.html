@@ -13,7 +13,6 @@
 <body>
     <div class="all">
         <div class="container">
-
             <div class="header">
                 <header>
                     <h2 class="titulo-nav">sneakers</h2>
@@ -27,19 +26,43 @@
                             <li><a>Contact</a></li>
                         </ul>
                     </nav>
-                    <div  class="svg">
-                        <svg id="iconProductosAdd" width="22" height="20" xmlns="http://www.w3.org/2000/svg"
-                            class="fill-current text-[#69707D] ">
-                            <path
-                                d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
-                                fill-rule="nonzero"></path>
-                        </svg>
+                    <div class="svg">
+                        <div class="icon-productos-add">
+                            <div id="divNotificacionCompra"
+                                class="div-notificacion-compra transition-opacity">0</div>
+                            <svg id="iconProductosAdd" width="22" height="20" xmlns="http://www.w3.org/2000/svg"
+                                class="fill-current text-[#69707D] ">
+
+                                <path
+                                    d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                                    fill-rule="nonzero"></path>
+                            </svg>
+                        </div>
                         <div class="div-avatar"> <img class="avatar" src="icons/image-avatar.png" alt=""></div>
                     </div>
                 </header>
                 <div id="productosAdd" class="productos-add invisible">
                     <div class="header-productos-add">
                         <h4>Cart</h4> <i id="quitProductosAdd" class="equis-productos-add fa-solid fa-xmark"></i>
+                    </div>
+                    <div id="contenidoProductosAdd" class="contenido-productos-add ">
+                        <div id="cleanProductosAdd" class="clean-productos-add">Your cart is empty</div>
+                        <div id="productosCheckout" class="productos-checkout ">
+                            <div class="contain-productos-checkout">
+                                <div class="div-img-checkout"> <img class="img-checkout"
+                                        src="img/imgCarrito/image-product-1.jpg" alt=""></div>
+                                <div class="div-descripcion-checkout">
+                                    <div>Fall Limit Edition Sneak... <br><span>$125.000 x
+                                        </span><span id="cantidadCheckout" class="cantidad_checkout">0</span> <span
+                                            id="cantidadTotalCheckout" class="cantidad-total-checkout">$0</span></div>
+                                </div>
+                                <div class="div-delete-checkout"> <i id="iconDeleteCheckout"
+                                        class="icon-delete-checkout fa-regular fa-trash-can"></i></div>
+                                <div class="checkout-checkout">Checkout</div>
+
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -100,7 +123,7 @@
                                 </div>
                                 <div id="idPlus" class="divPlus"> <i class="plus fa-solid fa-plus"></i></div>
                             </div>
-                            <div class="add-products"> <svg fill="white" width="22" height="20"
+                            <div id="AddToCart" class="add-products"> <svg fill="white" width="22" height="20"
                                     xmlns="http://www.w3.org/2000/svg" class="fill-current text-[#69707D]">
                                     <path
                                         d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
@@ -155,6 +178,7 @@
         </div>
     </div>
     <div class="invisible" style="margin-left: 30px;" id="posicionImgMini">0</div>
+    <div class="invisible" style="margin-left: 30px;" id="posicionImgMiniAddProductos">0</div>
 </body>
 
 </html>

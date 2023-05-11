@@ -1,5 +1,6 @@
 let imgMain = document.querySelectorAll(".imgMain");
 
+
 let imgMini = document.querySelectorAll(".imgMini");
 let borderFocus = document.querySelectorAll(".borderFocus");
 let divRight = document.getElementById("divRight")
@@ -8,6 +9,9 @@ let imgPredeterminada = document.getElementById("imgPredeterminada");
 let imgPredeterminada2 = document.getElementById("imgPredeterminada2");
 let productosAdd = document.getElementById("productosAdd");
 let iconProductosAdd = document.getElementById("iconProductosAdd");
+let AddToCart = document.getElementById("AddToCart");
+let posicionImgMiniAddProductos = document.getElementById("posicionImgMiniAddProductos");
+let quitProductosAdd = document.getElementById("quitProductosAdd");
 
 let posicionImgMini = document.getElementById("posicionImgMini");
 let idImgMain = document.getElementById("idImgMain");
@@ -19,8 +23,12 @@ let contenidoFocus = document.getElementById("contenidoFocus");
 let quitContenidoFocus = document.getElementById("quitContenidoFocus");
 let fondoOscuro = document.getElementById("fondoOscuro");
 
+
 quitContenidoFocus.addEventListener("click", function () {
     containVisibilidad(contenidoFocus)
+})
+quitProductosAdd.addEventListener("click", function () {
+    containVisibilidad(productosAdd)
 })
 fondoOscuro.addEventListener("click", function () {
     containVisibilidad(contenidoFocus)
@@ -28,9 +36,50 @@ fondoOscuro.addEventListener("click", function () {
 imgPredeterminada.addEventListener("click", function () {
     containVisibilidad(contenidoFocus)
 })
-iconProductosAdd.addEventListener("click", function(){
-    containVisibilidad(productosAdd);
+AddToCart.addEventListener("click", function () {
+    let idcantidadNumeroProducto = document.getElementById("idcantidadNumeroProducto").innerHTML;
+    let productosCheckout = document.getElementById("productosCheckout");
+    let idPrecioTotal = document.getElementById("idPrecioTotal").innerHTML;
+    let divNotificacionCompra = document.getElementById("divNotificacionCompra");
+    posicionImgMiniAddProductos.innerHTML = idcantidadNumeroProducto;
+    document.getElementById("cantidadCheckout").innerHTML = idcantidadNumeroProducto;
+    document.getElementById("divNotificacionCompra").innerHTML = idcantidadNumeroProducto;
+    document.getElementById("cantidadTotalCheckout").innerHTML = idPrecioTotal;
+    if (parseFloat(idcantidadNumeroProducto) == 0) {
+        alert("La cantidad agregada debe ser mayor a 0");
+        productosAdd.classList.add("invisible")
+        divNotificacionCompra.classList.add("transition-opacity")
+        productosCheckout.classList.add("transition-opacity")
+    } else {
+        let cleanProductosAdd = document.getElementById("cleanProductosAdd");
+        cleanProductosAdd.classList.add("transition-opacity");
+        productosCheckout.classList.remove("transition-opacity");
+        divNotificacionCompra.classList.remove("transition-opacity");
+    }
 })
+
+iconProductosAdd.addEventListener("click", function () {
+    if (parseFloat(posicionImgMiniAddProductos.innerHTML) == 0) {
+        productosAdd.classList.add("invisible");
+    } else {
+        containVisibilidad(productosAdd);
+    }
+})
+
+divNotificacionCompra.addEventListener("click", function () {
+    if (parseFloat(posicionImgMiniAddProductos.innerHTML) == 0) {
+        productosAdd.classList.add("transition-opacity");
+    } else {
+        containVisibilidad(productosAdd);
+    }
+})
+
+iconDeleteCheckout.addEventListener("click", function () {
+    productosCheckout.classList.add("transition-opacity");
+    cleanProductosAdd.classList.remove("transition-opacity");
+    divNotificacionCompra.classList.add("transition-opacity");
+})
+
 
 idMinus.addEventListener("click", function () {
     /*     let nodeToAdd = document.createElement("p");
@@ -59,6 +108,7 @@ idPlus.addEventListener("click", function () {
     let totalCantidadNumeroInt = cantidadNumeroInt + 1;
     let totalCantidadNumeroTxt = totalCantidadNumeroInt.toString();
     document.getElementById("idcantidadNumeroProducto").innerHTML = totalCantidadNumeroTxt;
+
     console.log(totalCantidadNumeroTxt)
     let precioZapatos = 250000;
     let descuento = precioZapatos * 0.5;
