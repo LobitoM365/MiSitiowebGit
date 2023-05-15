@@ -47,10 +47,10 @@ iconHamburguer.addEventListener("click", function () {
             for (let x = 0; x < iconSubMenu.length; x++) {
                 if (x == i) {
                     subMenuInvisible[x].classList.toggle("subMenuInvisible");
-                    subMenuInvisible[x].classList.toggle("prueba");
+                    subMenuInvisible[x].classList.toggle("transition-submenu");
                 } else {
                     subMenuInvisible[x].classList.add("subMenuInvisible");
-                    subMenuInvisible[x].classList.remove("prueba");
+                    subMenuInvisible[x].classList.remove("transition-submenu");
                 }
             }
         })

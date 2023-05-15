@@ -283,12 +283,16 @@ a {
 
 
 @media screen and (max-width:700px) {
+
+
   .subMenuInvisible {
+    visibility: hidden;
+  }
+
+  .invisible-mobile {
     display: none;
   }
-  .invisible-mobile{
-    display: none;
-  }
+
   .iconWolfMenuHamburguer {
     width: 40px;
     transform: scaleX(-1);
@@ -394,6 +398,60 @@ a {
     display: none;
   }
 
+  nav>Ul>Li>Ul>Li {
+    position: relative;
+    z-index: 3;
+  }
+  nav>Ul>Li>Ul>{
+
+    z-index: 3;
+  }
+  nav>Ul>Li>Ul>Li>ul>Li>a {
+    position: relative;
+    z-index: 2;
+  }
+
+  .subMenuInvisible {
+    position: absolute;
+    background-color: rgb(146, 160, 160);
+  }
+
+  .transition-elements1 {
+    margin-top: -26%;
+    transition: margin 2s;
+    z-index: -2;
+  }
+
+  .transition-elements4 {
+    margin-top: -103%;
+    transition: margin 2s;
+    z-index: -2;
+  }
+
+  .transition-elements3 {
+    margin-top: -78%;
+    transition: margin 2s;
+    z-index: -2;
+  }
+
+  .transition-elements2 {
+    margin-top: -50%;
+    transition: margin 2s;
+    z-index: -2;
+  }
+
+  .transition-elements6 {
+    margin-top: -155%;
+    transition: margin 2s;
+    z-index: -2;
+  }
+
+
+  .transition-submenu {
+    margin-top: 0;
+    position: relative;
+    transition: margin 2s;
+  }
 
 
 }
