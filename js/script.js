@@ -48,8 +48,30 @@ iconHamburguer.addEventListener("click", function () {
                 if (x == i) {
                     subMenuInvisible[x].classList.toggle("subMenuInvisible");
                     subMenuInvisible[x].classList.toggle("transition-submenu");
+                    subMenuInvisible[x].classList.add("primary-focus1");
+                    subMenuInvisible[x - 1].classList.add("primary-focus2");
+                    subMenuInvisible[x + 1].classList.add("primary-focus2");
+
+                    if (subMenuInvisible[x].classList.contains("transition-submenu")) {
+
+                    } else {
+                        subMenuInvisible[x].classList.remove("primary-focus2");
+                        subMenuInvisible[x + 1].classList.remove("primary-focus2");
+                        subMenuInvisible[x - 1].classList.remove("primary-focus2");
+                    }
                 } else {
-                    subMenuInvisible[x].classList.add("subMenuInvisible");
+
+                    if (x < i) {
+                        console.log(x, i)
+                        if (subMenuInvisible[x].classList.contains("transition-submenu")) {
+                            subMenuInvisible[x].classList.add("primary-focus2");
+                        } else {
+                            subMenuInvisible[x].classList.remove("primary-focus1");
+                        }
+                    } else {
+                        subMenuInvisible[x].classList.remove("primary-focus2");
+                        subMenuInvisible[x].classList.remove("primary-focus1");
+                    }
                     subMenuInvisible[x].classList.remove("transition-submenu");
                 }
             }
