@@ -455,6 +455,7 @@ a {
   width: 100%;
   top: 0;
   z-index: -1;
+  transition: opacity 0.5s;
 }
 .iframe-bills{
   position: absolute;
