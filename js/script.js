@@ -79,9 +79,9 @@ iconHamburguer.addEventListener("click", function () {
     }
 })
 
-/* window.onload = function () {
+window.onload = function () {
     let bills = document.getElementById("bills");
     bills.style.opacity = 0;
     imgFondoPcBlack.style.opacity = 1;
     imgFondoPcWhite.style.opacity = 1;
-} */
+}
