@@ -1,0 +1,1521 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(202, 202, 202);
+}
+
+.contenido {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.billCipher {
+    display: flex;
+    justify-content: center;
+}
+
+.div-bils {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.brazo1 {
+    border-left: 12px solid black;
+    border-bottom: 12px solid black;
+    rotate: -10deg;
+    border-radius: 40px 0px 0px 40px;
+    width: 70px;
+    height: 120px;
+    left: -8.5%;
+    top: calc(50% - 85px);
+    position: absolute;
+}
+
+.brazo2 {
+    border-left: 12px solid black;
+    border-bottom: 12px solid black;
+    rotate: 10deg;
+    border-radius: 40px 0px 0px 40px;
+    width: 70px;
+    height: 120px;
+    right: -8.5%;
+    top: calc(50% - 85px);
+    position: absolute;
+    transform: scaleX(-1);
+}
+
+.dedo1-brazo1 {
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid black;
+    border-radius: 40px 0px 40px 20px;
+    rotate: -30deg;
+    width: 70px;
+    height: 50px;
+    position: absolute;
+    left: -30px;
+    top: -10px;
+}
+
+.dedo2-brazo1 {
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid black;
+    border-radius: 40px 0px 40px 20px;
+    rotate: -70deg;
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    left: -50px;
+    top: 5px;
+}
+
+.dedo3-brazo1 {
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid black;
+    border-radius: 40px 0px 40px 20px;
+    rotate: 70deg;
+    width: 70px;
+    height: 50px;
+    position: absolute;
+    left: -50px;
+    top: -7px;
+    transform: scaleX(-1);
+}
+
+.bils {
+    background-color: transparent;
+    border-top: 0px transparent solid;
+    border-bottom: 300px solid yellow;
+    border-left: 173px transparent solid;
+    border-right: 173px transparent solid;
+}
+
+
+
+.fuego {
+    width: 100px;
+    height: 170px;
+    position: absolute;
+    overflow: hidden;
+    rotate: 40deg;
+    border-radius: 290px 290px 290px 290px;
+    left: -55px;
+    z-index: -1;
+    top: -5px;
+}
+
+
+
+.img-fuego {
+    position: relative;
+    width: 250px;
+    left: -70px;
+    top: -40px;
+}
+
+.fuego2 {
+    width: 100px;
+    height: 170px;
+    position: absolute;
+    overflow: hidden;
+    rotate: -40deg;
+    border-radius: 290px 290px 290px 290px;
+    right: -45px;
+    z-index: -1;
+    top: -5px;
+}
+
+.img-fuego2 {
+    position: relative;
+    width: 250px;
+    left: -70px;
+    top: -40px;
+    transform: scaleX(-1);
+}
+
+.div-ojo {
+    grid-area: div-ojo;
+    height: 70%;
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.div-rayas {
+    grid-area: div-ojo;
+    height: 30%;
+    width: 91.5%;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template: "raya1 raya2 raya2 raya3 raya3 raya4" 1fr "raya5 raya5 raya6  raya6 raya7 raya7" 1fr "raya8 raya9 raya9 raya10 raya10 raya11" 1fr/
+        auto 50px 50px 50px 50px auto;
+}
+
+.raya1 {
+    grid-area: raya1;
+    display: grid;
+    grid-template: "lado1-raya1 lado2-raya1" 1fr/
+        1fr 38%;
+}
+
+.lado1-raya1 {
+    grid-area: lado1-raya1;
+}
+
+.lado2-raya1 {
+    grid-area: lado2-raya1;
+    border-top: 4px solid rgb(144, 129, 43);
+}
+
+.raya2 {
+    grid-area: raya2;
+}
+
+.raya3 {
+    grid-area: raya3;
+}
+
+.raya4 {
+    border-left: 4px solid rgb(144, 129, 43);
+    grid-area: raya4;
+    display: grid;
+    grid-template: "lado1-raya4 lado2-raya4" 1fr/
+        38% 1fr;
+}
+
+.lado1-raya4 {
+    grid-area: lado1-raya4;
+    border-top: 4px solid rgb(144, 129, 43);
+}
+
+.lado2-raya4 {
+    grid-area: lado2-raya4;
+
+}
+
+.raya5 {
+    grid-area: raya5;
+    display: grid;
+    grid-template: "lado1-raya5 lado2-raya5" 1fr/
+        12px 1fr;
+}
+
+.lado1-raya5 {
+    grid-area: lado1-raya5;
+}
+
+.lado2-raya5 {
+    grid-area: lado2-raya5;
+    border-top: 4px solid rgb(144, 129, 43);
+}
+
+
+
+.raya6 {
+    grid-area: raya6;
+}
+
+.raya7 {
+    border-left: 4px solid rgb(144, 129, 43);
+    grid-area: raya7;
+    display: grid;
+    grid-template: "lado1-raya7 lado2-raya7" 1fr/
+        1fr 12px;
+}
+
+.lado1-raya7 {
+    grid-area: lado1-raya7;
+    border-top: 4px solid rgb(144, 129, 43);
+
+}
+
+.lado2-raya7 {
+    grid-area: lado2-raya7;
+}
+
+.raya8 {
+    grid-area: raya8;
+    border-top: 4px solid rgb(144, 129, 43);
+}
+
+.raya9 {
+    grid-area: raya9;
+}
+
+.raya10 {
+    grid-area: raya10;
+}
+
+.raya11 {
+    grid-area: raya11;
+}
+
+
+.raya2,
+.raya3,
+.raya6,
+.raya9,
+.raya10,
+.raya11 {
+    border-top: 4px solid rgb(144, 129, 43);
+    border-left: 4px solid rgb(144, 129, 43);
+}
+
+.bils::after {
+    content: "";
+    background-color: transparent;
+    border-top: 0px transparent solid;
+    border-bottom: 329px solid black;
+    border-left: 188px transparent solid;
+    border-right: 188px transparent solid;
+    position: absolute;
+    top: -20px;
+    left: -15px;
+    z-index: -1;
+}
+
+.traje {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.corbata {
+    width: -5px;
+    height: 5px;
+    border-left: 40px solid black;
+    border-right: 40px solid black;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    top: 9px;
+    position: absolute;
+}
+
+.div-ojo-parte1 {
+    position: absolute;
+    width: 130px;
+    height: 42px;
+    overflow: hidden;
+    margin-top: 13px;
+}
+
+.ojo-parte1 {
+    border-radius: 100%;
+    border: 3px solid black;
+    width: 90%;
+    height: 300%;
+    position: absolute;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 3px;
+}
+
+.div-ojo-parte2 {
+    position: absolute;
+    width: 130px;
+    height: 42px;
+    overflow: hidden;
+    margin-bottom: -97px;
+}
+
+.ojo-parte2 {
+    border-radius: 100%;
+    border: 3px solid black;
+    width: 90%;
+    height: 300%;
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 3px;
+}
+
+.pupila1 {
+    height: 55px;
+    width: 9px;
+    background-color: black;
+    bottom: 0;
+    position: relative;
+    margin-bottom: 60px;
+    border-radius: 100%;
+}
+
+.pupila2 {
+    height: 55px;
+    width: 9px;
+    background-color: black;
+    top: 0;
+    position: relative;
+    margin-top: 60px;
+    border-radius: 100%;
+}
+
+.lado-left {
+    width: 7.8px;
+    height: 90px;
+    background-color: black;
+    position: absolute;
+    rotate: 30deg;
+    margin-left: -291.5px;
+    bottom: 10px;
+    z-index: 2;
+}
+
+.lado-right {
+    width: 7px;
+    height: 90px;
+    background-color: black;
+    position: absolute;
+    rotate: -30deg;
+    margin-left: 291.1px;
+    bottom: 10px;
+    z-index: 2;
+}
+
+.div-pesta1 {
+    width: 20%;
+    height: 30px;
+    margin-bottom: 40px;
+    position: absolute;
+}
+
+.div-pesta2 {
+    width: 20%;
+    height: 30px;
+    margin-top: 150px;
+    position: absolute;
+}
+
+.pelo1-pesta1 {
+    background-color: black;
+    height: 76%;
+    width: 3px;
+    bottom: 0;
+    position: absolute;
+    border-radius: 10px 10px 0px 0px;
+    rotate: -25deg;
+}
+
+.pelo2-pesta1 {
+    background-color: black;
+    height: 76%;
+    width: 3px;
+    bottom: 0;
+    position: absolute;
+    border-radius: 10px 10px 0px 0px;
+    rotate: 25deg;
+    right: 0;
+}
+
+.pelo3-pesta1 {
+    background-color: black;
+    height: 85%;
+    width: 3px;
+    top: 0;
+    position: absolute;
+    border-radius: 10px 10px 0px 0px;
+    rotate: -10deg;
+    margin-left: 20px;
+}
+
+.pelo4-pesta1 {
+    background-color: black;
+    height: 85%;
+    width: 3px;
+    top: 0;
+    position: absolute;
+    border-radius: 10px 10px 0px 0px;
+    rotate: 10deg;
+    right: 0;
+    margin-right: 20px;
+}
+
+.pelo1-pesta2 {
+    background-color: rgb(0, 0, 0);
+    height: 76%;
+    width: 3px;
+    top: 0;
+    position: absolute;
+    border-radius: 0px 0px 10px 10px;
+    rotate: 25deg;
+}
+
+.pelo2-pesta2 {
+    background-color: black;
+    height: 76%;
+    width: 3px;
+    top: 0;
+    position: absolute;
+    border-radius: 0px 0px 10px 10px;
+    rotate: -25deg;
+    right: 0;
+}
+
+.pelo3-pesta2 {
+    background-color: black;
+    height: 85%;
+    width: 3px;
+    bottom: 0;
+    position: absolute;
+    border-radius: 0px 0px 10px 10px;
+    rotate: 10deg;
+    margin-left: 20px;
+}
+
+.pelo4-pesta2 {
+    background-color: black;
+    height: 90%;
+    width: 3px;
+    bottom: 0;
+    position: absolute;
+    border-radius: 0px 0px 10px 10px;
+    rotate: -10deg;
+    right: 0;
+    margin-right: 20px;
+}
+
+.sombrero {
+    width: 120px;
+    height: 100px;
+    position: absolute;
+    bottom: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.cabeza-sombrero {
+    top: 0;
+    margin-top: -20px;
+    width: 40px;
+    position: absolute;
+    border-top: 120px solid black;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+}
+
+.base-sombrero {
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    width: 90%;
+    height: 12%;
+}
+
+.div-cabeza-sombrero {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.rueda {
+    display: grid;
+    grid-template: "robbin        macgucket     sus wendy" 32.375%
+        "mabel        bill-cipher     bill-cipher   stanli" 35.25%
+        "noroeste    stanfor        gideon        dipper" 32.375%/
+        25% 25% 25% 25%;
+    border-radius: 100%;
+    width: 850px;
+    height: 850px;
+    border: 5px solid black;
+    animation: rueda 5s linear infinite;
+    overflow: hidden;
+}
+
+
+
+@keyframes rueda {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes bill {
+    from {
+        transform: rotate(360deg);
+
+    }
+
+    to {
+        transform: rotate(0deg);
+
+    }
+}
+
+@keyframes simbol {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+
+.rueda::after {
+    content: "";
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    border: 5px solid black;
+    border-radius: 100%;
+    left: calc(50% - 300px - 5px);
+    top: calc(50% - 300px - 5px);
+    background-color: rgb(202, 202, 202);
+    z-index: -2;
+    animation: rueda 5s linear infinite;
+}
+
+/* .rueda:before {
+    content: "";
+    border-radius: 100%;
+    width: 850px;
+    height: 850px;
+    z-index: -4;
+    background-image: conic-gradient(transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,rgba(255, 255, 255, 0.288),rgba(255, 255, 255, 0.719),rgba(255, 255, 255, 0.705));
+    position: absolute;
+    animation: rueda 5s linear infinite;
+    rotate: -5deg;
+    
+} */
+
+.robbin {
+    animation: robbin 1s linear infinite;
+    rotate: -72deg;
+    border-left: 2px solid black;
+    top: 70px;
+}
+
+.circulo-colores {
+    position: absolute;
+    width: 850px;
+    height: 850px;
+    overflow: hidden;
+    z-index: -5;
+    border-radius: 100%;
+}
+
+.img-robbin {
+    rotate: 72deg;
+}
+
+.macgucket {
+    grid-area: macgucket;
+    animation: macgucket 1s linear infinite;
+    rotate: -36deg;
+    border-left: 2px solid black;
+
+}
+
+.img-macgucket {
+    rotate: 36deg;
+}
+
+.sus {
+    grid-area: sus;
+    animation: sus 1s linear infinite;
+    rotate: 36deg;
+    border-right: 2px solid black;
+}
+
+.img-sus {
+    rotate: -36deg;
+}
+
+.wendy {
+    grid-area: wendy;
+    animation: wendy 1s linear infinite;
+    rotate: 72deg;
+    top: 70px;
+    border-right: 2px solid black;
+}
+
+.img-wendy {
+    rotate: -72deg;
+}
+
+.billCipher {
+    animation: bill 5s linear infinite;
+    grid-area: bill-cipher;
+    position: relative;
+}
+
+.stanli {
+    grid-area: stanli;
+    animation: stanli 1s linear infinite;
+    rotate: 108deg;
+    border-right: 2px solid black;
+}
+
+.img-stanli {
+    rotate: -108deg;
+}
+
+.dipper {
+    grid-area: dipper;
+    animation: dipper 1s linear infinite;
+    rotate: -36deg;
+    border-right: unset;
+}
+
+.img-dipper {
+    rotate: 36deg;
+}
+
+.gideon {
+    grid-area: gideon;
+    animation: gideon 1s linear infinite;
+    border-right: 2px solid black;
+    rotate: -36deg;
+
+}
+
+.img-gideon {
+    rotate: 36deg;
+}
+
+.stanfor {
+    grid-area: stanfor;
+    animation: stanfor 1s linear infinite;
+    rotate: 36deg;
+    border-left: 2px solid black;
+}
+
+.img-stanfor {
+    rotate: -36deg;
+}
+
+.noroeste {
+    grid-area: noroeste;
+    animation: noroeste 1s linear infinite;
+    rotate: 36deg;
+}
+
+.img-noroeste {
+    rotate: -36deg;
+}
+
+.mabel {
+    grid-area: mabel;
+    animation: mabel 1s linear infinite;
+    rotate: -108deg;
+    border-left: 2px solid black;
+}
+
+.img-mabel {
+    rotate: 108deg;
+}
+
+.linea-top {
+    border-left: black 2px solid;
+    width: 20px;
+    height: 212px;
+    rotate: 36deg;
+    position: absolute;
+    top: 0;
+    left: calc(100% + 50px);
+}
+
+.linea-bottom {
+    border-left: black 2px solid;
+    width: 20px;
+    height: 212px;
+    rotate: -36deg;
+    position: absolute;
+    top: 0;
+    left: calc(100% + 10px);
+}
+
+
+.robbin,
+.macgucket,
+.sus,
+.wendy,
+.stanli,
+.mabel,
+.dipper,
+.noroeste,
+.stanfor,
+.gideon {
+    z-index: -2;
+    position: relative;
+}
+
+
+.gravity-falls {
+    position: relative;
+    overflow: hidden;
+    zoom: 60%;
+}
+
+.simbolos {
+    width: 80px;
+    height: 80px;
+    animation: simbol 5s linear infinite;
+}
+
+.simbolo-mid-mid-right {
+    position: absolute;
+    left: calc(50% - 40px);
+    top: calc(50% - 80px);
+
+}
+
+.simbolo-mid-mid-left {
+    position: absolute;
+    left: calc(50% - 40px);
+    top: calc(50% - 80px);
+
+}
+
+.simbolo-esquina-top-left {
+    position: absolute;
+    top: calc(50% - 20px);
+    right: calc(50% - 30px);
+
+}
+
+.simbolo-esquina-top-right {
+    position: absolute;
+    top: calc(50% - 20px);
+    right: calc(50% - 50px);
+}
+
+.simbolo-esquina-bottom-right {
+    position: absolute;
+    bottom: calc(50% + 30px);
+    left: calc(50% - 10px);
+}
+
+.simbolo-esquina-bottom-left {
+    position: absolute;
+    bottom: calc(50% + 30px);
+    left: calc(50% - 60px);
+}
+
+.simbolo-mid-top-right {
+    position: absolute;
+    right: calc(50% - 30px);
+    top: 50px;
+}
+
+.simbolo-mid-top-left {
+    position: absolute;
+    left: calc(50% - 30px);
+    top: 50px;
+}
+
+.simbolo-mid-bottom-left {
+    position: absolute;
+    left: calc(50% - 20px);
+    bottom: 50px;
+}
+
+.simbolo-mid-bottom-right {
+    position: absolute;
+    right: calc(50% - 20px);
+    bottom: 40px;
+}
+
+.pierna {
+    width: 140px;
+    height: 130px;
+    position: absolute;
+    top: 100%;
+    right: calc(50% - 5px);
+}
+
+
+.parte1 {
+    border-top: 16px solid black;
+    border-left: 16px solid black;
+    width: 80px;
+    height: 40px;
+    rotate: -70deg;
+    position: absolute;
+    top: 30px;
+    left: 48px;
+    border-radius: 100% 10% 10% 100%;
+}
+
+.parte2 {
+    border-top: 16px solid transparent;
+    border-left: 16px solid black;
+    width: 40px;
+    height: 42px;
+    rotate: -105deg;
+    position: absolute;
+    top: 47px;
+    left: 62px;
+    border-radius: 100% 10% 100% 100%;
+}
+
+.pie {
+    width: 55px;
+    height: 16px;
+    rotate: 200deg;
+    background-color: black;
+    position: absolute;
+    top: 28px;
+    right: 27px;
+    border-radius: 100% 220% 160% 290%;
+}
+
+.pierna2 {
+    width: 140px;
+    height: 130px;
+    position: absolute;
+    top: 100%;
+    left: calc(50% - 5px);
+    transform: scaleX(-1);
+}
+
+.parte1-pierna2 {
+    border-top: 16px solid black;
+    border-left: 16px solid black;
+    width: 90px;
+    height: 50px;
+    rotate: -70deg;
+    position: absolute;
+    top: 30px;
+    left: 48px;
+    border-radius: 100% 10% 10% 100%;
+}
+
+.parte2-pierna2 {
+    border-top: 16px solid transparent;
+    border-left: 16px solid black;
+    width: 40px;
+    height: 42px;
+    rotate: -105deg;
+    position: absolute;
+    top: 57px;
+    left: 65px;
+    border-radius: 100% 10% 100% 100%;
+}
+
+.color-robbin {
+    width: 144px;
+    border-bottom: 0px solid transparent;
+    border-left: 60px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 170px solid transparent;
+    rotate: -52.5deg;
+    top: 148px;
+    left: 10px;
+    position: absolute;
+    animation: loader-robbin linear infinite;
+}
+
+.color-macgucket {
+    width: 190px;
+    border-bottom: 0px solid transparent;
+    border-left: 60px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 170px solid transparent;
+    rotate: -17deg;
+    top: 19px;
+    left: 156px;
+    position: absolute;
+    animation: loader-macgucket linear infinite;
+}
+
+.color-sus {
+    width: 190px;
+    border-bottom: 0px solid transparent;
+    border-left: 60px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 170px solid transparent;
+    rotate: 19.5deg;
+    left: 390px;
+    position: absolute;
+    top: 19px;
+    animation: loader-sus linear infinite;
+}
+
+.color-wendy {
+    width: 140px;
+    border-bottom: 0px solid transparent;
+    border-left: 60px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 170px solid transparent;
+    rotate: 55.5deg;
+    left: 580px;
+    top: 145px;
+    position: absolute;
+    animation: loader-wendy linear infinite;
+}
+
+.color-stanli {
+    width: 183px;
+    border-bottom: 0px solid transparent;
+    border-left: 60px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 170px solid transparent;
+    rotate: 92deg;
+    left: 630px;
+    top: 338px;
+    position: absolute;
+    animation: loader-stanli linear infinite;
+}
+
+.color-dipper {
+    width: 132px;
+    border-bottom: 0px solid transparent;
+    border-left: 60px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 172px solid transparent;
+    rotate: 127.5deg;
+    left: 585px;
+    bottom: 150px;
+    position: absolute;
+    animation: loader-dipper linear infinite;
+}
+
+.color-gideon {
+    width: 186px;
+    border-bottom: 0px solid transparent;
+    border-left: 60px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 170px solid transparent;
+    rotate: -196.5deg;
+    bottom: 18px;
+    left: 402px;
+    position: absolute;
+    animation: loader-gideon linear infinite;
+}
+
+.color-stanfor {
+    width: 195px;
+    border-bottom: 0px solid transparent;
+    border-left: 60px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 170px solid transparent;
+    rotate: -160deg;
+    bottom: 18px;
+    left: 163px;
+    position: absolute;
+    animation: loader-stanfor linear infinite;
+}
+
+.color-noroeste {
+    width: 144px;
+    border-bottom: 0px solid transparent;
+    border-left: 60px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 170px solid transparent;
+    rotate: -124.5deg;
+    bottom: 138px;
+    left: 10px;
+    position: absolute;
+    animation: loader-noroeste linear infinite;
+}
+
+.color-mabel {
+    width: 192px;
+    border-bottom: 0px solid transparent;
+    border-left: 60px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 170px solid transparent;
+    rotate: -88deg;
+    right: 640px;
+    top: 346px;
+    position: absolute;
+    animation: loader-mabel linear infinite;
+}
+
+.color-dipper,
+.color-macgucket,
+.color-robbin,
+.color-noroeste,
+.color-stanfor,
+.color-gideon,
+.color-sus,
+.color-wendy,
+.color-stanli,
+.color-mabel {
+    animation-duration: 0.5s;
+}
+
+
+@keyframes loader-robbin {
+    0% {
+        border-top-color: rgba(208, 37, 26, 0.719);
+    }
+
+    10% {
+        border-top-color: rgba(208, 37, 26, 0.322);
+    }
+
+    20% {
+        border-top-color: transparent;
+    }
+
+    30% {
+        border-top-color: transparent;
+    }
+
+    40% {
+        border-top-color: transparent;
+    }
+
+    50% {
+        border-top-color: transparent;
+    }
+
+    60% {
+        border-top-color: transparent;
+    }
+
+    70% {
+        border-top-color: transparent;
+    }
+
+    80% {
+        border-top-color: transparent;
+    }
+
+    90% {
+        border-top-color: transparent;
+    }
+
+    100% {
+        border-top-color: rgba(208, 37, 26);
+    }
+
+}
+
+@keyframes loader-macgucket {
+
+    10% {
+        border-top-color: rgb(82, 82, 82);
+    }
+
+    20% {
+        border-top-color: rgb(82, 82, 82, 0.719);
+    }
+
+    30% {
+        border-top-color: rgb(82, 82, 82, 0.322);
+    }
+
+    40% {
+        border-top-color: transparent;
+    }
+
+    50% {
+        border-top-color: transparent;
+    }
+
+    60% {
+        border-top-color: transparent;
+    }
+
+    70% {
+        border-top-color: transparent;
+    }
+
+    80% {
+        border-top-color: transparent;
+    }
+
+    90% {
+        border-top-color: transparent;
+    }
+
+    100% {
+        border-top-color: transparent;
+    }
+
+}
+
+@keyframes loader-sus {
+
+    10% {
+        border-top-color: transparent;
+    }
+
+    20% {
+        border-top-color: rgba(0, 64, 38);
+    }
+
+    30% {
+        border-top-color: rgba(0, 64, 38, 0.719);
+    }
+
+    40% {
+
+        border-top-color: rgba(0, 64, 38, 0.322);
+    }
+
+    50% {
+        border-top-color: transparent;
+    }
+
+    60% {
+        border-top-color: transparent;
+    }
+
+    70% {
+        border-top-color: transparent;
+    }
+
+    80% {
+        border-top-color: transparent;
+    }
+
+    90% {
+        border-top-color: transparent;
+    }
+
+    100% {
+        border-top-color: transparent;
+    }
+
+}
+
+@keyframes loader-wendy {
+
+    10% {
+        border-top-color: transparent;
+    }
+
+    20% {
+        border-top-color: transparent;
+    }
+
+    30% {
+        border-top-color: rgba(152, 208, 196);
+    }
+
+    40% {
+        border-top-color: rgba(152, 208, 196, 0.719);
+    }
+
+    50% {
+        border-top-color: rgba(152, 208, 196, 0.322);
+    }
+
+    60% {
+        border-top-color: transparent;
+    }
+
+    70% {
+        border-top-color: transparent;
+    }
+
+    80% {
+        border-top-color: transparent;
+    }
+
+    90% {
+        border-top-color: transparent;
+    }
+
+    100% {
+        border-top-color: transparent;
+    }
+
+}
+
+@keyframes loader-stanli {
+
+    10% {
+        border-top-color: transparent;
+    }
+
+    20% {
+        border-top-color: transparent;
+    }
+
+    30% {
+        border-top-color: transparent;
+    }
+
+    40% {
+        border-top-color: rgba(207, 184, 80);
+    }
+
+    50% {
+        border-top-color: rgba(207, 184, 80, 0.719);
+    }
+
+    60% {
+        border-top-color: rgba(207, 184, 80, 0.322);
+    }
+
+    70% {
+        border-top-color: transparent;
+    }
+
+    80% {
+        border-top-color: transparent;
+    }
+
+    90% {
+        border-top-color: transparent;
+    }
+
+    100% {
+        border-top-color: transparent;
+    }
+
+}
+
+@keyframes loader-dipper {
+
+    10% {
+        border-top-color: transparent;
+    }
+
+    20% {
+        border-top-color: transparent;
+    }
+
+    30% {
+        border-top-color: transparent;
+    }
+
+    40% {
+        border-top-color: transparent;
+    }
+
+    50% {
+        border-top-color: rgba(47, 133, 188);
+    }
+
+    60% {
+        border-top-color: rgba(47, 133, 188, 0.719);
+    }
+
+    70% {
+        border-top-color: rgba(47, 133, 188, 0.322);
+    }
+
+    80% {
+        border-top-color: transparent;
+    }
+
+    90% {
+        border-top-color: transparent;
+    }
+
+    100% {
+        border-top-color: transparent;
+    }
+
+}
+
+@keyframes loader-gideon {
+
+    10% {
+        border-top-color: transparent;
+    }
+
+    20% {
+        border-top-color: transparent;
+    }
+
+    30% {
+        border-top-color: transparent;
+    }
+
+    40% {
+        border-top-color: transparent;
+    }
+
+    50% {
+        border-top-color: transparent;
+    }
+
+    60% {
+        border-top-color: rgba(254, 192, 183);
+    }
+
+    70% {
+        border-top-color: rgba(254, 192, 183, 0.719);
+    }
+
+    80% {
+        border-top-color: rgba(254, 192, 183, 0.322);
+    }
+
+    90% {
+        border-top-color: transparent;
+    }
+
+    100% {
+        border-top-color: transparent;
+    }
+
+}
+
+@keyframes loader-stanfor {
+
+    10% {
+        border-top-color: transparent;
+    }
+
+    20% {
+        border-top-color: transparent;
+    }
+
+    30% {
+        border-top-color: transparent;
+    }
+
+    40% {
+        border-top-color: transparent;
+    }
+
+    50% {
+        border-top-color: transparent;
+    }
+
+    60% {
+        border-top-color: transparent;
+    }
+
+    70% {
+        border-top-color: rgba(146, 120, 52);
+    }
+
+    80% {
+        border-top-color: rgba(146, 120, 52, 0.719);
+    }
+
+    90% {
+        border-top-color: rgba(146, 120, 52, 0.322);
+
+    }
+
+    100% {
+        border-top-color: transparent;
+    }
+
+}
+
+@keyframes loader-noroeste {
+
+    10% {
+        border-top-color: transparent;
+    }
+
+    20% {
+        border-top-color: transparent;
+    }
+
+    30% {
+        border-top-color: transparent;
+    }
+
+    40% {
+        border-top-color: transparent;
+    }
+
+    50% {
+        border-top-color: transparent;
+    }
+
+    60% {
+        border-top-color: transparent;
+    }
+
+    70% {
+        border-top-color: transparent;
+    }
+
+    80% {
+        border-top-color: rgba(255, 162, 13);
+    }
+
+    90% {
+        border-top-color: rgba(255, 162, 13, 0.719);
+    }
+
+    100% {
+        border-top-color: rgba(255, 162, 13, 0.322);
+    }
+
+}
+
+@keyframes loader-mabel {
+    0% {
+        border-top-color: rgba(154, 21, 184, 0.322);
+    }
+
+    10% {
+        border-top-color: transparent;
+    }
+
+    20% {
+        border-top-color: transparent;
+    }
+
+    30% {
+        border-top-color: transparent;
+    }
+
+    40% {
+        border-top-color: transparent;
+    }
+
+    50% {
+        border-top-color: transparent;
+    }
+
+    60% {
+        border-top-color: transparent;
+    }
+
+    70% {
+        border-top-color: transparent;
+    }
+
+    80% {
+        border-top-color: transparent;
+    }
+
+    90% {
+        border-top-color: rgba(155, 21, 184);
+    }
+
+    100% {
+        border-top-color: rgba(154, 21, 184, 0.719);
+    }
+
+}
+
+@media screen and (max-width:700px) {
+    .gravity-falls {
+        zoom: 40%;
+    }
+}
+@media screen and (max-width:400px) {
+    .gravity-falls {
+        zoom: 30%;
+    }
+}

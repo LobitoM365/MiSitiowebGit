@@ -183,7 +183,13 @@ a {
 
   .img-fondo-smarphone {
     display: none;
+
   }
+
+  #imgFondoPcBlack,#imgFondoPcWhite{
+    opacity: 0;
+  }
+  
 
   .iconWolfMenuNormal {
     width: 50px;
@@ -442,4 +448,17 @@ a {
   .primary-focus2 >li >a{
     z-index: 4;
   }
+}
+
+.bills{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: -1;
+}
+.iframe-bills{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 100vh ;
 }
