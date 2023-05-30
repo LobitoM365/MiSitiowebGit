@@ -291,9 +291,14 @@ a {
 @media screen and (max-width:700px) {
 
   .invisible-mobile {
-    display: none;
+    visibility: hidden;
   }
-
+  .transition-top{
+    transition: margin 0.5s;
+  }
+  .transition-bottom{
+    transition: margin 0.5s;
+  }
   .iconWolfMenuHamburguer {
     width: 40px;
     transform: scaleX(-1);
@@ -403,35 +408,6 @@ a {
   }
 
 
-  .transition-elements1 {
-    margin-top: -25.8%;
-    transition: margin 0.5s;
-  }
-
-  .transition-elements4 {
-    margin-top: -103.5%;
-    transition: margin 0.5s;
-  }
-
-  .transition-elements3 {
-    margin-top: -78%;
-    transition: margin 0.5s;
-  }
-
-  .transition-elements2 {
-    margin-top: -51.8%;
-    transition: margin 0.5s;
-  }
-
-  .transition-elements6 {
-    margin-top: -155%;
-    transition: margin 0.5s;
-  }
-
-  .transition-submenu {
-    margin-top: 0;
-    transition: margin 0.5s;
-  }
 
   .subMenuInvisible>li>a {
     position: relative;

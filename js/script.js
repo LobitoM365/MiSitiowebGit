@@ -39,20 +39,35 @@ toogle.addEventListener("click", function () {
 })
 
 iconHamburguer.addEventListener("click", function () {
+    for(let u = 0 ; u < subMenuInvisible.length; u++){
+        let height = subMenuInvisible[u].scrollHeight;
+        subMenuInvisible[u].style.marginTop = "-" + height + "px";
+    }
     iconSubMenuPrincipal.addEventListener("click", function () {
         subMenuPrincipal.classList.toggle("invisible-mobile")
     })
     for (let i = 0; i < iconSubMenu.length; i++) {
+        
         iconSubMenu[i].addEventListener("click", function () {
             for (let x = 0; x < iconSubMenu.length; x++) {
                 if (x == i) {
+                    subMenuInvisible[x].classList.toggle("transition-bottom");
+                    let height = subMenuInvisible[x].scrollHeight;
+                    if(subMenuInvisible[x].classList.contains("transition-bottom")){
+                        subMenuInvisible[x].style.marginTop = 0;
+                        subMenuInvisible[x].classList.add("transition-top");
+                    }else{
+                        subMenuInvisible[x].classList.add("transition-top");
+                        subMenuInvisible[x].style.marginTop = "-" + height + "px";
+                    }
+
+
                     subMenuInvisible[x].classList.toggle("subMenuInvisible");
-                    subMenuInvisible[x].classList.toggle("transition-submenu");
                     subMenuInvisible[x].classList.add("primary-focus1");
                     subMenuInvisible[x - 1].classList.add("primary-focus2");
                     subMenuInvisible[x + 1].classList.add("primary-focus2");
 
-                    if (subMenuInvisible[x].classList.contains("transition-submenu")) {
+                    if (subMenuInvisible[x].classList.contains("transition-top")) {
 
                     } else {
                         subMenuInvisible[x].classList.remove("primary-focus2");
@@ -63,7 +78,7 @@ iconHamburguer.addEventListener("click", function () {
 
                     if (x < i) {
                         console.log(x, i)
-                        if (subMenuInvisible[x].classList.contains("transition-submenu")) {
+                        if (subMenuInvisible[x].classList.contains("transition-top")) {
                             subMenuInvisible[x].classList.add("primary-focus2");
                         } else {
                             subMenuInvisible[x].classList.remove("primary-focus1");
@@ -72,7 +87,6 @@ iconHamburguer.addEventListener("click", function () {
                         subMenuInvisible[x].classList.remove("primary-focus2");
                         subMenuInvisible[x].classList.remove("primary-focus1");
                     }
-                    subMenuInvisible[x].classList.remove("transition-submenu");
                 }
             }
         })
