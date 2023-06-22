@@ -1,9 +1,9 @@
 // Activando el modo Strict //
- "use strict"
+"use strict"
 
 
- // Ejercicio número 1 ////////////////////////////////////////////////////////////////////////////
- 
+// Ejercicio número 1 ////////////////////////////////////////////////////////////////////////////
+
 /*  let saludo = document.getElementById("saludo");
 
 saludo.addEventListener("click", function(){
@@ -49,13 +49,13 @@ console.log(numero5 + numero6);
 //Conversion de string a entero //
 let numero3Int = parseInt(numero3);
 let resultadoInt = numero1 + numero3Int;
-console.log (  "Convertir String a entero\n\n" + "5 + 4 = " + resultadoInt )
+console.log("Convertir String a entero\n\n" + "5 + 4 = " + resultadoInt)
 
 //Conversion de entero a string //
 
 let numero3String = numero3Int.toString();
 let resultadoString = numero1 + numero3String;
-console.log (  "Convertir String a entero\n\n" + "5 + 4 = " + resultadoString )
+console.log("Convertir String a entero\n\n" + "5 + 4 = " + resultadoString)
 
 //Conversion a decimal //
 
@@ -63,14 +63,14 @@ let numFloatString = "2.3";
 let numIntFloat = parseFloat(numero2);
 let numFloatNumber = parseFloat(numFloatString);
 let number2Float = 8.1;
-console.log ( "Valore: " +numIntFloat + " + " + numFloatNumber + " + " + number2Float + "\n\n" + (numIntFloat + numFloatNumber + number2Float))
+console.log("Valore: " + numIntFloat + " + " + numFloatNumber + " + " + number2Float + "\n\n" + (numIntFloat + numFloatNumber + number2Float))
 
 //Ajuste decimal hacia arriba//
 
-console.log ( "Ajuste resultados decimal hacia arriba, Valores:\n\n" +numIntFloat + " + " + numFloatNumber + " + " + number2Float + " = " + Math.ceil((numIntFloat + numFloatNumber + number2Float)))
+console.log("Ajuste resultados decimal hacia arriba, Valores:\n\n" + numIntFloat + " + " + numFloatNumber + " + " + number2Float + " = " + Math.ceil((numIntFloat + numFloatNumber + number2Float)))
 //Ajuste decimal hacia arriba//
 
-console.log ( "Ajuste resultados decimal hacia abajo, Valores:\n\n" +numIntFloat + " + " + numFloatNumber + " + " + number2Float + " = " + Math.floor((numIntFloat + numFloatNumber + number2Float)))
+console.log("Ajuste resultados decimal hacia abajo, Valores:\n\n" + numIntFloat + " + " + numFloatNumber + " + " + number2Float + " = " + Math.floor((numIntFloat + numFloatNumber + number2Float)))
 
 
 //Limitaciones para declaración de variables//////////////////////////////////////////////////////
@@ -86,3 +86,18 @@ let nombreusuario = "Vicente";
 //3.No poner carácteres especiales//
 let nombre-usuario = "Vicente";
 let nombreUsuario = "Vicente"; */
+
+//Operadores aritmeticos //////////////////////////////////////////////////////////////////////////
+let nombre = "juan Miguel Almario Rojas";
+let numArit1 = 8;
+let numArit2 = 6
+console.log("Suma");
+console.log(numArit1 + " + " + numArit2 + " +  2 = " + (2 + (numArit1 + numArit2)));
+console.log("Resta");
+console.log(numArit1 + " - " + numArit2 + " - " + 2 + " = " + (2 - (numArit1 - numArit2)));
+console.log("Multiplicacion");
+console.log(numArit1 + " * " + numArit2 + " = " + (numArit1 * numArit2));
+console.log("Division");
+console.log(numArit1 + " / " + numArit2 + " = " + (numArit1 / numArit2));
+console.log("Rendondear numero");
+console.log(numArit1 + " / " + numArit2 + " = " + Math.round(numArit1 / numArit2));
