@@ -357,7 +357,8 @@ h4 {
     opacity: 0;
     transition: all 1s;
 }
-.img-mobile{
+
+.img-mobile {
     display: none;
 }
 
@@ -493,7 +494,8 @@ h4 {
         height: 7vw;
         transition: background-color 0.8s;
     }
-    .menu{
+
+    .menu {
         display: none;
     }
 }
@@ -517,6 +519,7 @@ h4 {
         overflow: hidden;
         background-color: aqua;
     }
+
     .img {
         width: 100%;
         height: 100%;
@@ -531,7 +534,7 @@ h4 {
     .guia {
         font-size: 2vw;
     }
-    
+
     .div-left,
     .div-right {
         display: flex;
@@ -551,10 +554,116 @@ h4 {
         height: 10vw;
         transition: background-color 0.8s;
     }
-    .img-mobile{
+
+    .img-mobile {
         display: block;
     }
-    .img-pc{
+
+    .img-pc {
         display: none;
     }
+}
+
+
+.div-ana {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    height: 60px;
+    width: 100px;
+    z-index: 9;
+}
+
+.img-ana,
+.img-iconx-normal,
+.img-iconx-hover {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    position: absolute;
+}
+
+.img-iconx-normal,
+.img-iconx-hover {
+    width: 178%;
+    height: 130%;
+    top: calc(50% - 65%);
+}
+.img-iconx-normal{
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+.div-icons-x {
+    width: 55%;
+    height: 90%;
+    position: absolute;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    right: 5px;
+    top: 6px;
+    box-shadow: 0px 0px 5px rgb(160, 159, 159);
+}
+
+.img-ana{
+    z-index: 90;
+    transition: width 1s ease-in-out, opacity 0.2s ease-in-out;
+    right: 0;
+}
+.div-icons-x  .img-iconx-normal:hover  {
+    opacity:0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.div-div-icons-x{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: none;
+}
+
+.chat{
+    width: 400px;
+    bottom: 100%;
+    position: absolute;
+    right: 0%;
+    visibility: hidden;
+    z-index: 9999999;
+}
+
+.head{
+    background-color: rgb(0, 93, 173);
+    height: 75px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 8px 8px 0px 0px;
+    display: flex;
+    align-items: center;
+}
+.contenido-chat{
+    width: 100%;
+    height: 0;
+    background-color: rgb(234, 238, 243);
+    transition: height 0.3s ease-in-out;
+    border-radius: 8px 8px 0px 0px; 
+}
+.input-chat{
+    width: 100%;
+    background-color: rgb(234, 238, 243);
+    height: 60px;
+    border-radius: 0px 0px 8px 8px;
+    border-top: 2px solid rgb(48, 79, 254);
+}
+.img-ana-chat{
+    height: 80%;
+    margin-left: 8px;
+}
+
+.text-homecenter{
+    color: white;
+    font-size: 1.2em;
+    margin-left: 15px;
 }
