@@ -174,7 +174,7 @@ for (let x = 0; x < punto.length; x++) {
                 img[x].classList.remove("transition" + x);
                 img[x].classList.add("transition0");
                 punto[x].classList.add("puntoFocus");
-            } else {
+            } else {    
                 punto[u].classList.remove("puntoFocus");
                 if (x == 0) {
                     posicionImagen.innerHTML = 1;

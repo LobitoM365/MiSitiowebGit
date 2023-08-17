@@ -154,7 +154,7 @@ h4 {
 }
 
 .input-search-menu-mobile {
-    width: 100%;
+    width: calc(100% - 60px);
     height: 100%;
     padding: 0px 0px 0px 60px;
     border: none;
@@ -589,10 +589,12 @@ h4 {
     height: 130%;
     top: calc(50% - 65%);
 }
-.img-iconx-normal{
+
+.img-iconx-normal {
     opacity: 1;
     transition: opacity 0.2s ease-in-out;
 }
+
 .div-icons-x {
     width: 55%;
     height: 90%;
@@ -607,24 +609,25 @@ h4 {
     box-shadow: 0px 0px 5px rgb(160, 159, 159);
 }
 
-.img-ana{
+.img-ana {
     z-index: 90;
     transition: width 1s ease-in-out, opacity 0.2s ease-in-out;
     right: 0;
 }
-.div-icons-x  .img-iconx-normal:hover  {
-    opacity:0;
+
+.div-icons-x .img-iconx-normal:hover {
+    opacity: 0;
     transition: opacity 0.2s ease-in-out;
 }
 
-.div-div-icons-x{
+.div-div-icons-x {
     width: 100%;
     height: 100%;
     position: relative;
     display: none;
 }
 
-.chat{
+.chat {
     width: 400px;
     bottom: 100%;
     position: absolute;
@@ -633,7 +636,7 @@ h4 {
     z-index: 9999999;
 }
 
-.head{
+.head {
     background-color: rgb(0, 93, 173);
     height: 75px;
     width: 100%;
@@ -643,27 +646,167 @@ h4 {
     display: flex;
     align-items: center;
 }
-.contenido-chat{
+
+.contenido-chat {
     width: 100%;
     height: 0;
     background-color: rgb(234, 238, 243);
     transition: height 0.3s ease-in-out;
-    border-radius: 8px 8px 0px 0px; 
+    border-radius: 8px 8px 0px 0px;
 }
-.input-chat{
+
+.input-chat {
     width: 100%;
     background-color: rgb(234, 238, 243);
     height: 60px;
     border-radius: 0px 0px 8px 8px;
     border-top: 2px solid rgb(48, 79, 254);
 }
-.img-ana-chat{
+
+.img-ana-chat {
     height: 80%;
     margin-left: 8px;
 }
 
-.text-homecenter{
+.text-homecenter {
     color: white;
     font-size: 1.2em;
     margin-left: 15px;
+}
+
+.contenido-chat {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.div-mensajes-chat {
+   
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-mensaje-chat{
+    width: 80%;
+    gap: 10px;
+    display: flex;
+    margin-top: 75px;
+    flex-direction: column;
+    height: 85%;
+   
+}
+
+.div-mensajes-chat::-webkit-scrollbar {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0px;
+}
+
+.tex-mensaje {
+    max-width: 210px;
+    padding: 10px 25px 15px 15px;
+    background-color: white;
+    border-radius: 10px 10px 10px 0px;
+    font-weight: 400;
+    font-size: 0.9em;
+}
+
+.img-mensaje-ana {
+    width: 100px;
+    box-shadow: 2px 2px 4px gray;
+}
+
+.tex-mensaje-bolder {
+    font-weight: bolder;
+}
+
+.box-compra-aqui {
+    width: 99%;
+    height: 120px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 10px;
+}
+
+.parrafo-compra-aqui {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.h4-compra-con-experto{
+    color: blue;
+    margin-bottom: 10px;
+}
+
+.parrafo-compra-con-experto{
+    font-size: 0.7em;
+    color: gray;
+}
+
+.click-aqui-compra-aqui{
+    height: 36px;
+    border-top: 0.1px solid rgb(224, 222, 222);
+    border-radius: 0px 0px 10px 10px;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    
+}
+
+.button-click-compra-aqui{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: unset;
+    color: blue;
+    font-size: 0.95em;
+    cursor: pointer;
+}
+.click-aqui-compra-aqui:hover .button-click-compra-aqui{
+    color: white;
+}
+.click-aqui-compra-aqui:hover{
+    background-color: rgb(172, 185, 255);
+    
+}
+.mensaje-top{
+    margin-top: 10px;
+}
+
+.puntos-compra-box-aqui{
+    width: 100%;
+    height: 20px;
+    padding: 5px 0px 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.punto-compra-aqui{
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: rgb(159,175,248);
+}
+
+.img-chevron-compra-aqui{
+    width: 30px;
+    transform:rotate(180deg);
+    position: absolute;
+    right: -35px;
+    top: calc(50% - 35px);
+}
+
+.div-box-compra-aqui{
+    position: relative;
 }
