@@ -29,6 +29,7 @@ body::-webkit-scrollbar-thumb {
     box-shadow: 1px 1px 5px gray;
     position: fixed;
     z-index: 9000;
+    top: 0;
 }
 
 .logo {
@@ -347,7 +348,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .titulo-portafolio {
-    margin-top: 90px;
+    margin-top: 80px;
     width: 110px;
     background-color: rgb(54, 54, 54);
     color: white;
@@ -360,18 +361,32 @@ body::-webkit-scrollbar-thumb {
 }
 
 .div-box-items-portafolio {
-    width: 80%;
-    height: 65%;
+    width: 1200px;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     gap: 10px;
+    height: 80%;
+    overflow: auto;
+}
+
+.div-box-items-portafolio::-webkit-scrollbar {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+}
+
+.div-box-items-portafolio::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 100px;
 }
 
 .box-items-portafolio {
     border-radius: 8px;
     overflow: hidden;
     cursor: pointer;
+    height: 250px;
 }
 
 .img-items-portafolio {
@@ -390,7 +405,7 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
 }
 
-.div-formulario-contactame{
+.div-formulario-contactame {
     width: 60%;
     height: 55%;
     margin-top: 150px;
@@ -398,18 +413,18 @@ body::-webkit-scrollbar-thumb {
     grid-template-columns: 40% 60%;
 }
 
-.form-contactame{
+.form-contactame {
     background-color: rgb(27, 27, 27);
     display: flex;
     justify-content: center;
 }
 
-.campo-text-cotactame{
+.campo-text-cotactame {
     background-color: rgb(27, 27, 27);
     border-left: 1px solid rgb(46, 46, 46);
 }
 
-.div-campos-form-contactame{
+.div-campos-form-contactame {
     margin-top: 20px;
     width: 40%;
     height: 55%;
@@ -419,18 +434,19 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
 }
 
-.text-escribeme-contactame{
+.text-escribeme-contactame {
     text-align: center;
     color: white;
-    border-bottom: 2px solid    rgb(110, 216, 246);  ;
+    border-bottom: 2px solid rgb(110, 216, 246);
+    ;
     width: 150px;
     height: max-content;
-    padding: 10px 0px ;
+    padding: 10px 0px;
     font-size: 1.8em;
     margin-bottom: 20px;
 }
 
-.label-contactame{
+.label-contactame {
     color: white;
     text-align: left;
     display: block;
@@ -438,7 +454,7 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
 }
 
-.input-campos-conatctame{
+.input-campos-conatctame {
     background-color: unset;
     border: unset;
     border-bottom: 1px solid gray;
@@ -447,23 +463,24 @@ body::-webkit-scrollbar-thumb {
     width: calc(100% - 10px);
     margin-bottom: 10px;
 }
-.input-campos-conatctame:focus{
+
+.input-campos-conatctame:focus {
     outline: none;
-    
+
 }
 
-.campo-text-cotactame{
+.campo-text-cotactame {
     display: grid;
     grid-template-rows: 90% 10%;
 }
 
 
 
-.submit-contactame{
-    background-color:   rgb(110, 216, 246);
+.submit-contactame {
+    background-color: rgb(110, 216, 246);
 }
 
-.texarea-text-contactame{
+.texarea-text-contactame {
     width: calc(100% - 40px);
     height: 100%;
     padding: 10px 20px;
@@ -474,15 +491,404 @@ body::-webkit-scrollbar-thumb {
     resize: none;
 }
 
-.texarea-text-contactame:focus{
+.texarea-text-contactame:focus {
     outline: none;
 }
 
-.submit-contactame{
+.submit-contactame {
     width: 100%;
     height: 100%;
     border: unset;
     cursor: pointer;
     color: black;
     font-size: 1.1em;
+}
+
+@media screen and (max-width:1640px) {
+
+    .div-box-items-portafolio {
+        width: 1000px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .div-formulario-contactame {
+        width: 70%;
+
+    }
+}
+
+@media screen and (max-width:1410px) {
+    /* Estilos Inicio */
+
+    .info-inicio {
+        width: 530px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: calc(45% - 100px);
+        left: calc(10%);
+    }
+
+
+    .mi-nombre-inicio {
+        font-size: 2.5em;
+        font-weight: 700;
+    }
+
+
+    .img-yo-inicio {
+        position: absolute;
+        right: 40px;
+        bottom: 165px;
+    }
+
+    .img-principal-inicio {
+        width: 600px;
+    }
+
+    /* Estilos sobre mi */
+    .div-img-sobre-mi {
+        position: absolute;
+        right: 40px;
+        bottom: 290px;
+        background-color: antiquewhite;
+        z-index: 9;
+    }
+
+    .img-sobre-mi {
+        height: 400px;
+        margin-bottom: -16px;
+    }
+
+    .div-img-sobre-mi-marco {
+        content: "";
+        width: 283px;
+        height: 350px;
+        right: 80px;
+        bottom: 255px;
+        position: absolute;
+        z-index: 2;
+        border: 10px solid white;
+    }
+
+    .info-sobre-mi {
+        width: 530px;
+        position: absolute;
+        top: calc(50% - 140px);
+        left: 5%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width:1300px) {
+
+    /* Estilos protafolio */
+    .div-box-items-portafolio {
+        width: 800px;
+        height: auto;
+        display: grid;
+        gap: 10px;
+        height: 70%;
+        overflow: auto;
+    }
+
+    .box-items-portafolio {
+        border-radius: 8px;
+        overflow: hidden;
+        cursor: pointer;
+        height: 220px;
+    }
+
+    /* Estilos servicios */
+    .box-servicios {
+        width: 850px;
+        height: 350px;
+
+    }
+
+    .box-servicio {
+        display: grid;
+        grid-template: "div-img-box-servicio" 63%
+            "descripcion-box-servicio" 1fr;
+
+        position: relative;
+        border-radius: 10px;
+        background-color: rgb(28, 28, 28);
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    /* Estilos contactame */
+    .div-formulario-contactame {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:1230px) {
+    /* Estilos Inicio */
+
+    .info-inicio {
+        width: 530px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: calc(45% - 100px);
+        left: calc(6%);
+    }
+
+
+    .mi-nombre-inicio {
+        font-size: 2.5em;
+        font-weight: 700;
+    }
+
+
+    .img-yo-inicio {
+        position: absolute;
+        right: 40px;
+        bottom: 265px;
+    }
+
+    .img-principal-inicio {
+        width: 450px;
+    }
+
+    /* Estilos sobre mi */
+    .div-img-sobre-mi {
+        position: absolute;
+        right: 40px;
+        bottom: 290px;
+        background-color: antiquewhite;
+        z-index: 9;
+    }
+
+    .img-sobre-mi {
+        height: 400px;
+        margin-bottom: -16px;
+    }
+
+    .div-img-sobre-mi-marco {
+        content: "";
+        width: 283px;
+        height: 350px;
+        right: 80px;
+        bottom: 255px;
+        position: absolute;
+        z-index: 2;
+        border: 10px solid white;
+    }
+
+    /* Contáctame */
+
+    .div-formulario-contactame {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:1050px) {
+
+    /* Estilos contactame */
+    .div-formulario-contactame {
+        width: 90vw;
+        height: 50vw;
+    }
+
+    /* Estilos inicio */
+
+    .inicio {
+        height: 100vh;
+        background-color: rgb(236, 241, 253);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+
+    .info-inicio {
+        width: 530px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        position: relative;
+    }
+
+
+
+    .redes-inicio {
+        width: 195px;
+        height: auto;
+        position: absolute;
+        top: 90%;
+        left: 3%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .flecha-inicio {
+        height: 100px;
+        width: 30px;
+        left: calc(50% - 15px);
+        bottom: 50px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .columna-flecha-inicio {
+        height: 100%;
+        width: 1px;
+        background-color: black;
+    }
+
+    .flecha-flecha-inicio {
+        border-top: 8px solid black;
+        border-bottom: 0px solid transparent;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .img-yo-inicio {
+        position: relative;
+        right: 40px;
+        bottom: 40px;
+    }
+
+    .img-principal-inicio {
+        width: 500px;
+    }
+
+    /* Estilos sobre mi */
+    .div-img-sobre-mi {
+        position: absolute;
+        right: 40px;
+        bottom: 290px;
+        background-color: antiquewhite;
+        z-index: 9;
+    }
+
+    .img-sobre-mi {
+        height: 400px;
+        margin-bottom: -16px;
+    }
+
+    .div-img-sobre-mi-marco {
+        content: "";
+        width: 283px;
+        height: 350px;
+        right: 80px;
+        bottom: 255px;
+        position: absolute;
+        z-index: 2;
+        border: 10px solid white;
+    }
+
+    /* Estilos protafolio */
+
+    .box-items-portafolio {
+        border-radius: 8px;
+        overflow: hidden;
+        cursor: pointer;
+        height: 220px;
+    }
+
+    .div-box-items-portafolio {
+        width: 400px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Estilos servicios */
+    .box-servicios {
+        width: 350px;
+        height: 450px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        gap: 50px;
+        overflow: auto;
+    }
+
+    .box-servicios::-webkit-scrollbar {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 10px;
+    }
+
+    .box-servicios::-webkit-scrollbar-thumb {
+        background-color: gray;
+        border-radius: 100px;
+    }
+
+    .box-servicio {
+        display: grid;
+        grid-template: "div-img-box-servicio" 73%
+            "descripcion-box-servicio" 1fr;
+
+        position: relative;
+        border-radius: 10px;
+        background-color: rgb(28, 28, 28);
+        height: 450px;
+        width: 100%;
+
+    }
+
+    /* Estilos sobre mi */
+    .info-sobre-mi {
+        width: 60vw;
+        height: 40vw;
+        position: relative;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        top: 0;
+        margin-top: 150px;
+    }
+
+    .div-img-sobre-mi {
+        position: absolute;
+        bottom: 10px;
+        background-color: antiquewhite;
+        z-index: 9;
+        right: calc(50% - 175px);
+        margin-bottom: 100px;
+    }
+
+    .sobre-mi {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+       
+    }
+
+    .img-sobre-mi {
+        height: 300px;
+        margin-bottom: -6px;
+    }
+
+    .div-img-sobre-mi-marco {
+        content: "";
+        width: 223px;
+        right: 0;
+        left: 0;
+        height: 270px;
+        bottom: 80px;
+        position: absolute;
+        z-index: 2;
+        border: 10px solid white;
+        left: calc(50% - 85px);
+    }
 }

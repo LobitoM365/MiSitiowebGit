@@ -13,6 +13,7 @@ imgAna.addEventListener("click", function(){
     chat.style.visibility= "visible";
     contenidoChat.style.height = "510px";
     chat.style.opacity= "1";
+
 })
 divIconsX.addEventListener("click", function(){
     imgAna.style.display= "block";
