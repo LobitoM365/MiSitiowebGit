@@ -1,0 +1,488 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: rgb(0, 0, 0);
+    width: 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    border-radius: 100px;
+}
+
+/*//// Estilos inicio///*/
+.header-principal {
+    width: calc(100% - 40px);
+    height: auto;
+    background-color: rgb(245, 247, 251);
+    display: grid;
+    grid-template: "logo nav-principal idioma" 1fr/
+        200px 1fr 200px;
+    padding: 20px;
+    box-shadow: 1px 1px 5px gray;
+    position: fixed;
+    z-index: 9000;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.nav-principal {
+    grid-area: nav-principal;
+}
+
+.nav-principal>ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-principal>ul>li>a {
+    display: block;
+    padding: 6px 15px;
+    color: gray;
+    text-decoration: none;
+}
+
+.nav-principal>ul>li>a:hover {
+    background-color: black;
+    color: white;
+}
+
+.nav-principal>ul>li .focus {
+    background-color: black;
+    color: white;
+}
+
+.idioma {
+    grid-area: idioma;
+    display: flex;
+    align-items: center;
+}
+
+.text-ES {
+    padding: 3px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.text-ES:hover {
+    background-color: rgba(128, 128, 128, 0.508);
+}
+
+.inicio {
+    height: 100vh;
+    background-color: rgb(236, 241, 253);
+    position: relative;
+}
+
+
+.info-inicio {
+    width: 530px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(15%);
+}
+
+.nombre-juan-inicio {
+    color: rgb(127, 215, 247);
+}
+
+.mi-nombre-inicio {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.div-boton-inicio {
+    background-color: rgb(43, 40, 41);
+    width: 210px;
+    height: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.text-hola-inicio {
+    color: rgb(145, 156, 166);
+}
+
+.redes-inicio {
+    width: 195px;
+    height: auto;
+    position: absolute;
+    top: 90%;
+    left: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-contacto-inicio {
+    height: 20px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 100%;
+}
+
+.icon-contacto-inicio:hover {
+    background-color: rgba(169, 166, 166, 0.538);
+}
+
+.flecha-inicio {
+    height: 160px;
+    width: 30px;
+    left: calc(50% - 15px);
+    bottom: 50px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.columna-flecha-inicio {
+    height: 100%;
+    width: 1px;
+    background-color: black;
+}
+
+.flecha-flecha-inicio {
+    border-top: 12px solid black;
+    border-bottom: 0px solid transparent;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    position: absolute;
+    bottom: 0;
+}
+
+.img-yo-inicio {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+}
+
+.img-principal-inicio {
+    width: 700px;
+}
+
+
+/*//// Estilos sobre mi///*/
+
+.sobre-mi {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(22, 22, 22);
+    position: relative;
+}
+
+.info-sobre-mi {
+    width: 730px;
+    position: absolute;
+    top: calc(50% - 140px);
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.text-sobre-mi {
+    color: rgb(110, 216, 246);
+    font-size: 4em;
+}
+
+.text-freelancer-sobre-mi {
+    font-size: 2.1em;
+    color: white;
+}
+
+.parrafo-sobre-mi {
+    color: rgb(204, 204, 204);
+}
+
+.ver-mas-detalle-sobre-mi {
+    width: 200px;
+    height: 40px;
+    background-color: rgb(110, 216, 246);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.h3-ver-mas-detallas-sobre-mi {
+    color: rgb(44, 43, 43);
+}
+
+.div-img-sobre-mi {
+    position: absolute;
+    right: 40px;
+    bottom: 140px;
+    background-color: antiquewhite;
+    z-index: 9;
+}
+
+.img-sobre-mi {
+    height: 600px;
+    margin-bottom: -16px;
+}
+
+.div-img-sobre-mi-marco {
+    content: "";
+    width: 443px;
+    height: 570px;
+    right: 80px;
+    bottom: 100px;
+    position: absolute;
+    z-index: 2;
+    border: 10px solid white;
+}
+
+
+/*//// Estilos servicios///*/
+
+.servicios {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(22, 22, 24);
+    gap: 40px;
+}
+
+.titulo-servicios {
+    color: white;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-servicios {
+    font-size: 0.4em;
+    color: rgb(205, 201, 201);
+}
+
+.box-servicios {
+    width: 1050px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 50px;
+}
+
+.box-servicio {
+    display: grid;
+    grid-template: "div-img-box-servicio" 73%
+        "descripcion-box-servicio" 1fr;
+
+    position: relative;
+    border-radius: 10px;
+    background-color: rgb(28, 28, 28);
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.div-img-box-servicio {
+    grid-area: div-img-box-servicio;
+}
+
+.descripcion-box-servicio {
+    grid-area: descripcion-box-servicio;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+.titulo-box-servicio {
+    width: 140px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: calc(50% - 70px);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.img-box-servicio {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*//// Estilos servicios///*/
+
+.portafolio {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(22, 22, 24);
+}
+
+.titulo-portafolio {
+    margin-top: 90px;
+    width: 110px;
+    background-color: rgb(54, 54, 54);
+    color: white;
+    border-radius: 4px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+}
+
+.div-box-items-portafolio {
+    width: 80%;
+    height: 65%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.box-items-portafolio {
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.img-items-portafolio {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*//// Estilos contactame///*/
+.contactame {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(22, 22, 24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-formulario-contactame{
+    width: 60%;
+    height: 55%;
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.form-contactame{
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    justify-content: center;
+}
+
+.campo-text-cotactame{
+    background-color: rgb(27, 27, 27);
+    border-left: 1px solid rgb(46, 46, 46);
+}
+
+.div-campos-form-contactame{
+    margin-top: 20px;
+    width: 40%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-escribeme-contactame{
+    text-align: center;
+    color: white;
+    border-bottom: 2px solid    rgb(110, 216, 246);  ;
+    width: 150px;
+    height: max-content;
+    padding: 10px 0px ;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.label-contactame{
+    color: white;
+    text-align: left;
+    display: block;
+    margin-bottom: 4px;
+    width: 100%;
+}
+
+.input-campos-conatctame{
+    background-color: unset;
+    border: unset;
+    border-bottom: 1px solid gray;
+    color: gray;
+    padding: 7px 5px;
+    width: calc(100% - 10px);
+    margin-bottom: 10px;
+}
+.input-campos-conatctame:focus{
+    outline: none;
+    
+}
+
+.campo-text-cotactame{
+    display: grid;
+    grid-template-rows: 90% 10%;
+}
+
+
+
+.submit-contactame{
+    background-color:   rgb(110, 216, 246);
+}
+
+.texarea-text-contactame{
+    width: calc(100% - 40px);
+    height: 100%;
+    padding: 10px 20px;
+    background-color: transparent;
+    font-size: 1.2em;
+    border: unset;
+    color: white;
+    resize: none;
+}
+
+.texarea-text-contactame:focus{
+    outline: none;
+}
+
+.submit-contactame{
+    width: 100%;
+    height: 100%;
+    border: unset;
+    cursor: pointer;
+    color: black;
+    font-size: 1.1em;
+}
