@@ -18,6 +18,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*//// Estilos inicio///*/
+
+
 .header-principal {
     width: calc(100% - 40px);
     height: auto;
@@ -34,10 +36,15 @@ body::-webkit-scrollbar-thumb {
 
 .logo {
     grid-area: logo;
+    display: flex;
+    align-items: center;
 }
 
 .nav-principal {
     grid-area: nav-principal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-principal>ul {
@@ -454,7 +461,7 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
 }
 
-.input-campos-conatctame {
+.input-campos-contactame {
     background-color: unset;
     border: unset;
     border-bottom: 1px solid gray;
@@ -464,7 +471,7 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 10px;
 }
 
-.input-campos-conatctame:focus {
+.input-campos-contactame:focus {
     outline: none;
 
 }
@@ -504,6 +511,33 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.1em;
 }
 
+.idioma {
+    display: flex;
+    justify-content: right;
+}
+
+.div-hamburguer {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+    display: none;
+}
+
+.div-hamburguer:hover {
+    background-color: rgb(208, 205, 205);
+}
+
+.img-icon-hamburguer {
+    width: 100%;
+    height: 100%;
+}
+
+
 @media screen and (max-width:1640px) {
 
     .div-box-items-portafolio {
@@ -515,6 +549,7 @@ body::-webkit-scrollbar-thumb {
         width: 70%;
 
     }
+
 }
 
 @media screen and (max-width:1410px) {
@@ -700,6 +735,116 @@ body::-webkit-scrollbar-thumb {
 
     /* Estilos inicio */
 
+
+    .nav-principal>ul>Li>a {
+        display: none;
+
+    }
+
+    .nav-principal ul {
+        position: absolute;
+        top: -62px;
+        left: -62px;
+        width: 220px;
+        height: 220px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
+    }
+
+    .item-hamburguer {
+        border-radius: 100%;
+        width: 20%;
+        height: 20%;
+        background-color: rgb(22, 8, 225);
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .item-hamburguer {
+        width: 45px;
+        height: 45px;
+    }
+
+    .item-hamburguer-inicial {
+        left: calc(50% - 30px);
+        top: calc(50% - 30px);
+    }
+
+    .item-hamburguer1 {
+        left: calc(40%);
+        top: calc(0%); 
+    }
+
+    .item-hamburguer2 {
+        left: calc(63%);
+        top: calc(8%);
+    }
+
+    .item-hamburguer3 {
+        left: calc(77%);
+        top: calc(28%);
+    }
+
+
+    .item-hamburguer4 {
+        left: calc(16%);
+        top: calc(8%); 
+    }
+
+    .item-hamburguer5 {
+        left: calc(2%);
+        top: calc(28%);
+    }
+
+    .item-hamburguer6 {
+        left: calc(2%);
+        top: calc(52.2%);
+    }
+
+    .item-hamburguer7 {
+        left: calc(16%);
+        top: calc(72%);
+    }
+
+
+    .item-hamburguer8 {
+        left: calc(77%);
+        top: calc(52.2%);
+    }
+
+    .item-hamburguer9 {
+        left: calc(63%);
+        top: calc(72%);
+    }
+
+    .item-hamburguer10 {
+        left: calc(40%);
+        top: calc(80%);
+    }
+
+
+
+    .header-principal {
+        grid-template: "nav-principal logo idioma" 1fr/ 1fr 200px 30px;
+        padding: 15px;
+        width: calc(100% - 30px);
+    }
+
+    .nav-principal {
+        justify-content: unset;
+        align-items: unset;
+        display: unset;
+    }
+
+    .div-hamburguer {
+        display: block;
+        cursor: pointer;
+        z-index: 9;
+    }
+
     .inicio {
         height: 100vh;
         background-color: rgb(236, 241, 253);
@@ -775,14 +920,14 @@ body::-webkit-scrollbar-thumb {
     .div-img-sobre-mi {
         position: absolute;
         right: 40px;
-        bottom: 290px;
+
         background-color: antiquewhite;
         z-index: 9;
     }
 
     .img-sobre-mi {
         height: 400px;
-        margin-bottom: -16px;
+
     }
 
     .div-img-sobre-mi-marco {
@@ -790,7 +935,6 @@ body::-webkit-scrollbar-thumb {
         width: 283px;
         height: 350px;
         right: 80px;
-        bottom: 255px;
         position: absolute;
         z-index: 2;
         border: 10px solid white;
@@ -848,30 +992,28 @@ body::-webkit-scrollbar-thumb {
     /* Estilos sobre mi */
     .info-sobre-mi {
         width: 60vw;
-        height: 40vw;
+        height: auto;
         position: relative;
         left: 0;
         display: flex;
         flex-direction: column;
         gap: 25px;
-        top: 0;
-        margin-top: 150px;
+        top: calc(15%);
     }
 
     .div-img-sobre-mi {
         position: absolute;
-        bottom: 10px;
+        bottom: 60px;
         background-color: antiquewhite;
         z-index: 9;
-        right: calc(50% - 175px);
-        margin-bottom: 100px;
+        right: auto;
     }
 
     .sobre-mi {
         display: flex;
         align-items: center;
         flex-direction: column;
-       
+
     }
 
     .img-sobre-mi {
@@ -885,10 +1027,385 @@ body::-webkit-scrollbar-thumb {
         right: 0;
         left: 0;
         height: 270px;
-        bottom: 80px;
+        bottom: 30px;
         position: absolute;
         z-index: 2;
         border: 10px solid white;
-        left: calc(50% - 85px);
+        left: calc(50% - 150px);
+        right: auto;
+    }
+
+    .text-sobre-mi {
+        color: rgb(110, 216, 246);
+        font-size: 6vw;
+    }
+
+    .text-freelancer-sobre-mi {
+        font-size: 5vw;
+        color: white;
+    }
+
+    .parrafo-sobre-mi {
+        color: rgb(204, 204, 204);
+    }
+
+    .ver-mas-detalle-sobre-mi {
+        width: 22vw;
+        height: 40px;
+        background-color: rgb(110, 216, 246);
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 2.1vw;
+    }
+
+    /* Estilos contactame */
+    .div-formulario-contactame {
+        grid-template-columns: 1fr;
+        height: 60vw;
+        margin: unset;
+    }
+
+    .form-contactame {
+        align-items: center;
+        border-bottom: 2px solid gray;
+
+    }
+
+    .campo-text-cotactame {
+        border: unset;
+    }
+
+    .div-campos-form-contactame {
+        width: 20vw;
+    }
+
+    .text-escribeme-contactame {
+        width: 20vw;
+        font-size: 3vw;
+        height: 10vw;
+    }
+}
+
+@media screen and (max-width:630px) {
+
+    /* Estilos sobre mi */
+    .info-sobre-mi {
+        top: 13%;
+    }
+
+    .ver-mas-detalle-sobre-mi {
+        width: 30vw;
+        height: 40px;
+        background-color: rgb(110, 216, 246);
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 2.5vw;
+    }
+
+    .img-sobre-mi {
+        height: 100%;
+        margin-bottom: -6px;
+    }
+
+    .div-img-sobre-mi-marco {
+        content: "";
+        width: 40vw;
+        right: 0;
+        left: 0;
+        height: 50vw;
+        top: unset;
+        position: absolute;
+        bottom: 10vw;
+        z-index: 2;
+        border: 1.3vw solid white;
+        left: calc(35% - 12vw);
+    }
+
+    .div-img-sobre-mi {
+        height: 55vw;
+        position: absolute;
+        top: unset;
+        background-color: antiquewhite;
+        z-index: 9;
+        right: auto;
+        margin-bottom: unset;
+        bottom: 15vw;
+    }
+
+    /* Estilos protafolio */
+
+    .box-items-portafolio {
+        border-radius: 8px;
+        overflow: hidden;
+        cursor: pointer;
+        height: 35vw;
+    }
+
+    .div-box-items-portafolio {
+        width: 65vw;
+        height: calc(109vw);
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2vw;
+    }
+
+    /* Estilos servicios */
+    .box-servicios {
+        width: 62vw;
+        height: 85vw;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        gap: 50px;
+        overflow: auto;
+    }
+
+    .box-servicios::-webkit-scrollbar {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 10px;
+    }
+
+    .box-servicios::-webkit-scrollbar-thumb {
+        background-color: gray;
+        border-radius: 100px;
+    }
+
+    .box-servicio {
+        display: grid;
+        grid-template: "div-img-box-servicio" 55vw
+            "descripcion-box-servicio" 1fr;
+
+        position: relative;
+        border-radius: 10px;
+        background-color: rgb(28, 28, 28);
+        height: 80vw;
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+    .descripcion-box-servicio {
+        grid-area: descripcion-box-servicio;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 6vw;
+        text-align: center;
+        color: white;
+    }
+
+    .descripcion-box-servicio p {
+        font-size: 3.2vw;
+    }
+
+    .box-servicio .titulo-box-servicio {
+        width: 25vw;
+        left: calc(50% - 12.5vw);
+        font-size: 3vw;
+    }
+
+    .titulo-servicios h2 {
+        font-size: 8vw;
+    }
+
+    .titulo-servicios h4 {
+        font-size: 2.7vw;
+        width: 50vw;
+        text-align: center;
+    }
+
+    /* Estilos inicio */
+
+    .inicio {
+        height: 100vh;
+        background-color: rgb(236, 241, 253);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+
+    .info-inicio {
+        width: auto;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        top: 10px;
+        left: 0;
+        position: relative;
+        margin: 0px 40px;
+    }
+
+
+
+    .redes-inicio {
+        width: 195px;
+        height: auto;
+        position: absolute;
+        top: 90%;
+        left: 3%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .flecha-inicio {
+        height: 100px;
+        width: 5vw;
+        right: calc(0% + 5vw);
+        left: unset;
+        bottom: 50px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .columna-flecha-inicio {
+        height: 100%;
+        width: 1px;
+        background-color: black;
+    }
+
+    .flecha-flecha-inicio {
+        border-top: 8px solid black;
+        border-bottom: 0px solid transparent;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .img-yo-inicio {
+        position: relative;
+        right: unset;
+        bottom: unset;
+    }
+
+    .img-principal-inicio {
+        width: 90vw;
+    }
+
+    /* Estilos conactame */
+    .div-formulario-contactame {
+        height: 90vw;
+    }
+
+    .div-campos-form-contactame {
+        width: 30vw;
+    }
+
+}
+
+@media screen and (max-width:410px) {
+
+    .div-img-sobre-mi-marco {
+        content: "";
+        width: 40vw;
+        right: 0;
+        left: 0;
+        height: 50vw;
+        bottom: calc(17.5vw);
+        top: unset;
+        position: absolute;
+        z-index: 2;
+        border: 1.3vw solid white;
+        left: calc(35% - 12vw);
+    }
+
+    .div-img-sobre-mi {
+        height: 55vw;
+        position: absolute;
+        top: unset;
+        bottom: calc(23vw);
+        background-color: antiquewhite;
+        z-index: 9;
+        right: auto;
+        margin-bottom: unset;
+    }
+
+    .ver-mas-detalle-sobre-mi {
+        width: 40vw;
+        height: 40px;
+        background-color: rgb(110, 216, 246);
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 3.5vw;
+    }
+
+    /* Estilos inicio */
+    .div-boton-inicio {
+        width: 50vw;
+        height: 14vw;
+        font-size: 6vw;
+    }
+
+    .redes-inicio {
+        bottom: 5vw;
+        top: unset;
+    }
+
+    .mi-nombre-inicio {
+        font-size: 9vw;
+    }
+
+    .info-inicio p {
+        font-size: 4vw;
+    }
+
+    .flecha-inicio {
+        right: calc(50% - 2.5vw);
+        bottom: 8%;
+    }
+
+    .img-principal-inicio {
+        margin-bottom: 10vw;
+    }
+
+    /* Estilos contactame */
+
+    .div-formulario-contactame {
+        height: 70%;
+        width: 80%;
+    }
+
+    .form-contactame {
+        align-items: center;
+        border-bottom: 2px solid gray;
+
+    }
+
+    .campo-text-cotactame {
+        border: unset;
+    }
+
+    .div-campos-form-contactame {
+        width: 70%;
+    }
+
+    .text-escribeme-contactame {
+        width: 70%;
+        font-size: 8vw;
+        height: 50%;
+    }
+
+    .label-contactame {
+        font-size: 6vw;
+    }
+
+    .input-campos-contactame::placeholder {
+        font-size: 5vw;
     }
 }
