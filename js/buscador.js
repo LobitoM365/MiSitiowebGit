@@ -47,18 +47,18 @@ if (windowWidth > 600) {
         if (imgMobile[x].classList.contains("img")) {
             imgMobile[x].classList.remove("img");
             imgPc[x].classList.add("img");
-        } 
+        }
     }
 
-}else{
+} else {
     for (let x = 0; x < imgMobile.length; x++) {
         if (imgPc[x].classList.contains("img")) {
             imgPc[x].classList.remove("img");
             imgMobile[x].classList.add("img");
-        } 
+        }
     }
 }
-img =  document.querySelectorAll(".img");
+img = document.querySelectorAll(".img");
 window.addEventListener("resize", function () {
     windowWidth = window.innerWidth;
     if (windowWidth > 600) {
@@ -66,16 +66,16 @@ window.addEventListener("resize", function () {
             if (imgMobile[x].classList.contains("img")) {
                 imgMobile[x].classList.remove("img");
                 imgPc[x].classList.add("img");
-            } 
+            }
         }
-    
-    }else{
+
+    } else {
         for (let x = 0; x < imgMobile.length; x++) {
             if (imgPc[x].classList.contains("img")) {
                 imgPc[x].classList.remove("img");
                 imgMobile[x].classList.add("img");
-    
-            } 
+
+            }
         }
     }
     img = document.querySelectorAll(".img");
@@ -174,7 +174,7 @@ for (let x = 0; x < punto.length; x++) {
                 img[x].classList.remove("transition" + x);
                 img[x].classList.add("transition0");
                 punto[x].classList.add("puntoFocus");
-            } else {    
+            } else {
                 punto[u].classList.remove("puntoFocus");
                 if (x == 0) {
                     posicionImagen.innerHTML = 1;
@@ -199,4 +199,56 @@ for (let x = 0; x < punto.length; x++) {
 
 window.onload = function () {
     loader.classList.add("invisible-loader")
+}
+
+
+
+let imgChevron = document.querySelectorAll(".img-chevron");
+let puntoCompraAqui = document.querySelectorAll(".punto-compra-aqui");
+let divSlider = document.getElementById("divSlider");
+
+
+let contadorSlider = 0;
+let contadorPosicion = 1;
+puntoCompraAqui[0].style.width = "8px";
+puntoCompraAqui[0].style.height = "8px";
+for (let x = 0; x < imgChevron.length; x++) {
+    imgChevron[x].addEventListener("click", function () {
+        if (x == 1) {
+
+            if (contadorSlider < 335 * imgChevron.length + 1) {
+                contadorSlider = contadorSlider + 335;
+                contadorPosicion = contadorPosicion + 1;
+                divSlider.style.marginLeft = "-" + contadorSlider + "px";
+            }
+
+        } else {
+            if (contadorSlider > 0) {
+                contadorSlider = contadorSlider - 335;
+                contadorPosicion = contadorPosicion - 1;
+                divSlider.style.marginLeft = "-" + contadorSlider + "px";
+            }
+        }
+        if (contadorSlider > 0) {
+            imgChevron[0].style.display = "block";
+        } else {
+            imgChevron[0].style.display = "none";
+        }
+        if (contadorSlider > 335 * imgChevron.length + 1) {
+            imgChevron[1].style.display = "none";
+        } else {
+            imgChevron[1].style.display = "block";
+        }
+
+        for (let u = 0; u < puntoCompraAqui.length; u++) {
+            if (u == contadorPosicion - 1) {
+                puntoCompraAqui[u].style.width = "8px";
+                puntoCompraAqui[u].style.height = "8px";
+            } else {
+                puntoCompraAqui[u].style.width = "";
+                puntoCompraAqui[u].style.height = "";
+            }
+        }
+
+    })
 }

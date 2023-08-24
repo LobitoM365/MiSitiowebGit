@@ -645,6 +645,7 @@ h4 {
     border-radius: 8px 8px 0px 0px;
     display: flex;
     align-items: center;
+    z-index: 9;
 }
 
 .contenido-chat {
@@ -674,30 +675,21 @@ h4 {
     margin-left: 15px;
 }
 
-.contenido-chat {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    
-}
 
 .div-mensajes-chat {
-   
+
     width: 100%;
     height: 100%;
     overflow: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
-.content-mensaje-chat{
-    width: 80%;
-    gap: 10px;
-    display: flex;
+
+.content-mensaje-chat {
+    width: 328px;
     margin-top: 75px;
-    flex-direction: column;
     height: 85%;
-   
+
 }
 
 .div-mensajes-chat::-webkit-scrollbar {
@@ -742,27 +734,27 @@ h4 {
     flex-direction: column;
 }
 
-.h4-compra-con-experto{
+.h4-compra-con-experto {
     color: blue;
     margin-bottom: 10px;
 }
 
-.parrafo-compra-con-experto{
+.parrafo-compra-con-experto {
     font-size: 0.7em;
     color: gray;
 }
 
-.click-aqui-compra-aqui{
+.click-aqui-compra-aqui {
     height: 36px;
     border-top: 0.1px solid rgb(224, 222, 222);
     border-radius: 0px 0px 10px 10px;
     border-bottom: 2px solid white;
     border-left: 2px solid white;
     border-right: 2px solid white;
-    
+
 }
 
-.button-click-compra-aqui{
+.button-click-compra-aqui {
     width: 100%;
     height: 100%;
     background-color: transparent;
@@ -771,18 +763,83 @@ h4 {
     font-size: 0.95em;
     cursor: pointer;
 }
-.click-aqui-compra-aqui:hover .button-click-compra-aqui{
+
+.click-aqui-compra-aqui:hover .button-click-compra-aqui {
     color: white;
 }
-.click-aqui-compra-aqui:hover{
+
+.click-aqui-compra-aqui:hover {
     background-color: rgb(172, 185, 255);
-    
+
 }
-.mensaje-top{
+
+.mensaje-top {
     margin-top: 10px;
 }
 
-.puntos-compra-box-aqui{
+
+
+.punto-compra-aqui {
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: rgb(159, 175, 248);
+}
+
+
+
+
+.div-slider {
+    overflow: hidden;
+    display: flex;
+    gap: 10px;
+    margin-left: 0px;
+    transition: margin 0.5s;
+    position: relative;
+}
+
+.elementos-compra-aqui {
+    width: 325px;
+    flex: none;
+
+}
+
+.div-box-compra-aqui {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+.mensajes-chat{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.content-slider-compra-aqui{
+    position: relative;
+    height: 160px;
+}
+
+.img-chevron-right-compra-aqui {
+    width: 30px;
+    position: absolute;
+    right: -32px;
+    top: calc(50% - 35px);
+    transform: rotate(180deg);
+    overflow: hidden;
+}
+.img-chevron-left-compra-aqui{
+    width: 30px;
+    position: absolute;
+    left: -32px;
+    top: calc(50% - 35px);
+    overflow: hidden;
+    display: none;
+}
+
+.puntos-compra-box-aqui {
     width: 100%;
     height: 20px;
     padding: 5px 0px 15px 0px;
@@ -790,23 +847,7 @@ h4 {
     justify-content: center;
     align-items: center;
     gap: 8px;
-}
-
-.punto-compra-aqui{
-    width: 5px;
-    height: 5px;
-    border-radius: 100%;
-    background-color: rgb(159,175,248);
-}
-
-.img-chevron-compra-aqui{
-    width: 30px;
-    transform:rotate(180deg);
     position: absolute;
-    right: -35px;
-    top: calc(50% - 35px);
+    bottom: 0%;
 }
 
-.div-box-compra-aqui{
-    position: relative;
-}
