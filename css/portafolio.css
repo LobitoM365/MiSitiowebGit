@@ -19,6 +19,10 @@ body::-webkit-scrollbar-thumb {
 
 /*//// Estilos inicio///*/
 
+.circulo-hijo{
+    display: none;
+}
+
 .item-hamburguer{
     position: absolute;
 }
@@ -784,7 +788,6 @@ body::-webkit-scrollbar-thumb {
         align-items: center;
         overflow: hidden;
         visibility: hidden;
-        transition : margin 0.5s, visibility 1s, opacity 1s;
         cursor: pointer;
     }
     .c1{

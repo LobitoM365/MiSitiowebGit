@@ -14,7 +14,7 @@ divIconHamburguer.addEventListener("click", function () {
       circuloHijo[x].classList.add("c" + (x + 1))
       circuloHijo[x].style.visibility = "visible";
       circuloHijo[x].style.opacity = "1";
-      circuloHijo[x].style.transition = "";
+      circuloHijo[x].style.transition = "margin 0.5s, visibility 1s, opacity 1s";
       contador = contador + 1;
     }
   } else {
