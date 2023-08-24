@@ -134,7 +134,7 @@ borderFocus[4].classList.add("borderFocusActive");
 imgMini[4].classList.add("img-opacity");
 
 
-for (let d = 0; d <= imgMini.length; d++) {
+for (let d = 0; d < imgMini.length; d++) {
     let clickRight = 4;
     let focusBehindRight = 0;
     divRight.addEventListener("click", function () {
@@ -298,7 +298,7 @@ for (let d = 0; d <= imgMini.length; d++) {
             contenidoFocus.classList.toggle("invisible")
         })
     }
-    for (let i = 0; i <= imgMini.length; i++) {
+    for (let i = 0; i < imgMini.length; i++) {
         imgMini[i].addEventListener("click", function () {
             imgPredeterminada.classList.add("invisible")
             posicionImgMini.innerHTML = i;
