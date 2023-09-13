@@ -1,9 +1,14 @@
-*{
+* {
     padding: 0%;
     margin: 0%;
 }
 
-h1,h2{
+body {
+    background-color: white;
+}
+
+h1,
+h2 {
     padding: 30px;
     text-align: center;
     padding: 30px;
@@ -11,46 +16,62 @@ h1,h2{
 }
 
 
-label{
+label {
     display: block;
     padding: 30px 0px 5px 0px;
 }
 
-.registro{
+.registro {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2em 0em;
 }
 
-option, select{
+option,
+select {
     color: aliceblue;
     padding: 5px;
 }
-fieldset{
-   
+
+fieldset {
+
     color: aliceblue;
 }
-.otra{
+
+.otra {
     padding: 0%;
 }
-.formulario{
+
+.formulario {
     width: 60%;
-   
+
 }
-button:hover{
+
+button:hover {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.103);
 }
-body{
-    background-color: rgb(50, 88, 110);
-}
-.formulario, input[type="text"], select, textarea, button, input[type="submit"], .registro, input[type="number"], nav{
-    
+
+body {
     background-color: rgb(50, 88, 110);
 }
 
-input[type="text"],input[type="number"]{ 
+.formulario,
+input[type="text"],
+select,
+textarea,
+button,
+input[type="submit"],
+.registro,
+input[type="number"],
+nav {
+
+    background-color: rgb(50, 88, 110);
+}
+
+input[type="text"],
+input[type="number"] {
     border: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.278);
     font-size: 1em;
@@ -58,50 +79,57 @@ input[type="text"],input[type="number"]{
     width: 240px;
     color: white;
 }
-textarea{
+
+textarea {
     font-size: 1.2em;
     padding: 4px;
 }
-input[type="text"]:focus,input[type="number"]:focus{
+
+input[type="text"]:focus,
+input[type="number"]:focus {
     outline: none;
 }
-fieldset{
-    border-radius: 12px ;
+
+fieldset {
+    border-radius: 12px;
     padding: 70px;
 }
 
 
-::placeholder{
+::placeholder {
     color: rgba(255, 255, 255, 0.4);
 }
 
-button{
-    background-color: rgb(28,181,224);
+button {
+    background-color: rgb(28, 181, 224);
     padding: 10px;
-    border: solid  1px rgb(28,181,224);
+    border: solid 1px rgb(28, 181, 224);
     border-radius: 3px;
     margin: 20px 20px 20px 0px;
     width: 10%;
 }
 
-nav ul li a{
+nav ul li a {
     color: rgba(0, 0, 0, 0.842);
     font-size: 2.2em;
     text-decoration: none;
-    padding: 9px ;
-    
+    padding: 9px;
+
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
-    
-    
+
+
 }
-nav{
+
+nav {
     margin: 40px;
 }
-nav ul li a:hover{
-    background-color:rgba(179, 184, 184, 0.432);
+
+nav ul li a:hover {
+    background-color: rgba(179, 184, 184, 0.432);
     padding: 9px;
     border-radius: 4px;
-   
+
 }

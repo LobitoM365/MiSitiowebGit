@@ -4,6 +4,10 @@
     font-family: "diciembre";
 }
 
+body {
+    background-color: white;
+}
+
 @font-face {
     font-family: "diciembre";
     src: url(../fonts/Billionstar\ Italic.ttf);

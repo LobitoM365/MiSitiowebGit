@@ -4,6 +4,10 @@
 }
 
 body {
+    background-color: white;
+}
+
+body {
     background-color: rgb(14, 14, 112);
 }
 
@@ -22,31 +26,35 @@ h1 {
     position: absolute;
     padding: 30px;
 }
-.nav nav ul li a{
+
+.nav nav ul li a {
     color: white;
     font-size: 3em;
     text-decoration: none;
     padding: 7px;
     font-family: 'waltograph42';
 }
-.nav nav ul li{
+
+.nav nav ul li {
     list-style: none;
-    
+
 }
-.nav nav ul li a:hover{
+
+.nav nav ul li a:hover {
     background-color: rgba(240, 255, 255, 0.300);
     padding: 7px;
     border-radius: 4px;
-   
+
 }
-img{
+
+img {
     position: fixed;
     width: 100%;
     height: 100%;
     z-index: -1;
 }
 
-.div-letra{
+.div-letra {
     display: flex;
     justify-content: center;
     position: absolute;
@@ -55,7 +63,7 @@ img{
     z-index: -1;
 }
 
-.letra{
+.letra {
     position: absolute;
     top: 80%;
     z-index: -1;

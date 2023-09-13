@@ -1,61 +1,70 @@
-*{
+* {
     padding: 0%;
     margin: 0%;
 }
 
-body{
+body {
+    background-color: white;
+}
+
+body {
     background-color: rgb(24, 24, 24);
 }
 
-h1{
+h1 {
     font-family: "cinzel";
-    color:rgba(255, 255, 255, 0.712);
+    color: rgba(255, 255, 255, 0.712);
     font-size: 4em;
     font-weight: 100;
     letter-spacing: 30px;
 }
 
-@font-face{
+@font-face {
     font-family: "cinzel";
     src: url(../fonts/Game\ of\ Thrones.ttf);
 }
 
-.G{
-    display:flex;
+.G {
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 
 }
+
 .nav {
     position: absolute;
     padding-top: 40px;
     padding-left: 20px;
 }
-.nav nav ul li a{
+
+.nav nav ul li a {
     color: white;
     font-size: 1.4em;
     text-decoration: none;
     padding: 20px;
     font-family: "cinzel";
 }
-.nav nav ul li{
+
+.nav nav ul li {
     list-style: none;
-    
+
 }
-.nav nav ul li a:hover{
+
+.nav nav ul li a:hover {
     background-color: rgba(240, 255, 255, 0.300);
     padding: 20px;
     border-radius: 4px;
-   
+
 }
 
-.fondo{
+.fondo {
     position: fixed;
     width: 100%;
     height: 100%;
     z-index: -1;
 }
-.espada{
+
+.espada {
     width: 60px;
 }

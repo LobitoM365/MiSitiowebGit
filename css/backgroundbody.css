@@ -4,6 +4,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: white
+    ;
+}
 input {
     background-color: rgb(33, 101, 200);
     padding: 15px 20px;

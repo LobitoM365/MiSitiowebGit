@@ -4,6 +4,10 @@
     border: transparent;
 }
 
+body {
+    background-color: white;
+}
+
 h1 {
     font-family: 'Bebas Neue', cursive;
     font-size: 10vh;
@@ -128,79 +132,85 @@ span {
     .n {
         font-size: 13.2vh;
     }
-    
+
     .e {
         font-size: 12vh;
-    
+
     }
-    
+
     .t {
         font-size: 12vh;
     }
-    
+
     .f {
         font-size: 12vh;
     }
-    
+
     .l {
         font-size: 11.35vh;
     }
-    
+
     .i {
         font-size: 12vh;
     }
-    
+
     .x {
         font-size: 13.2vh;
     }
+
     .curva {
         top: 51.9%;
         height: 120%;
     }
+
     .complemento {
         height: 83.3%;
         top: -43.2%;
     }
-    
+
 }
+
 @media screen and (max-width:1185px) {
     .n {
         font-size: 13.2vh;
     }
-    
+
     .e {
         font-size: 12vh;
-    
+
     }
-    
+
     .t {
         font-size: 12vh;
     }
-    
+
     .f {
         font-size: 12vh;
     }
-    
+
     .l {
         font-size: 11.35vh;
     }
-    
+
     .i {
         font-size: 12vh;
     }
-    
+
     .x {
         font-size: 13.2vh;
     }
+
     .curva {
         top: 51.9%;
         height: 100%;
     }
+
     .complemento {
         width: 140%;
         height: 100%;
         top: -51.9%;
     }
+
     .fondo {
         width: 140%;
     }
@@ -210,82 +220,89 @@ span {
     .n {
         font-size: 13.2vh;
     }
-    
+
     .e {
         font-size: 12vh;
-    
+
     }
-    
+
     .t {
         font-size: 12vh;
     }
-    
+
     .f {
         font-size: 12vh;
     }
-    
+
     .l {
         font-size: 11.35vh;
     }
-    
+
     .i {
         font-size: 12vh;
     }
-    
+
     .x {
         font-size: 13.2vh;
     }
+
     .curva {
         top: 51.9%;
         height: 70%;
     }
+
     .complemento {
         width: 140%;
         height: 142.9%;
         top: -74.1%;
     }
+
     .fondo {
         width: 140%;
     }
 }
+
 @media screen and (max-width:892px) {
     .n {
         font-size: 13.2vh;
     }
-    
+
     .e {
         font-size: 12vh;
-    
+
     }
-    
+
     .t {
         font-size: 12vh;
     }
-    
+
     .f {
         font-size: 12vh;
     }
-    
+
     .l {
         font-size: 11.35vh;
     }
-    
+
     .i {
         font-size: 12vh;
     }
-    
+
     .x {
         font-size: 13.2vh;
     }
+
     .curva {
         top: 51.9%;
         height: 40%;
     }
+
     .complemento {
         width: 140%;
         height: 249.6%;
         top: -129.4%;
     }
+
     .fondo {
         width: 140%;
     }
@@ -295,40 +312,43 @@ span {
     .n {
         font-size: 13.2vh;
     }
-    
+
     .e {
         font-size: 12vh;
-    
+
     }
-    
+
     .t {
         font-size: 12vh;
     }
-    
+
     .f {
         font-size: 12vh;
     }
-    
+
     .l {
         font-size: 11.35vh;
     }
-    
+
     .i {
         font-size: 12vh;
     }
-    
+
     .x {
         font-size: 13.2vh;
     }
+
     .curva {
         top: 51.9%;
         height: 25%;
     }
+
     .complemento {
         width: 260%;
         height: 399.2%;
         top: -207%;
     }
+
     .fondo {
         width: 260%;
     }
@@ -338,40 +358,43 @@ span {
     .n {
         font-size: 13.2vh;
     }
-    
+
     .e {
         font-size: 12vh;
-    
+
     }
-    
+
     .t {
         font-size: 12vh;
     }
-    
+
     .f {
         font-size: 12vh;
     }
-    
+
     .l {
         font-size: 11.35vh;
     }
-    
+
     .i {
         font-size: 12vh;
     }
-    
+
     .x {
         font-size: 13.2vh;
     }
+
     .curva {
         top: 51.9%;
         height: 15%;
     }
+
     .complemento {
         width: 320%;
         height: 665.4%;
         top: -345%;
     }
+
     .fondo {
         width: 320%;
     }
@@ -381,40 +404,43 @@ span {
     .n {
         font-size: 13.2vh;
     }
-    
+
     .e {
         font-size: 12vh;
-    
+
     }
-    
+
     .t {
         font-size: 12vh;
     }
-    
+
     .f {
         font-size: 12vh;
     }
-    
+
     .l {
         font-size: 11.35vh;
     }
-    
+
     .i {
         font-size: 12vh;
     }
-    
+
     .x {
         font-size: 13.2vh;
     }
+
     .curva {
         top: 51.9%;
         height: 12%;
     }
+
     .complemento {
         width: 480%;
         height: 833%;
         top: -432.2%;
     }
+
     .fondo {
         width: 480%;
     }
@@ -425,40 +451,43 @@ span {
     .n {
         font-size: 13.2vh;
     }
-    
+
     .e {
         font-size: 12vh;
-    
+
     }
-    
+
     .t {
         font-size: 12vh;
     }
-    
+
     .f {
         font-size: 12vh;
     }
-    
+
     .l {
         font-size: 11.35vh;
     }
-    
+
     .i {
         font-size: 12vh;
     }
-    
+
     .x {
         font-size: 13.2vh;
     }
+
     .curva {
         top: 51.9%;
-        height:10%;
+        height: 10%;
     }
+
     .complemento {
         width: 580%;
         height: 999.2%;
         top: -518.6%;
     }
+
     .fondo {
         width: 580%;
     }
@@ -468,40 +497,43 @@ span {
     .n {
         font-size: 13.2vh;
     }
-    
+
     .e {
         font-size: 12vh;
-    
+
     }
-    
+
     .t {
         font-size: 12vh;
     }
-    
+
     .f {
         font-size: 12vh;
     }
-    
+
     .l {
         font-size: 11.35vh;
     }
-    
+
     .i {
         font-size: 12vh;
     }
-    
+
     .x {
         font-size: 13.2vh;
     }
+
     .curva {
         top: 51.9%;
-        height:6.6%;
+        height: 6.6%;
     }
+
     .complemento {
         width: 580%;
         height: 1513.8%;
         top: -785.7%;
     }
+
     .fondo {
         width: 580%;
     }

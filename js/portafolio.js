@@ -52,3 +52,15 @@ for (let x = 1; x < itemHamburguer.length; x++) {
 }
 console.log((((radio - (itemHamburguer[0].scrollHeight * (itemHamburguer.length - 1))) / 2) + itemHamburguer[0].scrollHeight))
  */
+
+
+window.addEventListener("load", function () {
+  let iframePortafolio = document.querySelectorAll(".iframe-portafolio");
+
+  for (let x = 0; x < iframePortafolio.length; x++) {
+    let contentIframe = iframePortafolio[x].contentWindow;
+    let bodyIframe = contentIframe.document.body;
+    console.log(bodyIframe)
+    bodyIframe.style.zoom = "22%";
+  }
+})
