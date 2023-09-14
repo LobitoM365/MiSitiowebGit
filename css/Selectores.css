@@ -1,14 +1,19 @@
-*{
+* {
     margin: 0px;
     padding: 0%;
 }
-.letter-style{
+
+body {
+    background-color: white;
+}
+
+.letter-style {
     font-size: 2em;
     color: rgb(162, 164, 165);
 }
 
-.name-style{
-    color: rgb(64, 64, 64); 
+.name-style {
+    color: rgb(64, 64, 64);
 }
 
 /* Ejemplo clase de elemento */
@@ -18,43 +23,45 @@ h2 {
 
 /* Ejemplo clase atada*/
 
-h2.text-style{
-    color:blue;
+h2.text-style {
+    color: blue;
 }
 
 /* Ejemplo calse no atada */
 
-.text-style{
+.text-style {
     color: darkcyan;
 }
 
 /* Ejemplo de estilo utilizando ID*/
-#textStyle{
+#textStyle {
     color: violet;
 }
 
 .nav {
-    
+
     padding: 30px;
-  
-    
+
+
 }
 
-.nav nav ul li a{
+.nav nav ul li a {
     color: rgba(0, 0, 0, 0.842);
     font-size: 2.2em;
     text-decoration: none;
-    padding: 9px ;
-    
+    padding: 9px;
+
 }
-.nav nav ul li{
+
+.nav nav ul li {
     list-style: none;
-    
-    
+
+
 }
-.nav nav ul li a:hover{
-    background-color:rgba(179, 184, 184, 0.432);
+
+.nav nav ul li a:hover {
+    background-color: rgba(179, 184, 184, 0.432);
     padding: 9px;
     border-radius: 4px;
-   
+
 }

@@ -4,6 +4,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: white;
+}
+
 .menu_principal {
     display: flex;
     justify-content: center;
@@ -28,12 +32,13 @@ li {
     font-weight: bolder;
 }
 
-.color_focus{
+.color_focus {
     background-color: rgb(87, 87, 86);
     color: white;
     text-decoration: none;
     font-size: 12px;
 }
+
 .focus {
     color: white;
     text-decoration: none;
@@ -189,11 +194,12 @@ h4 {
 
 }
 
-.icon_submenu{
+.icon_submenu {
     font-size: 26px;
     color: white;
     margin-right: 6px;
 }
+
 .submenu li:hover {
     background-color: rgba(0, 0, 0, 0.472);
 }

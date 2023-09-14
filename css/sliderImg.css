@@ -3,9 +3,10 @@
     padding: 0;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
+
 @font-face {
     font-family: "rickandmorty";
     src: url(../fonts/get_schwifty.ttf);
@@ -308,7 +309,8 @@ img {
     padding: 1vw;
     font-size: 1vw;
 }
-.loader{
+
+.loader {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -319,20 +321,21 @@ img {
     background-color: rgb(38, 44, 58);
     z-index: 1;
 }
-.loader-gif{
+
+.loader-gif {
     width: 8vw;
     height: 8vw;
     position: relative;
     z-index: 4;
 }
 
-.title-loader{
+.title-loader {
     font-size: 1vw;
     color: white;
     z-index: 4;
 }
 
-.invisible-loader{
+.invisible-loader {
     visibility: hidden;
     z-index: -1;
     opacity: 0;

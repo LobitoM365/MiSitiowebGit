@@ -4,6 +4,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: white;
+}
+
 .menu_principal {
     display: flex;
     justify-content: center;

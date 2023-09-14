@@ -1,69 +1,77 @@
-*{
-    margin: 0%;
-    padding: 0%;
- }
- 
- .google{
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    height: 80vh;
-    font-size: 4em;
- 
- }
- 
- span.G{
-    color:blue;
-    
-   
- }
- 
- span.O{
-    color: red;
-    
- }
- 
- span.o{
-    color: rgb(255, 196, 0);
-    
- }
- 
- span.g{
-    color:blue;
-    
- }
- span.l{
-    color: rgb(5, 177, 5);
-    
- }
- span.e{
-    color: red;
-    
- }
-
-
- .nav {
-    
-    padding: 30px;
-  
-    
+* {
+   margin: 0%;
+   padding: 0%;
 }
 
-.nav nav ul li a{
-    color: rgba(0, 0, 0, 0.842);
-    font-size: 2.2em;
-    text-decoration: none;
-    padding: 9px ;
-    
+body {
+   background-color: white;
 }
-.nav nav ul li{
-    list-style: none;
-    
-    
+
+.google {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 80vh;
+   font-size: 4em;
+
 }
-.nav nav ul li a:hover{
-    background-color:rgba(179, 184, 184, 0.432);
-    padding: 9px;
-    border-radius: 4px;
-   
+
+span.G {
+   color: blue;
+
+
+}
+
+span.O {
+   color: red;
+
+}
+
+span.o {
+   color: rgb(255, 196, 0);
+
+}
+
+span.g {
+   color: blue;
+
+}
+
+span.l {
+   color: rgb(5, 177, 5);
+
+}
+
+span.e {
+   color: red;
+
+}
+
+
+.nav {
+
+   padding: 30px;
+
+
+}
+
+.nav nav ul li a {
+   color: rgba(0, 0, 0, 0.842);
+   font-size: 2.2em;
+   text-decoration: none;
+   padding: 9px;
+
+}
+
+.nav nav ul li {
+   list-style: none;
+
+
+}
+
+.nav nav ul li a:hover {
+   background-color: rgba(179, 184, 184, 0.432);
+   padding: 9px;
+   border-radius: 4px;
+
 }
