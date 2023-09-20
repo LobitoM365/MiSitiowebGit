@@ -98,4 +98,7 @@ window.onload = function () {
     bills.style.opacity = 0;
     imgFondoPcBlack.style.opacity = 1;
     imgFondoPcWhite.style.opacity = 1;
+    setTimeout(() => {
+        bills.remove();
+    }, 1000);
 }
