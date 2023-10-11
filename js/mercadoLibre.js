@@ -16,7 +16,7 @@ let arrayInfo = [
         "descripcion": "Mazda Cx-5 2.0 Touring Camioneta",
         "color": "rojo",
         "marca": "mazda",
-        "img": "../img/mercadoLibre/carro1.webp",
+        "img": "img/mercadoLibre/carro1.webp",
         "precio": "$90.000.000",
         "ubicacion": "Suba - Bogotá D.C."
     },
@@ -25,7 +25,7 @@ let arrayInfo = [
         "descripcion": "Citroen C3 1.6l Vti Visiodrive",
         "color": "gris",
         "marca": "citroen",
-        "img": "../img/mercadoLibre/carro2.webp",
+        "img": "img/mercadoLibre/carro2.webp",
         "precio": "$35.0000.000",
         "ubicacion": "Usaquén - Bogotá D.C."
     },
@@ -34,7 +34,7 @@ let arrayInfo = [
         "descripcion": "Peugeot 2008 1.2 Gt Line",
         "color": "rojo",
         "marca": "peugeot",
-        "img": "../img/mercadoLibre/carro3.webp",
+        "img": "img/mercadoLibre/carro3.webp",
         "precio": "$127.00.000",
         "ubicacion": "Usaquén - Bogotá D.C."
     },
@@ -43,7 +43,7 @@ let arrayInfo = [
         "descripcion": "Seat Leon 1.8 Fr Tsi Dsg 180 Hp",
         "color": "negro",
         "marca": "seat leon",
-        "img": "../img/mercadoLibre/carro4.webp",
+        "img": "img/mercadoLibre/carro4.webp",
         "precio": "$68.000.000",
         "ubicacion": "Usaquén - Bogotá D.C."
     },
@@ -52,7 +52,7 @@ let arrayInfo = [
         "descripcion": "Bmw M2 3.0 F22 Coupe",
         "color": "blanco",
         "marca": "bmw",
-        "img": "../img/mercadoLibre/carro5.webp",
+        "img": "img/mercadoLibre/carro5.webp",
         "precio": "$160.000.000",
         "ubicacion": "Teusaquillo - Bogotá D.C."
     },
@@ -61,7 +61,7 @@ let arrayInfo = [
         "descripcion": "Volkswagen New Beetle 2.5 Cabrio",
         "color": "rojo",
         "marca": "volkswagen",
-        "img": "../img/mercadoLibre/carro6.webp",
+        "img": "img/mercadoLibre/carro6.webp",
         "precio": "$58.000.000",
         "ubicacion": "Teusaquillo - Bogotá D.C."
     },
@@ -70,7 +70,7 @@ let arrayInfo = [
         "descripcion": "Mercedes-benz Clase Gle 3.0 Amg 53 4matic",
         "color": "blanco",
         "marca": "mercedes-benz",
-        "img": "../img/mercadoLibre/carro7.webp",
+        "img": "img/mercadoLibre/carro7.webp",
         "precio": "$485.000.000",
         "ubicacion": "Teusaquillo - Bogotá D.C."
     },
@@ -79,7 +79,7 @@ let arrayInfo = [
         "descripcion": "Volkswagen Fox 1.6 Xtreme",
         "color": "negro",
         "marca": "volkswagen",
-        "img": "../img/mercadoLibre/carro8.webp",
+        "img": "img/mercadoLibre/carro8.webp",
         "precio": "$48.000.000",
         "ubicacion": "Engativa - Bogotá D.C."
     }
