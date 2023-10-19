@@ -16,19 +16,22 @@
                 <h1 class="title-principal">Pomodoro</h1>
                 <nav>
                     <ul>
-                        <li><a href="">Cronómetro</a></li>
-                        <li><a class="a-focus" href="">Hora</a></li>
-                        <li><a href="">Despertador</a></li>
+                        <li><h5 class="h5-head" id="cronometro">Cronómetro</h5></li>
+                        <li><h5 class="h5-head h5-focus" id="reloj" href="">Hora</h5></li>
+                        <li><h5 class="h5-head" id="despertador">Temporalizador</a></li>
                     </ul>
                 </nav>
             </header>
             <div class="time">
                 <div class="circle">
                     <div class="circle-content">
-                        <div class="circle-desplazamiento">
-                            <div class="date">
-                                <h4 class="text-time"> <span id="hora">0</span>:<span id="minuto">0</span>:<span
+                        <div id="divDate" class="circle-desplazamiento">
+                            <div  class="date">
+                                <h4 id="textTime" class="text-time"> <span id="hora">0</span>:<span id="minuto">0</span>:<span
                                         id="segundo">0</span></h4>
+                                <div id="start" class="options-cronometro">
+                                    <h6 id="actionCronometro"></h6>
+                                </div>
                             </div>
                         </div>
                     </div>
