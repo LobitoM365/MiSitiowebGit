@@ -8,6 +8,7 @@ let cronometro = document.getElementById("cronometro")
 let despertador = document.getElementById("despertador")
 let textTime = document.getElementById("textTime")
 let h5Focus = document.querySelectorAll(".h5-head")
+let spanTime = document.querySelectorAll(".span-time")
 let intervalSeconds;
 let on = 1;
 let timeHora = 0;
@@ -71,6 +72,11 @@ function time(seconds, type, action, continueT) {
             timeSegundo = 0;
         }
         divDate.classList.add("date-focus")
+    } else if(type === "temporalizador"){
+        divDate.classList.remove("date-focus")
+        timeHora = 0;
+        timeMinuto = 2;
+        timeSegundo = 1;
     }
 
 
@@ -78,8 +84,30 @@ function time(seconds, type, action, continueT) {
 
     console.log(type, action, continueT)
     function intervalTime() {
-        if (type === "despertador") {
-
+        if (type === "temporalizador") {
+            
+            intervalSeconds = setInterval(() => {
+                timeSegundo = timeSegundo - 1;
+               
+                if (timeSegundo == 0) {
+                    timeSegundo = 10;
+                    if(timeMinuto != 0){
+                        timeMinuto = timeMinuto - 1;
+                    }
+                    getSeconds();
+                    getMinutes();
+                }
+                if (timeMinuto == 0) {
+                    timeMinuto = 0;
+                    if(timeHora != 0){
+                        timeHora = timeHora - 1;
+                    }
+                    
+                    getMinutes();
+                    getHora();
+                }
+                getSeconds();
+            }, seconds);
         } else {
             intervalSeconds = setInterval(() => {
                 timeSegundo = timeSegundo + 1;
@@ -146,42 +174,66 @@ reloj.addEventListener("click", function () {
 })
 
 function configureDespertador() {
-    let inputHora = document.createElement("input");
-    inputHora.classList.add("input-time")
-    inputHora.classList.add("text-time")
-    inputHora.value = "00";
-    textTime.replaceChild(inputHora, hora)
-    let inputTime = document.querySelectorAll(".input-time");
-    let value = "00";
-    let valueS = "00";
+    for(let x = 0; x < 3; x++){
+        let input = document.createElement("input");
+        input.classList.add("input-time")
+        input.classList.add("text-time")
+        input.value = "00";
 
-    inputTime[0].addEventListener("input", function (event) {
-        value = inputTime[0].value.toString();
-        if (value.length == 3) {
-            valueS = value[1] + value[2];
+        spanTime[x].innerHTML = "<input type='text' value='00' class='input-time text-time'> " 
+    }
+
+        let inputTime = document.querySelectorAll(".input-time");
+        let value = {
+            "0" : "00",
+            "1" : "00",
+            "2" : "00",
+        };
+        let valueS = {
+            "0" : "00",
+            "1" : "00",
+            "2" : "00",
+        };
+    
+        for(let x = 0; x < inputTime.length; x++){
+            inputTime[x].addEventListener("input", function (event) {
+                value[x] = inputTime[x].value.toString();
+                if (value[x].length == 3) {
+                    valueS[x] = value[x][1] + value[x][2];
+                }
+        
+                if (value[x].length == 3) {
+                    inputTime[x].value = value[x][1] + value[x][2]
+                }
+            })
+        
+            inputTime[x].addEventListener("keyup", function (event) {
+                if (event.key === "Backspace") {
+                    inputTime[x].value = "0" + valueS[x][0]
+                    valueS[x] = "0" + valueS[x][0];
+                }
+            })
         }
-
-        if (value.length == 3) {
-            console.log(inputTime[0].value[3])
-            inputTime[0].value = value[1] + value[2]
-        }
-    })
-
-    inputTime[0].addEventListener("keyup", function (event) {
-
-        if (event.key === "Backspace") {
-            console.log(valueS)
-            inputTime[0].value = "0" + valueS[0]
-            valueS = "0" + valueS[0];
-            console.log(valueS)
-        }
-    })
+    
 
 }
 
 
 
 despertador.addEventListener("click", function () {
+    divDate.classList.remove("start")
+    actionCronometro.innerHTML = "";
     clearInterval(intervalSeconds)
+    
+    actionCronometro.innerHTML = "Comenzar"
+    divDate.classList.add("starD")
     configureDespertador();
+})
+divDate.addEventListener("click", function () {
+    let inputTime = document.querySelectorAll(".input-time");
+    console.log(inputTime[0].value)
+/*     if (divDate.classList.contains("starD")) {
+        time(1000, "temporalizador", 1)
+    } */
+
 })
