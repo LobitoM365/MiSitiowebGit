@@ -23,6 +23,16 @@ getHora();
 function intervalTime(){
     let interval = setInterval(() => {
         timeSegundo = timeSegundo + 1;
+        if(timeSegundo == 60){
+            timeSegundo = 0;
+            timeMinuto = timeMinuto + 1;
+            getMinutes();
+        }
+        if(timeMinuto == 60){
+            timeMinuto = 0;
+            timeHora = timeHora + 1;
+            getHora();
+        }
         getSeconds();
     }, 1000);
 }
