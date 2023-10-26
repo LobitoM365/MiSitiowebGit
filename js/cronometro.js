@@ -204,6 +204,7 @@ cronometro.addEventListener("click", function () {
     reloadCronometro[0].addEventListener("click", function () {
         cronometro.click()
     })
+    actionCronometro.innerHTML = "Iniciar"
 })
 actionCronometro.addEventListener("click", function () {
     if (divDate.classList.contains("start")) {
@@ -221,6 +222,10 @@ actionCronometro.addEventListener("click", function () {
 
 })
 reloj.addEventListener("click", function () {
+    let reloadId = document.getElementById("reloadId");
+    if (reloadId) {
+        reloadId.remove()
+    }
     divDate.classList.remove("start")
     divDate.classList.remove("starD")
     actionCronometro.innerHTML = ""
@@ -331,6 +336,7 @@ actionCronometro.addEventListener("click", function () {
 
 
         } else if (divDate.classList.contains("pauseD")) {
+            audio.pause();
             divDate.classList.add("starD")
             divDate.classList.remove("pauseD")
             actionCronometro.innerHTML = "Comenzar"
