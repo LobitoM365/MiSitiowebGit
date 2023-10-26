@@ -9,10 +9,14 @@ let despertador = document.getElementById("despertador")
 let textTime = document.getElementById("textTime")
 let h5Focus = document.querySelectorAll(".h5-head")
 let spanTime = document.querySelectorAll(".span-time")
+let circleColor = document.querySelectorAll(".circle-color")
 let actionCronometro = document.getElementById("actionCronometro")
 let dateID = document.getElementById("dateID");
 let reloadId = document.getElementById("reloadId");
-let cloneReload = reloadId.cloneNode(true)
+let circleAvance = document.getElementById("circleAvance");
+let cloneReload = reloadId.cloneNode(true);
+let secondsC = 0;
+let secondL;
 reloadId.remove()
 
 let intervalSeconds;
@@ -41,7 +45,7 @@ for (let x = 0; x < h5Focus.length; x++) {
 
 
 
-function time(seconds, type, action, continueT, times) {
+function time(seconds, type, action, continueT, times, secondsC, secondL) {
     clearInterval(intervalSeconds);
     let limit;
     if (type == "cronometro") {
@@ -104,49 +108,49 @@ function time(seconds, type, action, continueT, times) {
     function intervalTime() {
         if (type === "temporalizador") {
 
+            let valueC = secondsC;
+
 
             intervalSeconds = setInterval(() => {
 
+
+                audio.play()
+
+                timeSegundo = timeSegundo - 1;
+
+                if (timeSegundo == -1) {
+                    timeSegundo = 59;
+                    timeMinuto = timeMinuto - 1;
+
+                }
+
+                if (timeMinuto == -1) {
+                    timeMinuto = 59;
+                    if (timeHora != 0) {
+
+                        timeHora = timeHora - 1;
+                        if (timeHora.toString().length == 1) {
+                            timeHora = "0" + timeHora;
+                        } else if (timeHora == "0") {
+                            timeHora = "00";
+
+                        }
+                    }
+
+                }
+                getHora();
+                getSeconds();
+                getMinutes();
+                valueC = (secondL - ((parseFloat(timeHora) * 3600) + (parseFloat(timeMinuto) * 60) + parseFloat(timeSegundo))) * secondsC;
+                circleAvance.style.background = `conic-gradient( rgb(250, 113, 111)${valueC}deg,transparent 0deg)`
                 if (timeSegundo == 0 & timeMinuto == 0 & timeHora == 0) {
                     audio.pause();
                     audio.setAttribute("src", "audio/despertador2.mp3")
                     audio.play();
                     clearInterval(intervalSeconds)
                     actionCronometro.style.display = "none"
-                } else {
-                    audio.play()
-
-                    timeSegundo = timeSegundo - 1;
-
-                    if (timeSegundo == -1) {
-                        timeSegundo = 59;
-                            timeMinuto = timeMinuto - 1;
-                        
-                    }
-
-                    if (timeMinuto == -1) {
-                        timeMinuto = 59;
-                        if (timeHora != 0) {
-                            
-                            timeHora = timeHora - 1;
-                            if (timeHora.toString().length == 1) {
-                                timeHora = "0" + timeHora;
-                            } else if (timeHora == "0") {
-                                timeHora = "00";
-                    
-                            }
-                        }
-
-                    }
-                    getHora();
-                    getSeconds();
-                    getMinutes();
-
                 }
-
             }, seconds);
-
-
         } else {
             intervalSeconds = setInterval(() => {
                 timeSegundo = timeSegundo + 1;
@@ -182,6 +186,8 @@ time(1000, "reloj", 1)
 
 
 cronometro.addEventListener("click", function () {
+    secondsC = 0;
+    circleColor[0].style.borderColor = ""
     actionCronometro.style.display = ""
     let reloadId = document.getElementById("reloadId");
     if (reloadId) {
@@ -199,6 +205,7 @@ cronometro.addEventListener("click", function () {
     on = 1;
     divDate.classList.add("start")
     divDate.classList.remove("starD")
+    divDate.classList.remove("pauseD")
 
     audio.pause();
 
@@ -225,6 +232,8 @@ actionCronometro.addEventListener("click", function () {
 
 })
 reloj.addEventListener("click", function () {
+    secondsC = 0;
+    circleColor[0].style.borderColor = ""
     let reloadId = document.getElementById("reloadId");
     if (reloadId) {
         reloadId.remove()
@@ -260,18 +269,32 @@ function configureDespertador() {
 
     for (let x = 0; x < inputTime.length; x++) {
         inputTime[x].addEventListener("input", function (event) {
+            inputTime[x].value = inputTime[x].value.replace(/[a-zA-Z]/, "")
             value[x] = inputTime[x].value.toString();
-            if (value[x].length == 3) {
-                valueS[x] = value[x][1] + value[x][2];
-            }
+
 
             if (value[x].length == 3) {
                 inputTime[x].value = value[x][1] + value[x][2]
             }
+
+            if (value[x].length == 3) {
+                valueS[x] = value[x][1] + value[x][2];
+                if (x == 1 || x == 2) {
+                    if (parseFloat(inputTime[x].value) > 59) {
+                        valueS[x] = value[x][0] + value[x][2];
+                        inputTime[x].value = 59
+                        value[x] = "0" + 59
+                    }
+
+                }
+            }
+
+
+
         })
 
         inputTime[x].addEventListener("keyup", function (event) {
-            if (event.key === "Backspace") {
+            if (event.key === "Backspace" || event.key === "Delete") {
                 inputTime[x].value = "0" + valueS[x][0]
                 valueS[x] = "0" + valueS[x][0];
             }
@@ -279,12 +302,16 @@ function configureDespertador() {
         })
     }
 
-
 }
 
 
 
 despertador.addEventListener("click", function () {
+    secondsC = 0;
+    circleAvance.style.background = ""
+
+    circleColor[0].style.borderColor = "white"
+    audio.setAttribute("src", "audio/temporalizador.mp3")
     actionCronometro.style.display = ""
 
     audio.pause();
@@ -315,31 +342,47 @@ actionCronometro.addEventListener("click", function () {
     let inputTime = document.querySelectorAll(".input-time");
     let spanTime = document.querySelectorAll(".span-time");
     let times = []
+
     if (inputTime.length > 0) {
         times = [
             inputTime[0].value,
             inputTime[1].value,
             inputTime[2].value
         ]
+        if (secondsC == 0) {
+            secondsC = 360 / ((parseFloat(times[0]) * 3600) + (parseFloat(times[1]) * 60) + parseFloat(times[2]));
+            secondL = ((parseFloat(times[0]) * 3600) + (parseFloat(times[1]) * 60) + parseFloat(times[2]));
+        }
+
     } else {
         times = [
             parseFloat(spanTime[0].innerHTML),
             parseFloat(spanTime[1].innerHTML),
             parseFloat(spanTime[2].innerHTML)
         ]
+        if (secondsC == 0) {
+            secondsC = 360 / ((parseFloat(spanTime[0].innerHTML) * 3600) + (parseFloat(spanTime[1].innerHTML) * 60) + parseFloat(spanTime[2].innerHTML));
+            secondL = ((parseFloat(spanTime[0].innerHTML) * 3600) + (parseFloat(spanTime[1].innerHTML) * 60) + parseFloat(spanTime[2].innerHTML));
+
+        }
+
     }
+    let seconds = secondsC
+
     if (times[0] == 0 && times[1] == 0 && times[2] == 0) {
 
     } else {
         if (divDate.classList.contains("starD")) {
 
-            time(1000, "temporalizador", 1, "", times);
+            time(1000, "temporalizador", 1, "", times, secondsC, secondL);
+
             divDate.classList.remove("starD")
             divDate.classList.add("pauseD")
             actionCronometro.innerHTML = "Pausar"
 
 
         } else if (divDate.classList.contains("pauseD")) {
+            audio.setAttribute("src", "audio/temporalizador.mp3")
             audio.pause();
             divDate.classList.add("starD")
             divDate.classList.remove("pauseD")
