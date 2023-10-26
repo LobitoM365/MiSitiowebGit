@@ -120,18 +120,21 @@ function time(seconds, type, action, continueT, times) {
 
                     if (timeSegundo == -1) {
                         timeSegundo = 59;
-                        if (timeMinuto != 0) {
                             timeMinuto = timeMinuto - 1;
-                        }
+                        
                     }
 
                     if (timeMinuto == -1) {
+                        timeMinuto = 59;
                         if (timeHora != 0) {
-                            timeMinuto = 59;
-
+                            
                             timeHora = timeHora - 1;
-
-
+                            if (timeHora.toString().length == 1) {
+                                timeHora = "0" + timeHora;
+                            } else if (timeHora == "0") {
+                                timeHora = "00";
+                    
+                            }
                         }
 
                     }
@@ -196,7 +199,7 @@ cronometro.addEventListener("click", function () {
     on = 1;
     divDate.classList.add("start")
     divDate.classList.remove("starD")
-        
+
     audio.pause();
 
     let reloadCronometro = document.querySelectorAll(".reload")
@@ -272,6 +275,7 @@ function configureDespertador() {
                 inputTime[x].value = "0" + valueS[x][0]
                 valueS[x] = "0" + valueS[x][0];
             }
+
         })
     }
 
