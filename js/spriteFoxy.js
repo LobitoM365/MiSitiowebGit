@@ -3,10 +3,9 @@ let imgSprite = document.getElementById("imgSprite")
 
 let posicion = 0;
 let interval;
-let time = 100;
+let time = 30;
 let direccion;
 let on = 1;
-let left;
 let movimiento = 1;
 let posicionLeft = 0;
 let posicionTop = 0;
