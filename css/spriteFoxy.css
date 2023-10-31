@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+.div-img-fondo{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -999;
+}
+.img{
+    width: 100%;
+    height: 100%;
+}
+.div-img-sprite{
+    position: absolute;
+    width: 100px;
+}

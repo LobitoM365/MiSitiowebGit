@@ -114,11 +114,11 @@ a {
     display: block;
   }
 
-  nav>ul>Li>ul li {
+  nav>ul>li> .header-ul  li {
     position: relative;
   }
 
-  nav>ul>Li>ul>li a {
+  nav>ul>li> .header-ul ul >li a {
     width: 225px;
     padding: 20px 20px;
     font-size: 1.2em;
@@ -133,27 +133,29 @@ a {
 
   nav>ul>li {
     float: left;
+
   }
 
-  nav>ul>li>ul {
+  nav>ul>li .header-ul {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
+    margin-bottom: 300px;
+
   }
 
-  nav>ul>li>ul>li>ul {
+  nav>ul>li> .header-ul li ul {
     display: none;
     position: absolute;
     top: -10%;
     left: 100.4%;
   }
 
-  nav>ul>li:hover>ul,
-  nav>ul>li>ul li:hover>ul {
+  nav>ul>li:hover> .header-ul ,
+  nav>ul>li> .header-ul  li:hover>ul {
     display: block;
-    background-color: rgba(4, 4, 4, 0.747);
-    border: 6px solid black;
+
     z-index: 2;
   }
 
@@ -253,6 +255,7 @@ a {
   .ulWhite {
     color: white;
   }
+
 
   .img-fondo-pc-white {
     position: fixed;
@@ -360,13 +363,13 @@ a {
     z-index: 7;
   }
 
-  nav>ul>li>ul>li>a {
+  nav>ul>li> .header-ul >li>a {
     background-color: rgb(45, 45, 45);
     position: relative;
     z-index: 8;
   }
 
-  nav>ul>li>ul>li>ul>li>a {
+  nav>ul>li> .header-ul >li>ul>li>a {
     background-color: rgb(72, 72, 72);
   }
 
@@ -374,11 +377,11 @@ a {
     border-bottom: 2px solid rgb(255, 255, 255);
   }
 
-  nav>ul>li>ul>Li>a {
+  nav>ul>li> .header-ul >Li>a {
     border-bottom: 2px solid rgb(123, 123, 123);
   }
 
-  nav>ul>li>ul>li>ul>Li>a {
+  nav>ul>li> .header-ul >li>ul>Li>a {
     border-bottom: 2px solid rgb(0, 0, 0);
   }
 
@@ -439,4 +442,12 @@ a {
   width: 100%;
   top: 0;
   height: 100vh ;
+}
+.header-ul{
+  padding-bottom: 100px;
+}
+.header-ul ul{
+  position: relative;
+  background-color: rgba(4, 4, 4, 0.747);
+  border: 6px solid black;
 }
