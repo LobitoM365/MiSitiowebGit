@@ -13,6 +13,8 @@ let marginI;
 
 
 
+
+
 function getMovimiento(posicionI, posicionM) {
     if (posicionI > 3) {
         posicion = 2;

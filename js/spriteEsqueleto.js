@@ -9,6 +9,34 @@ let on = 0;
 let time = 100;
 let direccion;
 
+
+const imagenes = [
+
+]
+
+for(let x = 1; x <= 44; x++){
+    imagenes.push(`img/sprites/extraterreste/bailando/sprite1/spriteLeft (${x}).png`)
+}
+for(let x = 1; x <= 45; x++){
+    imagenes.push(`img/sprites/extraterreste/bailando/sprite1/spriteRight (${x}).png`)
+}
+for(let x = 1; x <= 173; x++){
+    imagenes.push(`img/sprites/extraterreste/bailando/sprite1/spriteUp (${x}).png`)
+}
+for(let x = 1; x <= 113; x++){
+    imagenes.push(`img/sprites/extraterreste/bailando/sprite1/spriteDown (${x}).png`)
+}
+
+console.log(imagenes)
+
+function precargarImagenes(imagenes) {
+    for (const ruta of imagenes) {
+        const imagen = new Image();
+        imagen.src = ruta;
+    }
+}
+precargarImagenes(imagenes);
+
 function getIMg(imgPosition) {
     if(direccion == "Up"){
         if(imgPosition > 172){
