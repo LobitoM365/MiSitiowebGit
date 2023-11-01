@@ -12,7 +12,31 @@ let posicionTop = 0;
 let marginI;
 
 
+const imagenes = [
 
+]
+
+for(let x = 1; x <= 3; x++){
+    imagenes.push(`img/sprites/FiveNights/movimiento/sprite1/spriteLeft (${x}).png`)
+}
+for(let x = 1; x <= 3; x++){
+    imagenes.push(`img/sprites/FiveNights/movimiento/sprite1/spriteRight (${x}).png`)
+}
+for(let x = 1; x <= 3; x++){
+    imagenes.push(`img/sprites/FiveNights/movimiento/sprite1/spriteUp (${x}).png`)
+}
+for(let x = 1; x <= 3; x++){
+    imagenes.push(`img/sprites/FiveNights/movimiento/sprite1/spriteDown (${x}).png`)
+}
+
+
+async function precargarImagenes(imagenes) {
+    for (const ruta of imagenes) {
+        const imagen = new Image();
+        imagen.src = ruta;
+    }
+}
+await precargarImagenes(imagenes);
 
 
 function getMovimiento(posicionI, posicionM) {

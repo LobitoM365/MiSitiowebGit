@@ -27,15 +27,15 @@ for(let x = 1; x <= 113; x++){
     imagenes.push(`img/sprites/extraterreste/bailando/sprite1/spriteDown (${x}).png`)
 }
 
-console.log(imagenes)
 
-function precargarImagenes(imagenes) {
+
+async function precargarImagenes(imagenes) {
     for (const ruta of imagenes) {
         const imagen = new Image();
         imagen.src = ruta;
     }
 }
-precargarImagenes(imagenes);
+await precargarImagenes(imagenes);
 
 function getIMg(imgPosition) {
     if(direccion == "Up"){
@@ -61,7 +61,7 @@ function getIMg(imgPosition) {
     }
     imgSprite.setAttribute("src", `img/sprites/extraterreste/bailando/sprite1/sprite${direccion} (${imgPosition}).png`)
     audio.play();
-    console.log(imgPosition)
+  
 }
 
 
