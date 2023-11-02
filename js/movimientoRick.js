@@ -30,8 +30,9 @@ divNaveRick.style.left = `calc(50% - ${divNaveRick.scrollWidth / 2}px)`;
 divNaveRick.style.transition = ` transition: all 0.1s;`;
 
 function getInterval() {
-    interval = setInterval(() => {
+    console.log(time)
 
+    interval = setInterval(() => {
 
         if (keysPressed["ArrowLeft"]) {
             let auxLeft = posicionLeft + movimiento;
@@ -58,7 +59,6 @@ function getInterval() {
                 posicionLeft -= movimiento;
                 divNaveRick.style.left = `calc(50% - ${divNaveRick.scrollWidth / 2}px - ${posicionLeft}px)`;
             }
-            console.log(document.body.clientWidth, Math.ceil((((document.body.clientWidth / 2) - (divNaveRick.clientWidth / 2)) + (divNaveRick.clientWidth))), (auxRight), divNaveRick.clientWidth)
 
 
             auxRight = posicionLeft;
@@ -85,7 +85,7 @@ document.body.addEventListener("keyup", function (event) {
     if (event.key == "ArrowLeft" || event.key == "ArrowDown" || event.key == "ArrowRight" || event.key == "ArrowUp" || event.code == "Space") {
 
         delete keysPressed[event.key];
-        console.log(Object.keys(keysPressed).length)
+
         if (Object.keys(keysPressed).length === 0) {
             clearInterval(interval);
             on = 0;
@@ -153,12 +153,12 @@ document.body.addEventListener("keyup", function (event) {
             audio.play()
             timeOut = setTimeout(() => {
                 audio.pause()
-               if(turbo == 2){
-                audio.setAttribute("src", "audio/naveMoving.mp3");
-                audio.load()
+                if (turbo == 2) {
+                    audio.setAttribute("src", "audio/naveMoving.mp3");
+                    audio.load()
 
-                audio.play();
-               }
+                    audio.play();
+                }
             }, 3000);
 
 
@@ -173,10 +173,13 @@ document.body.addEventListener("keyup", function (event) {
             turbo = 0
             time = 15;
             movimiento = 10;
-        }else{
-        audio.pause();
+        } else {
+            audio.pause();
+
 
         }
+        clearInterval(interval);
+        getInterval();
 
     }
 });
