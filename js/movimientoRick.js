@@ -36,7 +36,7 @@ function getInterval() {
         if (keysPressed["ArrowLeft"]) {
             let auxLeft = posicionLeft + movimiento;
             if (document.body.scrollWidth >= Math.ceil((((document.body.scrollWidth / 2) - (divNaveRick.scrollWidth / 2)) + (divNaveRick.scrollWidth)) - (auxLeft * -1))) {
-
+                posicionLeft += movimiento;
                 divNaveRick.style.left = `calc(50% - ${divNaveRick.scrollWidth / 2}px - ${posicionLeft}px)`;
             }
             auxLeft = posicionLeft;
@@ -58,7 +58,7 @@ function getInterval() {
                 posicionLeft -= movimiento;
                 divNaveRick.style.left = `calc(50% - ${divNaveRick.scrollWidth / 2}px - ${posicionLeft}px)`;
             }
-           
+            console.log(document.body.clientWidth, Math.ceil((((document.body.clientWidth / 2) - (divNaveRick.clientWidth / 2)) + (divNaveRick.clientWidth))), (auxRight), divNaveRick.clientWidth)
 
 
             auxRight = posicionLeft;
@@ -85,7 +85,7 @@ document.body.addEventListener("keyup", function (event) {
     if (event.key == "ArrowLeft" || event.key == "ArrowDown" || event.key == "ArrowRight" || event.key == "ArrowUp" || event.code == "Space") {
 
         delete keysPressed[event.key];
-
+        console.log(Object.keys(keysPressed).length)
         if (Object.keys(keysPressed).length === 0) {
             clearInterval(interval);
             on = 0;
