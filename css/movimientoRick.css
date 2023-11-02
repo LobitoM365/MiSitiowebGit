@@ -5,13 +5,16 @@
 body{
     position: relative;
     height: 100vh;
-
+    overflow: hidden;
 }
+
+
 .div-fondo{
     position: fixed;
-    width: 100%;
+    width: 80%;
     height: 100%;
     z-index: -9999;
+    display: flex;
 }
 .img{
     width: 100%;
@@ -27,4 +30,39 @@ body{
     width: 80px;
     transform: rotate(-80deg);
     z-index: -1;
+}
+
+.foco{
+    position: absolute;
+    width: 75px;
+    left: calc(100% - 53px);
+    top: calc(50% + 75px);
+}
+.foco2{
+    left: calc(100% - 13px);
+    top: calc(50% + 35px);
+}
+@keyframes moveFonda {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+.img-2,.img-4{
+    transform: scaleX(-1);
+    margin-left: -10px;
+}
+
+.audio{
+    width: 0;
+    height: 0;
+    max-width: 0;
+    max-height: 0;
+    position: absolute;
+    z-index: -99999999;
+    visibility: hidden;
+    opacity: 0;
 }
