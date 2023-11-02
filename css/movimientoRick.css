@@ -53,7 +53,7 @@ body{
 
 .img-2,.img-4{
     transform: scaleX(-1);
-    margin-left: -10px;
+    margin-left: -2  %;
 }
 
 .audio{
