@@ -36,6 +36,12 @@ fondoOscuro.addEventListener("click", function () {
 imgPredeterminada.addEventListener("click", function () {
     containVisibilidad(contenidoFocus)
 })
+
+for (let i = 0; i <= 3; i++) {
+    imgMain[i].addEventListener("click", function () {
+        containVisibilidad(contenidoFocus)
+    })
+}
 AddToCart.addEventListener("click", function () {
     let idcantidadNumeroProducto = document.getElementById("idcantidadNumeroProducto").innerHTML;
     let productosCheckout = document.getElementById("productosCheckout");
@@ -60,7 +66,8 @@ AddToCart.addEventListener("click", function () {
 
 iconProductosAdd.addEventListener("click", function () {
     if (parseFloat(posicionImgMiniAddProductos.innerHTML) == 0) {
-        productosAdd.classList.add("invisible");
+        containVisibilidad(productosAdd);
+
     } else {
         containVisibilidad(productosAdd);
     }
@@ -162,7 +169,7 @@ for (let d = 0; d < imgMini.length; d++) {
         clickRight = parseFloat(clickRight) + 1;
         imgPredeterminada.classList.add("invisible")
         focusBehindRight = parseFloat(focusBehindRight) + 1;
-        for (let i = 0; i <= 8; i++) {
+        for (let i = 0; i < 8; i++) {
             imgMain[i].classList.remove("focus-transition1");
             imgMain[i].classList.remove("focus-transition2");
             if (clickRight >= 8 || focusBehindRight >= 4) {
@@ -176,7 +183,7 @@ for (let d = 0; d < imgMini.length; d++) {
                     imgMain[i].classList.add("prueba");
                     imgMain[i].classList.remove("img-box-invisible");
                 }
-                for (let u = 0; u <= imgMini.length; u++) {
+                for (let u = 0; u < imgMini.length; u++) {
                     if (i > 3) {
                         imgMain[i].classList.remove("img-position-" + u);
                         imgMain[i].classList.add("img-position-4")
@@ -189,7 +196,7 @@ for (let d = 0; d < imgMini.length; d++) {
                     imgMain[i].classList.remove("prueba");
                     imgMain[i].classList.add("img-box-invisible");
                 }
-                for (let u = 0; u <= imgMini.length; u++) {
+                for (let u = 0; u < imgMini.length; u++) {
                     if (i > 3) {
                         console.log(clickRight)
                         if (clickRight == 4) {
@@ -228,7 +235,7 @@ for (let d = 0; d < imgMini.length; d++) {
                 posicionImgMini.innerHTML = clickRight - 1;
             }
         }
-        if (valorPosicionMini <= 3) {
+        if (valorPosicionMini < 3) {
             if (valorPosicionMini == 0) {
                 clickRight = clickRight;
                 focusBehindRight = focusBehindRight;
@@ -241,8 +248,8 @@ for (let d = 0; d < imgMini.length; d++) {
         imgPredeterminada.classList.add("invisible")
         clickRight = clickRight - 1;
         focusBehindRight = focusBehindRight - 1;
-        for (let i = 0; i <= 8; i++) {
-            if (clickRight <= 2 || focusBehindRight <= -1) {
+        for (let i = 0; i < 8; i++) {
+            if (clickRight < 2 || focusBehindRight < -1) {
                 clickRight = 7;
                 focusBehindRight = 3;
             }
@@ -253,7 +260,7 @@ for (let d = 0; d < imgMini.length; d++) {
                     imgMain[i].classList.add("prueba");
                     imgMain[i].classList.remove("img-box-invisible");
                 }
-                for (let u = 0; u <= imgMini.length; u++) {
+                for (let u = 0; u < imgMini.length; u++) {
                     if (i > 3) {
                         imgMain[i].classList.remove("img-position-" + u);
                         imgMain[i].classList.add("img-position-4")
@@ -266,7 +273,7 @@ for (let d = 0; d < imgMini.length; d++) {
                     imgMain[i].classList.remove("prueba");
                     imgMain[i].classList.add("img-box-invisible");
                 }
-                for (let u = 0; u <= imgMini.length; u++) {
+                for (let u = 0; u < imgMini.length; u++) {
                     if (i > 3) {
                         console.log(clickRight)
                         if (clickRight == 4) {
@@ -293,16 +300,11 @@ for (let d = 0; d < imgMini.length; d++) {
         }
     })
 
-    for (let i = 0; i <= 3; i++) {
-        imgMain[i].addEventListener("click", function () {
-            contenidoFocus.classList.toggle("invisible")
-        })
-    }
     for (let i = 0; i < imgMini.length; i++) {
         imgMini[i].addEventListener("click", function () {
             imgPredeterminada.classList.add("invisible")
             posicionImgMini.innerHTML = i;
-            for (let x = 0; x <= imgMini.length; x++) {
+            for (let x = 0; x < imgMini.length; x++) {
                 if (x == i || x == i + 4 || x == i - 4) {
                     borderFocus[x].classList.add("borderFocusActive");
                     imgMini[x].classList.add("img-opacity");
@@ -310,7 +312,7 @@ for (let d = 0; d < imgMini.length; d++) {
                         imgMain[x].classList.add("prueba");
                         imgMain[x].classList.remove("img-box-invisible");
                     }
-                    for (let u = 0; u <= imgMini.length; u++) {
+                    for (let u = 0; u < imgMini.length; u++) {
                         if (x > 3) {
                             imgMain[x].classList.remove("img-position-" + u);
                             imgMain[x].classList.add("img-position-4")
@@ -323,10 +325,10 @@ for (let d = 0; d < imgMini.length; d++) {
                         imgMain[x].classList.remove("prueba");
                         imgMain[x].classList.add("img-box-invisible");
                     }
-                    for (let u = 0; u <= imgMini.length; u++) {
+                    for (let u = 0; u < imgMini.length; u++) {
                         if (x > 3) {
                             let valorPosicionMini = document.getElementById("posicionImgMini").innerHTML;
-                            if (parseFloat(valorPosicionMini) <= 3) {
+                            if (parseFloat(valorPosicionMini) < 3) {
                                 valorPosicionMini = parseFloat(valorPosicionMini) + 4;
                             }
                             console.log(valorPosicionMini)

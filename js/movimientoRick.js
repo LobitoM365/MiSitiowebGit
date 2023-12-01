@@ -203,3 +203,7 @@ document.body.addEventListener("keydown", function (event) {
 
     }
 });
+
+/* const urlParams = window.location.search;
+let params = new URLSearchParams(urlParams);
+console.log(params.get("nombre"),params.get("id")) */
